@@ -1,0 +1,55 @@
+/*div {
+    border: 1px solid red;
+}*/
+
+body {
+    background-color: grey !important;
+}
+
+header {
+    background: crimson;
+    border-bottom: 1px solid black;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.box, .crystalBox {
+    background-color: bisque;
+    margin: auto;
+    width: 80%;
+    border: 1px solid black;
+}
+
+.crystalBox {
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#info {
+    padding: 5px;
+    font-weight: bold;
+    background-color: bisque;
+}
+
+#currentScore {
+    color: red;
+}
+
+.midText {
+    text-align: center;
+}
+
+.currentNum {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.crystals {
+    display: block;
+    margin: auto;
+}
+
+#status {
+    height: 50px;
+}
