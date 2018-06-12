@@ -1,0 +1,27 @@
+/*div {
+    border: 1px solid red;
+}*/
+
+header {
+    background: crimson;
+    border-bottom: 1px solid black;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.box, .triviaBox, .resultBox {
+    background-color: bisque;
+    margin: auto;
+    border: 1px solid black;
+    padding: 15px;
+    width: 100%;
+    opacity: 0.9;
+}
+
+/* Centers the button */
+#startButton, #timer, #nextButton, #resetButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
