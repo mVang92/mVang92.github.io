@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GifTastic</title>
+        <link rel="icon" href="assets/images/favicon.png" type="favicon.png" sizes="16x16">
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+        <!-- Boostrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+            integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    </head>
+
+    <body background="assets/images/background.png" style="background-repeat:no-repeat; background-attachment:fixed;">
+        <header>
+            <img id="welcomeGif" src="assets/images/pbjTime.gif" title="Peanut Butter Jelly Time"/> GifTastic
+        </header>
+        <div id="container">
+            <div class="row">
+                <div class="input col-md-12">
+                    <br>
+                    <form id="movieForm">
+                        <label for="show"><b>Add a Show</b></label>
+                        <input type="text" id="showLength"> <input id="submit" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="input col-md-12">
+                    <div id="movieButton"></div>
+                    <br>  
+                    <div id="shows"></div>
+                    <div id="gifs"></div>
+                </div>
+            </div>
+            <br>  
+        </div>    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+    </body>
+</html>

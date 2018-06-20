@@ -1,0 +1,84 @@
+/* div {
+    border: 1px solid red;
+} */
+
+#welcomeGif {
+    height: 64px;
+}
+
+header {
+    background-color: crimson;
+    color: white;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-size: 40px;   
+    margin-bottom: 10px;
+    text-shadow: 3px 3px black;
+}
+
+#container {
+    padding: 10px;
+    width:75%;
+    margin: auto;
+    background-color: rgb(255, 228, 196);
+    box-shadow: 10px 10px rgb(96, 96, 96);
+    margin-bottom: 20px; 
+    border-radius: 10px;
+    border-right: 5px solid rgb(200, 168, 128);
+    border-bottom: 5px solid rgb(168, 128, 96);
+}
+
+.input {
+    text-align: center;
+}
+
+button {
+    box-shadow: 2px 2px rgb(96, 96, 96);
+    border: 1px solid crimson;
+}
+
+button, #submit {
+    background-color: white;
+    color: black;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    
+}
+
+.tag {
+    background-color: crimson;
+    transition-duration: 0.3s;
+    color: rgb(64, 64, 64);
+    opacity: 0.5;
+}
+
+.display {
+    display: inline-block;
+}
+
+#submit:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+button:hover {
+    background-color: crimson;
+    color: white;
+}
+
+.tag:hover {
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    opacity: 1;
+}
+
+.gifImage {
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.gifImage:hover {
+    border: 1px solid bisque;;
+    padding: 3px;
+}
