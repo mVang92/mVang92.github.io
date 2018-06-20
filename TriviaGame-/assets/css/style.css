@@ -3,7 +3,7 @@
 }*/
 
 html {
-    height: 100%
+    height: 100%;
 }
 
 body {
@@ -24,30 +24,46 @@ header {
 
 .container {
     background-color: lightgray;
-    width: 960px;
+    height: 475px;
     margin: auto;
     padding: 20px;
+    box-shadow: 7px 7px 25px darkgray;
 }
 
 #startBtn {
     width: 90px;
-    height: 30px;
+    height: 40px;
     font-size: 20px;
     background-color: white;
     transition-duration: 0.3s;
 }
 
+#reset {
+    border: 1px solid black;
+}
+
+#reset:hover {
+    transition-duration: 0.2s;
+    border: 1px solid white;
+    background-color: rgb(255, 105, 105);
+    color: white;
+    cursor: pointer;
+}
+
 #startBtn:hover {
     background-color: rgb(255, 105, 105);
     color: white;
+    cursor: pointer;
 }
 
 .answerList {
     display: inline-block;
+    font-size: 20px;
 }
 
 .thisChoice:hover {
-    transition-duration: 0s;
+    transition-duration: 0.2s;
+    background-color: rgb(255, 168, 168);
     font-weight: bold;
     cursor: pointer;
 }
