@@ -22,7 +22,7 @@ input {
 }
 
 .jumbotron {
-    background: url("../images/jumbotron.jpg");
+    background: url("../images/jumbotron.JPG");
     background-size: cover;
     box-shadow: 2px 2px 25px white;
     height: 250px;
