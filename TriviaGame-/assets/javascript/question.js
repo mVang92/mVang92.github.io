@@ -1,3 +1,4 @@
+// Array of objects for questions
 var questions = [{
 	question: "Suppose there is an alien civilization 66 million light-years away from Earth. What would they see if they looked at the Earth right now?",
 	answerList: [
@@ -67,6 +68,7 @@ var questions = [{
         answer: 2
 }];
 
+// Array for our random API themes
 var apiTheme = [
         "",
         "earth",
