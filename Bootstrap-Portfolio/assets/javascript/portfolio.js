@@ -22,7 +22,7 @@ $(document).ready(function () {
     // Enables the submit button only when there is text in the dialog box
     // Disables the button if text is not present
     $(".input").keyup(function () {
-        if ($("#nameInput").val() == "" || $("#emailInput").val() == "" || $("#messageInput").val() == "") {
+        if ($("#nameInput").val() == "" || $("#emailInput").val() == "" || $("#commentInput").val() == "") {
             $("#submitBtn").prop("disabled", true);
         } else {
             $("#submitBtn").removeAttr("disabled");
@@ -36,7 +36,7 @@ $(document).ready(function () {
         // Take the inputs from the user and assign them to variables
         name = $("#nameInput").val().trim();
         email = $("#emailInput").val().trim();
-        message = $("#messageInput").val().trim();
+        message = $("#commentInput").val().trim();
 
         // Pushing the values to the database
         database.ref().push({
@@ -52,11 +52,11 @@ $(document).ready(function () {
         reset();
     })
 
-    // Reset functiol
-    function reset(){
+    // Reset function
+    function reset() {
         $("#submitBtn").prop("disabled", true);
         $("#nameInput").val("");
         $("#emailInput").val("");
-        $("#messageInput").val("");
+        $("#commentInput").val("");
     }
 })
