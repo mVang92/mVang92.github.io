@@ -42,14 +42,9 @@ footer {
     background: white;
 }
 
-.navbar-toggler {
-    transition-duration: 0.5s;
-    background: lightgray;
-}
-
 .navbar-toggler:hover {
     transition-duration: 0.2s;
-    background: crimson;
+    background: rgb(255, 128, 129);
 }
 
 .input {
