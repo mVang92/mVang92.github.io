@@ -1,0 +1,79 @@
+/*Check rows/columns*/
+/*div {
+    border: 1px solid red;
+}*/
+
+body {
+    background: url("../images/Background.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+#name {
+    font-size: 36px;
+    text-shadow: 2px 3px 5px rgb(92, 92, 92);
+}
+
+#hello {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.navbar,
+footer {
+    background: url("../images/Navbar.png");
+    background-size: cover;
+    color: white;
+}
+
+.pageDesc {
+    background: url("../images/PageDescription.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.jumbotron {
+    border: 1px solid black;
+}
+
+.navbar-toggler {
+    transition-duration: 0.3s;
+    background: white;
+}
+
+.navbar-toggler {
+    transition-duration: 0.5s;
+    background: lightgray;
+}
+
+.navbar-toggler:hover {
+    transition-duration: 0.2s;
+    background: crimson;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 991px) {
+    #name {
+        font-size: 50px;
+    }
+
+    .nav-link {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 28px;
+        line-height: 2;
+    }
+
+    .navbar-toggler {
+        width: 65px;
+        height: 65px;
+    }
+}
