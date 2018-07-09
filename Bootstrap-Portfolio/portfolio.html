@@ -12,25 +12,13 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-    <style>
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            left: 0px;
-        }
-
-        /*Check rows/columns*/
-
-        /*div {
-                border: 1px solid red;
-            }*/
-    </style>
+    <!-- External style sheet -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 </head>
 
-<body background="assets/images/dark_embroidery.png">
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-        <a class="navbar-brand ml-5 text-light">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand ml-4 text-light">
             <strong>Meng Vang</strong>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -41,10 +29,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="mr-auto"></ul>
             <ul class="navbar-nav nav justify-content-end text-center mr-5">
-                <li class="nav-item active">
-                    <a class="nav-link " href="index.html">About</a>
-                </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li class="nav-item active">
                     <a class="nav-link bg-dark text-light" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
@@ -57,7 +45,7 @@
     <div class="container">
         <!--Things about me-->
         <div class="jumbotron" style="margin-bottom:12%;">
-            <h2 class="text-black bg-light text-center rounded">Portfolio</h2>
+            <h2 class="text-black text-center rounded pageDesc">Portfolio</h2>
             <hr>
 
             <!-- First Row -->
@@ -82,7 +70,7 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <a title="Astronomy Quiz Game" href="https://mvang92.github.io/TriviaGame-/" target="_blank">
+                    <a title="Astronomy Trivia Game" href="https://mvang92.github.io/TriviaGame-/" target="_blank">
                         <img src="assets/images/TriviaGame.png" style="width:100%" alt="Astronomy Trivia Game">
                     </a>
                     <p class="text-center">
@@ -113,10 +101,7 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <img class="ml-5" src="assets/images/network.jpg" alt="Computer Networking">
-                    <p class="text-center">
-                        <strong>Computer Networking</strong>
-                    </p>
+                    <!-- Add a new project here -->
                 </div>
             </div>
         </div>

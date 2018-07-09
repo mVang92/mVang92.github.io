@@ -12,25 +12,15 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-    <style>
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            left: 0px;
-        }
-
-        /*Check rows/columns*/
-
-        /*div {
-            border: 1px solid red;
-        }*/
-    </style>
+    <!-- External style sheet -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
 </head>
 
-<body background="assets/images/dark_embroidery.png">
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-        <a class="navbar-brand ml-5 text-light">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand ml-4 text-light">
             <strong>Meng Vang</strong>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -41,13 +31,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="mr-auto"></ul>
             <ul class="navbar-nav nav justify-content-end text-center mr-5">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link bg-dark text-light" href="contact.html">Contact</a>
                 </li>
             </ul>
@@ -64,7 +54,7 @@
                         <hr>
                         <div class="row">
                             <div class="col-lg-12">
-                                <h2 class="bg-light text-center rounded">Contact</h2>
+                                <h2 class="text-center rounded pageDesc">Contact</h2>
                             </div>
                         </div>
                         <!-- Name -->
@@ -73,7 +63,7 @@
                                 <strong>Name</strong>
                             </div>
                             <div class="col-lg-8">
-                                <input type="text">
+                                <input id="nameInput" class="input" type="text" placeholder="Required">
                             </div>
                         </div>
                         <br>
@@ -83,7 +73,7 @@
                                 <strong>Email</strong>
                             </div>
                             <div class="col-lg-8">
-                                <input type="text">
+                                <input id="emailInput" class="input" type="text" placeholder="Required">
                             </div>
                         </div>
                         <br>
@@ -92,15 +82,15 @@
                                 <strong>Message</strong>
                             </div>
                             <div class="col-lg-8">
-                                <textarea></textarea>
+                                <textarea id="messageInput" class="input" placeholder="Required"></textarea>
                             </div>
                         </div>
                         <br>
                         <!-- Message -->
                         <div class="row">
                             <div class="col-lg-12">
-                                <button type="button" class="btn btn-primary">Reset</button>
-                                <button type="button" class="btn btn-danger">Submit</button>
+                                <button type="button" id="resetBtn" class="btn btn-primary">Reset</button>
+                                <button type="submit" id="submitBtn" class="btn btn-danger">Submit</button>
                             </div>
                         </div>
                         <br>
@@ -111,7 +101,7 @@
                         <hr>
                         <div class="row">
                             <div class="col-lg-12">
-                                <h2 class="bg-light text-center rounded">Connect with Me</h2>
+                                <h2 class="text-center rounded pageDesc">Connect with Me</h2>
                             </div>
                         </div>
                         <!-- Github link -->
@@ -149,6 +139,8 @@
         </div>
     </footer>
     </div>
+    <!-- Javascript File -->
+    <script type="text/javascript" src="assets/javascript/portfolio.js"></script>
 </body>
 
 </html>

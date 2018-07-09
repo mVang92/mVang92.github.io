@@ -1,0 +1,33 @@
+/*Check rows/columns*/
+/*div {
+    border: 1px solid red;
+}*/
+
+body {
+    background: url("../images/Background.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navbar,
+footer {
+    background: url("../images/Navbar.png");
+    background-size: cover;
+    color: white;
+}
+
+.pageDesc {
+    background: url("../images/PageDescription.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.jumbotron {
+    border: 1px solid black;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0px;
+}
