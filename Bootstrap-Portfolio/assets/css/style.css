@@ -44,22 +44,32 @@ footer {
 
 .navbar-toggler:hover {
     transition-duration: 0.2s;
-    background: rgb(255, 128, 129);
+    background: rgb(255, 128, 128);
 }
 
 .input {
     width: 100%;
 }
 
-.projects,
-.links {
+.projects{
     transition-duration: 0.7s;
+    border: 1px solid rgb(235, 235, 235);
 }
 
-.projects:hover,
-.links:hover {
+.projects:hover{
     transition-duration: 0.2s;
     background: white;
+    border: 1px solid gray;
+}
+
+#close {
+    transition-duration: 0.7s;
+    background: white;
+}
+
+#close:hover {
+    transition-duration: 0.2s;
+    background: rgb(255, 128, 128);
 }
 
 footer {
@@ -68,6 +78,40 @@ footer {
     width: 100%;
     left: 0px;
 }
+
+/* Begin Modal Content */
+.modal-content {
+    background: url("../images/Modal.jpg"); 
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 3px 5px rgb(32, 32, 32);
+    margin: auto;
+    margin-top: 10%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.3s;
+    animation-name: animatetop;
+    animation-duration: 0.3s;
+}
+
+/* Background Color when modal appears */
+#modalBox {
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+/* End Modal Content */
 
 /* Media queries */
 @media only screen and (max-width: 991px) {
@@ -101,5 +145,11 @@ footer {
 
     .projectName {
         font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .projectName {
+        font-size: 11px;
     }
 }
