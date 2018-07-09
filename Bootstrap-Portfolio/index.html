@@ -1,97 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Meng Vang Portfolio: About</title>
-        <link rel="icon" href="assets/images/favicon.png" type="favicon.png" size="16x16">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
-            integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-        <style>
-            footer {
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-                left: 0px;
-            }
 
-            /*Check rows/columns*/
-            /*div {
+<head>
+    <title>Meng Vang Portfolio: About</title>
+    <link rel="icon" href="assets/images/favicon.png" type="favicon.png" size="16x16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <style>
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            left: 0px;
+        }
+
+        /*Check rows/columns*/
+
+        /*div {
                 border: 1px solid red;
             }*/
-        </style>
-    </head>
+    </style>
+</head>
 
-    <body background="assets/images/dark_embroidery.png">
-        <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-            <a class="navbar-brand ml-5 text-light"><strong>Meng Vang</strong></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navbarNavDropdown" class="navbar-collapse collapse">
-                <ul class="mr-auto"></ul> <!--Placeholder to get nav links to move to the right-->
-                <ul class="navbar-nav nav justify-content-end mr-5">
-                    <li class="nav-item">
-                        <a class="nav-link bg-dark text-light" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <br>
-        <div class="container">
-            <!--Things about me-->
-            <div class="jumbotron" style="margin-bottom:12%;">
-                <div class="container">
+<body background="assets/images/dark_embroidery.png">
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <a class="navbar-brand ml-5 text-light">
+            <strong>Meng Vang</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                    <!-- First row -->
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h2 class="text-black bg-light text-center rounded">About Me</h2>
-                        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="mr-auto"></ul> 
+            <ul class="navbar-nav nav justify-content-end text-center mr-5">
+                <li class="nav-item active">
+                    <a class="nav-link bg-dark text-light" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <!--Things about me-->
+        <div class="jumbotron" style="margin-bottom:12%;">
+            <div class="container">
+
+                <!-- First row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-black bg-light text-center rounded">About Me</h2>
                     </div>
-                    <hr>
+                </div>
+                <hr>
 
-                    <!-- Second row -->
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <img class="shadow p-0 mb-0 bg-white rounded" width="100%" src="assets/images/picture.png" alt="Meng Vang">
-                        </div>
-                        <div class="col-lg-9" style="line-height: 30px">
-                            <br><br>
-                            <p> 
-                                Hello! After graduating with a Bachelor's Degree in Computer Science Informations Systems at the University of Wisconsin - River Falls in 2015,
-                                I have been seeking a career in Web Development. As technology plays such a large role in today's modern society, the search for talented 
-                                individuals is in great demand. With the skills and knowledge obtained through schooling and private learning, I plan to show off my skills 
-                                and talents by designing interactive web applications.
-                            </p>
-                        </div>
+                <!-- Second row -->
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img class="shadow p-0 mb-0 bg-white rounded" width="100%" src="assets/images/picture.png" alt="Meng Vang">
                     </div>
-                    <br>
-                    <div class="p-3" style="line-height: 30px">
-                        <p>    
-                            I am very confident in myself to learn new skills and technologies so concepts can be made into a functional application. 
-                            With great interests in Web Development, I plan to gain new skills for developing innovative web applications to increase productivity and 
-                            efficiency throughout large companies and clients one day.
-                        </p>
+                    <div class="col-lg-9" style="line-height: 30px">
+                        <br>
+                        <br>
                         <p>
-                            To take a closer look at the professional work I have done, check out my portfolio. If you would like to reach out to me, I would be happy 
-                            to connect.
+                            Hello! After graduating with a Bachelor's Degree in Computer Science Informations Systems at the University of Wisconsin
+                            - River Falls in 2015, I have been seeking a career in Web Development. As technology plays such
+                            a large role in today's modern society, the search for talented individuals is in great demand.
+                            With the skills and knowledge obtained through schooling and private learning, I plan to show
+                            off my skills and talents by designing interactive web applications.
                         </p>
-                        <p>
-                            Thank you for taking the time to visit my website. Have a great day!
-                        </p>
-                    </div>    
+                    </div>
+                </div>
+                <br>
+                <div class="p-3" style="line-height: 30px">
+                    <p>
+                        I am very confident in myself to learn new skills and technologies so concepts can be made into a functional application.
+                        With great interests in Web Development, I plan to gain new skills for developing innovative web
+                        applications to increase productivity and efficiency throughout large companies and clients one day.
+                    </p>
+                    <p>
+                        To take a closer look at the professional work I have done, check out my portfolio. If you would like to reach out to me,
+                        I would be happy to connect.
+                    </p>
+                    <p>
+                        Thank you for taking the time to visit my website. Have a great day!
+                    </p>
                 </div>
             </div>
-            <footer class="modal-footer bg-danger">
-                <div class="container text-center">
-                    <span class="text-light">Copyright 2018 - Meng Vang</span>
-                </div>            
-            </footer> 
         </div>
-    </body>
+        <footer class="modal-footer bg-danger">
+            <div class="container text-center">
+                <span class="text-light">Copyright 2018 - Meng Vang</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
 </html>
