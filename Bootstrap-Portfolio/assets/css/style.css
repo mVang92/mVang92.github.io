@@ -115,6 +115,10 @@ footer {
 
 /* Media queries */
 @media only screen and (max-width: 991px) {
+    .pageDesc {
+        font-size: 48px;
+    }
+
     .picture {
         width: 50%;
         margin: auto;
@@ -132,6 +136,23 @@ footer {
     p {
         font-size: 28px;
         line-height: 2;
+    }
+
+    .inputType {
+        font-size: 30px;
+    }
+
+    .input {
+        font-size: 32px;
+        height: 55px;
+    }
+
+    .links {
+        font-size: 32px;
+    }
+
+    #commentInput {
+        height: 100px;
     }
 
     .navbar-toggler {
