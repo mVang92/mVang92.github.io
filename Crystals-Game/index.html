@@ -1,99 +1,107 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <Title>Crystals Collector</Title>
-        <link rel="icon" href="assets/images/favicon.png" type="favicon.png" sizes="16x16">
-        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
-        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-        <!-- jQuery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- Boostrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
-            integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    </head>
 
-    <body>
-        <header>
-            <h1>Crystals Collector!</h1>
-        </header>
-        <div class="container">
-            <!-- First Row -->
-            <div class="box">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div id="info">
-                            <p>
-                                You will be given a random number at the start of the game.
-                            </p>
-                            <p>
-                                There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.
-                            </p>
-                            <p>
-                                You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
-                            </p>
-                            <p>
-                                The value of each crystal is hidden from you until you click on it.
-                            </p>
-                            <p>
-                                Each time when the game starts, the game will change the values of each crystal.
-                            </p>
-                        </div>
-                    </div>
-                </div>    
-            </div>
-            <br>
-            <div class="box">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div id="status">
-                            <div id="displayStatus"></div>
-                        </div>
-                    </div>
-                </div>    
-            </div>
-            <br>
-            <div class="box">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="midText">Random Number
-                            <h2 id="randomNum"></h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 currentNum">
-                        <div class="midText">Total Score
-                            <h2 id="userGuess"></h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="midText">Wins:
-                            <p id="winScore"></p>
-                        </div>
-                        <br>
-                        <div class="midText">Losses:
-                            <p id="loseScore"></p>
-                        </div>
+<head>
+    <Title>Crystals Collector</Title>
+    <link rel="icon" href="assets/images/favicon.png" type="favicon.png" sizes="16x16">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <h1>Crystals Collector!</h1>
+    </header>
+    <div class="container">
+        <!-- First Row -->
+        <div class="box">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="info">
+                        <p>
+                            You will be given a random number at the start of the game.
+                        </p>
+                        <hr>
+                        <p>
+                            There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.
+                        </p>
+                        <hr>
+                        <p>
+                            You win the game by matching your total score to random number, you lose the game if your total score goes above the random
+                            number.
+                        </p>
+                        <hr>
+                        <p>
+
+                            The value of each crystal is hidden from you until you click on it.
+                        </p>
+                        <hr>
+                        <p>
+                            Each time when the game starts, the game will change the values of each crystal.
+                        </p>
                     </div>
                 </div>
-            </div>   
-            <br>
-            <div class="crystalBox">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div id="crystal1" class="crystals"></div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div id="crystal2" class="crystals"></div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div id="crystal3" class="crystals"></div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div id="crystal4" class="crystals"></div>
-                    </div>
-                </div>
-            </div> 
+            </div>
         </div>
-        <!-- Javasript link source -->
-        <script type="text/javascript" src="assets/javascript/game.js"></script>
-    </body>
+        <br>
+        <div class="box">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="status">
+                        <div id="displayStatus"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="infoBox">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="midText">Random Number
+                        <h2 id="randomNum"></h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 currentNum">
+                    <div class="midText">Total Score
+                        <h2 id="userGuess"></h2>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="midText">Wins:
+                        <p id="winScore"></p>
+                    </div>
+                    <br>
+                    <div class="midText">Losses:
+                        <p id="loseScore"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="crystalBox">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div id="crystal1" class="crystals"></div>
+                </div>
+                <div class="col-lg-3">
+                    <div id="crystal2" class="crystals"></div>
+                </div>
+                <div class="col-lg-3">
+                    <div id="crystal3" class="crystals"></div>
+                </div>
+                <div class="col-lg-3">
+                    <div id="crystal4" class="crystals"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Javasript link source -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
 </html>

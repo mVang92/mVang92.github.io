@@ -3,7 +3,8 @@
 }*/
 
 body {
-    background-color: grey !important;
+    background: url("../images/Background.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
 header {
@@ -14,16 +15,30 @@ header {
     margin-bottom: 10px;
 }
 
-.box, .crystalBox {
+.box,
+.infoBox,
+.crystalBox {
     background-color: bisque;
     margin: auto;
-    width: 80%;
     border: 1px solid black;
+}
+
+.crystals {
+    transition-duration: 0.6s;
+    width: 50%;
+    opacity: 0.6;
+}
+
+.crystals:hover {
+    transition-duration: 0.2s;
+    width: 55%;
+    opacity: 1;
 }
 
 .crystalBox {
     padding: 15px;
     margin-bottom: 15px;
+    height: 145px;
 }
 
 #info {
@@ -52,4 +67,71 @@ header {
 
 #status {
     height: 50px;
+}
+
+@media only screen and (max-width: 991px) {
+    p {
+        font-size: 36px;
+    }
+
+    .midText {
+        font-size: 36px;
+    }
+
+    .crystals {
+        width: 70%;
+    }
+
+    .crystals:hover {
+        transition-duration: 0.2s;
+        width: 75%;
+        opacity: 1;
+    }
+
+    .crystalBox {
+        float: left;
+        width: 30%;
+        height: 465px;
+        margin-top: -24px;
+    }
+
+    .currentNum {
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .infoBox {
+        float: left;
+        width: 70%;
+        height: 465px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .midText {
+        font-size: 30px;
+    }
+
+    .crystalBox {
+        float: left;
+        width: 50%;
+        height: 480px;
+        margin-top: -24px;
+    }
+
+    .crystals {
+        width: 55%;
+    }
+
+    .crystals:hover {
+        transition-duration: 0.2s;
+        width: 60%;
+        opacity: 1;
+    }
+
+    .infoBox {
+        float: left;
+        width: 50%;
+        height: 480px;
+    }
 }
