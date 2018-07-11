@@ -22,7 +22,7 @@ $(document).ready(function () {
     // Enables the submit button only when there is text in the dialog box
     // Disables the button if text is not present
     $(".input").keyup(function () {
-        if ($("#nameInput").val() == "" || $("#emailInput").val() == "" || $("#messageInput").val() == "") {
+        if ($("#nameInput").val() == "" || $("#emailInput").val() == "" || $("#commentInput").val() == "") {
             $("#submitBtn").prop("disabled", true);
         } else {
             $("#submitBtn").removeAttr("disabled");
@@ -36,7 +36,7 @@ $(document).ready(function () {
         // Take the inputs from the user and assign them to variables
         name = $("#nameInput").val().trim();
         email = $("#emailInput").val().trim();
-        message = $("#messageInput").val().trim();
+        message = $("#commentInput").val().trim();
 
         // Pushing the values to the database
         database.ref().push({
@@ -52,10 +52,38 @@ $(document).ready(function () {
         reset();
     })
 
-    function reset(){
+    // Reset function
+    function reset() {
         $("#submitBtn").prop("disabled", true);
         $("#nameInput").val("");
         $("#emailInput").val("");
-        $("#messageInput").val("");
+        $("#commentInput").val("");
     }
+})
+
+// Modal content
+var modal = document.getElementById("modalBox");
+
+// Get the button that opens the modal
+var btn = document.getElementById("submitBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0]; 
+
+// When the user clicks the button, open the modal 
+btn.onclick = function () {
+  modal.style.display = "block";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// When the user clicks the close button,
+// remove the modal and disable the sumbit button
+$("#close").on("click", function () {
+  modal.style.display = "none";
 })

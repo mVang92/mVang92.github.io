@@ -14,12 +14,14 @@
         crossorigin="anonymous"></script>
     <!-- External style sheet -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand ml-4 text-light">
-            <strong>Meng Vang</strong>
+            <strong id="name">Meng Vang</strong>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +32,7 @@
             <ul class="mr-auto"></ul> 
             <ul class="navbar-nav nav justify-content-end text-center mr-5">
                 <li class="nav-item active">
-                    <a class="nav-link bg-dark text-light" href="index.html">About</a>
+                    <a class="nav-link bg-danger text-light" href="index.html">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
@@ -57,14 +59,12 @@
 
                 <!-- Second row -->
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 picture">
                         <img class="shadow p-0 mb-0 bg-white rounded" width="100%" src="assets/images/picture.png" alt="Meng Vang">
                     </div>
                     <div class="col-lg-9" style="line-height: 30px">
-                        <br>
-                        <br>
                         <p>
-                            Hello! After graduating with a Bachelor's Degree in Computer Science Informations Systems at the University of Wisconsin
+                            <span id="hello">Hello!</span> After graduating with a Bachelor's Degree in Computer Science Informations Systems at the University of Wisconsin
                             - River Falls in 2015, I have been seeking a career in Web Development. As technology plays such
                             a large role in today's modern society, the search for talented individuals is in great demand.
                             With the skills and knowledge obtained through schooling and private learning, I plan to show

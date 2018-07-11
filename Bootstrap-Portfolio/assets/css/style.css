@@ -4,8 +4,19 @@
 }*/
 
 body {
-    background: url("../images/Background.png") no-repeat center center fixed;
+    background: url("../images/Background.jpg") no-repeat center center fixed;
     background-size: cover;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#name {
+    font-size: 36px;
+    text-shadow: 2px 3px 5px rgb(92, 92, 92);
+}
+
+#hello {
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .navbar,
@@ -22,7 +33,43 @@ footer {
 }
 
 .jumbotron {
+    background: rgb(235, 235, 235);
     border: 1px solid black;
+}
+
+.navbar-toggler {
+    transition-duration: 0.3s;
+    background: white;
+}
+
+.navbar-toggler:hover {
+    transition-duration: 0.2s;
+    background: rgb(255, 128, 128);
+}
+
+.input {
+    width: 100%;
+}
+
+.projects{
+    transition-duration: 0.7s;
+    border: 1px solid rgb(235, 235, 235);
+}
+
+.projects:hover{
+    transition-duration: 0.2s;
+    background: white;
+    border: 1px solid gray;
+}
+
+#close {
+    transition-duration: 0.7s;
+    background: white;
+}
+
+#close:hover {
+    transition-duration: 0.2s;
+    background: rgb(255, 128, 128);
 }
 
 footer {
@@ -30,4 +77,100 @@ footer {
     bottom: 0;
     width: 100%;
     left: 0px;
+}
+
+/* Begin Modal Content */
+.modal-content {
+    background: url("../images/Modal.jpg"); 
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 3px 5px rgb(32, 32, 32);
+    margin: auto;
+    margin-top: 10%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.3s;
+    animation-name: animatetop;
+    animation-duration: 0.3s;
+}
+
+/* Background Color when modal appears */
+#modalBox {
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+/* End Modal Content */
+
+/* Media queries */
+@media only screen and (max-width: 991px) {
+    .pageDesc {
+        font-size: 48px;
+    }
+
+    .picture {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+    #name {
+        font-size: 50px;
+    }
+
+    .nav-link {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 28px;
+        line-height: 2;
+    }
+
+    .inputType {
+        font-size: 30px;
+    }
+
+    .input {
+        font-size: 32px;
+        height: 55px;
+    }
+
+    .links {
+        font-size: 32px;
+    }
+
+    #commentInput {
+        height: 100px;
+    }
+
+    .navbar-toggler {
+        width: 65px;
+        height: 65px;
+    }
+
+    .projects {
+        width: 33%;
+    }
+
+    .projectName {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .projectName {
+        font-size: 11px;
+    }
 }
