@@ -19,6 +19,10 @@ body {
     font-weight: bold;
 }
 
+.aboutMe {
+    padding: 2%;
+}
+
 .navbar,
 footer {
     background: url("../images/Navbar.png");
@@ -33,7 +37,7 @@ footer {
 }
 
 .jumbotron {
-    background: rgba(235, 235, 235, 0.87);
+    background: rgba(235, 235, 235, 0.7);
     border: 1px solid black;
 }
 
@@ -51,9 +55,15 @@ footer {
     width: 100%;
 }
 
-.projects{
+.contactInfo {
+    background: rgba(235, 235, 235);
+    font-size: 20px;
+}
+
+.projects {
+    background: rgb(235, 235, 235);
     transition-duration: 0.7s;
-    border: 1px solid rgb(235, 235, 235);
+    border: 1px solid rgba(235, 235, 235, 0.87);
 }
 
 .projects:hover{
@@ -147,6 +157,10 @@ footer {
         height: 55px;
     }
 
+    .contactInfo {
+        font-size: 48px;
+    }
+
     .links {
         font-size: 32px;
     }
@@ -172,5 +186,9 @@ footer {
 @media only screen and (max-width: 767px) {
     .projectName {
         font-size: 11px;
+    }
+
+    .contactInfo {
+        font-size: 36px;
     }
 }
