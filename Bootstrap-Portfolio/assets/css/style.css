@@ -33,7 +33,7 @@ footer {
 }
 
 .jumbotron {
-    background: rgb(235, 235, 235);
+    background: rgba(235, 235, 235, 0.87);
     border: 1px solid black;
 }
 
