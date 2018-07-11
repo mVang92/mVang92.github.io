@@ -2,6 +2,11 @@
     border: 1px solid red;
 } */
 
+body {
+    background: url("../images/background.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
 #welcomeGif {
     height: 64px;
 }
@@ -32,6 +37,10 @@ header {
     text-align: center;
 }
 
+#showLength {
+    width: 205px;
+}
+
 button {
     box-shadow: 2px 2px rgb(96, 96, 96);
     border: 1px solid crimson;
@@ -40,16 +49,8 @@ button {
 button, #submit {
     background-color: white;
     color: black;
-    transition-duration: 0.3s;
+    transition-duration: 0.6s;
     cursor: pointer;
-    
-}
-
-.tag {
-    background-color: crimson;
-    transition-duration: 0.3s;
-    color: rgb(64, 64, 64);
-    opacity: 0.5;
 }
 
 .display {
@@ -57,28 +58,40 @@ button, #submit {
 }
 
 #submit:hover {
+    transition-duration: 0.2s;
     background-color: greenyellow;
     color: black;
 }
 
 button:hover {
-    background-color: crimson;
+    transition-duration: 0.2s;
+    background-color: rgb(255, 100, 100);
     color: white;
 }
 
-.tag:hover {
-    background-color: red;
+.tag {
+    background-color: gray;
+    transition-duration: 0.6s;
     font-weight: bold;
-    color: white;
+    color: rgb(64, 64, 64);
+    opacity: 0.7;
+}
+
+.tag:hover {
+    background-color: white;
+    transition-duration: 0.2s;
+    font-weight: bold;
+    color: black;
     opacity: 1;
 }
 
 .gifImage {
-    transition-duration: 0.5s;
+    transition-duration: 0.6s;
+    border: 4px solid rgb(255, 228, 196);
     cursor: pointer;
 }
 
 .gifImage:hover {
-    border: 1px solid bisque;;
-    padding: 3px;
+    transition-duration: 0.2s;
+    border: 4px solid white;
 }
