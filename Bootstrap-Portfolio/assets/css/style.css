@@ -67,6 +67,19 @@ footer {
 
 .contactInfo {
     background: rgba(235, 235, 235);
+    border-radius: 7px;
+    font-size: 20px;
+}
+
+.contactInfoContact {
+    background: rgba(235, 235, 235);
+    border-radius: 7px 0px 0px 7px;
+    font-size: 20px;
+}
+
+.contactInfoConnect {
+    background: rgba(235, 235, 235);
+    border-radius: 0px 7px 7px 0px;
     font-size: 20px;
 }
 
@@ -74,6 +87,7 @@ footer {
     background: rgb(235, 235, 235);
     transition-duration: 0.7s;
     border: 1px solid rgba(235, 235, 235, 0.87);
+    border-radius: 7px;
 }
 
 .projects:hover{
@@ -92,6 +106,11 @@ footer {
     background: rgb(255, 128, 128);
 }
 
+#submitBtn,
+#resetBtn {
+    margin-bottom: 2%;
+}
+
 footer {
     position: fixed;
     bottom: 0;
@@ -103,17 +122,22 @@ footer {
 .modal-content {
     background: url("../images/Modal.jpg"); 
     background-size: cover;
+    text-align: center;
     color: white;
     text-shadow: 2px 3px 5px rgb(32, 32, 32);
     margin: auto;
-    margin-top: 10%;
+    margin-top: 20%;
     padding: 20px;
     border: 1px solid #888;
-    width: 50%;
+    width: 650px;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.3s;
     animation-name: animatetop;
     animation-duration: 0.3s;
+}
+
+#modalText {
+    font-size: 38px;
 }
 
 /* Background Color when modal appears */
@@ -177,6 +201,14 @@ footer {
         font-size: 48px;
     }
 
+    .contactInfoContact {
+        border-radius: 7px 7px 0px 0px;
+    }
+    
+    .contactInfoConnect {
+        border-radius: 0px 0px 7px 7px;
+    }
+
     .links {
         font-size: 32px;
     }
@@ -197,6 +229,21 @@ footer {
     .projectName {
         font-size: 16px;
     }
+
+    #submitBtn,
+    #resetBtn {
+        width: 125px;
+        height: 55px;
+        font-size: 24px;
+    }
+
+    .modal-content {
+        width: 700px;
+    }
+
+    #modalText {
+        font-size: 44px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -206,5 +253,13 @@ footer {
 
     .contactInfo {
         font-size: 36px;
+    }
+
+    .modal-content {
+        width: 750px;
+    }
+
+    #modalText {
+        font-size: 48px;
     }
 }

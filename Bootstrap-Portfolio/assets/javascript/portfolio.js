@@ -1,7 +1,3 @@
-var name;
-var email;
-var message;
-
 $(document).ready(function () {
     // Initialize Firebase
     var config = {
@@ -22,7 +18,7 @@ $(document).ready(function () {
     // Enables the submit button only when there is text in the dialog box
     // Disables the button if text is not present
     $(".input").keyup(function () {
-        if ($("#nameInput").val() == "" || $("#emailInput").val() == "" || $("#commentInput").val() == "") {
+        if ($("#commentInput").val() == "") {
             $("#submitBtn").prop("disabled", true);
         } else {
             $("#submitBtn").removeAttr("disabled");
@@ -34,15 +30,11 @@ $(document).ready(function () {
         evt.preventDefault();
 
         // Take the inputs from the user and assign them to variables
-        name = $("#nameInput").val().trim();
-        email = $("#emailInput").val().trim();
-        message = $("#commentInput").val().trim();
+        var comment = $("#commentInput").val().trim();
 
         // Pushing the values to the database
         database.ref().push({
-            name: name,
-            email: email,
-            message: message
+            comment: comment
         })
         reset();
     })
@@ -55,8 +47,6 @@ $(document).ready(function () {
     // Reset function
     function reset() {
         $("#submitBtn").prop("disabled", true);
-        $("#nameInput").val("");
-        $("#emailInput").val("");
         $("#commentInput").val("");
     }
 })
