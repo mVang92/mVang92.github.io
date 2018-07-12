@@ -70,6 +70,7 @@ footer {
     background: rgba(235, 235, 235);
     border-radius: 7px;
     font-size: 20px;
+    visibility: visible;
 }
 
 .contactInfoContact {
