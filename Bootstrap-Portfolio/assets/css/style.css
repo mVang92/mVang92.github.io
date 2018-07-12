@@ -41,6 +41,16 @@ footer {
     border: 1px solid black;
 }
 
+.nav-link {
+    transition-duration: 0.5s;
+}
+
+.nav-link:hover {
+    transition-duration: 0.2s;
+    background: gray;
+    color: black !important;
+}
+
 .navbar-toggler {
     transition-duration: 0.3s;
     background: white;
@@ -140,7 +150,13 @@ footer {
     }
 
     .nav-link {
+        transition-duration: 0.5s;
         font-size: 30px;
+    }
+
+    .nav-link:hover {
+        transition-duration: 0.2s;
+        background: rgb(255, 128, 128);
     }
 
     p {
