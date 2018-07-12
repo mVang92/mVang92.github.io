@@ -1,7 +1,7 @@
 /*Check rows/columns*/
-div {
+/*div {
     border: 1px solid red;
-}
+}*/
 
 body {
     background: url("../images/Background.jpg") no-repeat center center fixed;
@@ -39,6 +39,7 @@ footer {
 .jumbotron {
     background: rgba(235, 235, 235, 0.7);
     border: 1px solid black;
+    visibility: visible;
 }
 
 .nav-link {
