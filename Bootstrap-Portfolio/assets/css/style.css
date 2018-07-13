@@ -61,23 +61,28 @@ footer {
     background: rgb(255, 128, 128);
 }
 
+.aboutMeInfo {
+    font-size: 18px;
+    line-height: 2;
+}
+
 .input {
     width: 100%;
 }
 
-.contactInfo {
+.box {
     background: rgb(235, 235, 235);
     border-radius: 7px;
     font-size: 20px;
 }
 
-.contactInfoContact {
+.boxContact {
     background: rgba(235, 235, 235);
     border-radius: 7px 0px 0px 7px;
     font-size: 20px;
 }
 
-.contactInfoConnect {
+.boxConnect {
     background: rgba(235, 235, 235);
     border-radius: 0px 7px 7px 0px;
     font-size: 20px;
@@ -94,6 +99,18 @@ footer {
     transition-duration: 0.2s;
     background: white;
     border: 1px solid gray;
+}
+
+.projectImg {
+    margin: auto;
+    width: 100%;
+}
+
+.projectName {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 #close {
@@ -158,7 +175,17 @@ footer {
 /* End Modal Content */
 
 /* Media queries */
+@media only screen and (max-width: 1199px) {
+    .aboutMeInfo {
+        line-height: 1.5;
+    }
+}
+
 @media only screen and (max-width: 991px) {
+    #hello {
+        font-size: 38px;
+    }
+
     .pageDesc {
         font-size: 48px;
     }
@@ -183,8 +210,8 @@ footer {
         background: rgb(255, 128, 128);
     }
 
-    p {
-        font-size: 28px;
+    .aboutMeInfo {
+        font-size: 30px;
         line-height: 2;
     }
 
@@ -197,15 +224,15 @@ footer {
         height: 55px;
     }
 
-    .contactInfo {
+    .box {
         font-size: 48px;
     }
 
-    .contactInfoContact {
+    .boxContact {
         border-radius: 7px 7px 0px 0px;
     }
     
-    .contactInfoConnect {
+    .boxConnect {
         border-radius: 0px 0px 7px 7px;
     }
 
@@ -222,12 +249,20 @@ footer {
         height: 65px;
     }
 
-    .projects {
-        width: 33%;
+    .projectName {
+        text-decoration: none;
+        background: lightgrey;
+        font-size: 34px;
     }
 
-    .projectName {
-        font-size: 16px;
+    .projectDesc {
+        font-size: 34px;
+    }
+
+    .projectImg {
+        display: block;
+        margin: auto;
+        width: 40%;
     }
 
     #submitBtn,
@@ -247,12 +282,13 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
+    .boxInfo,
     .projectName {
-        font-size: 11px;
+        font-size: 36px;
     }
 
-    .contactInfo {
-        font-size: 36px;
+    .projectDesc {
+        font-size: 20px;
     }
 
     .modal-content {
