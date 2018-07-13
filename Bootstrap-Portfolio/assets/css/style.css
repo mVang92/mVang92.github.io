@@ -39,7 +39,6 @@ footer {
 .jumbotron {
     background: rgba(235, 235, 235, 0.7);
     border: 1px solid black;
-    visibility: visible;
 }
 
 .nav-link {
@@ -67,10 +66,9 @@ footer {
 }
 
 .contactInfo {
-    background: rgba(235, 235, 235);
+    background: rgb(235, 235, 235);
     border-radius: 7px;
     font-size: 20px;
-    visibility: visible;
 }
 
 .contactInfoContact {
