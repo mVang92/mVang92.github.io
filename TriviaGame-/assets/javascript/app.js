@@ -10,9 +10,9 @@ var userSelect;
 var randomTheme;
 // Message object to display status to user
 var messages = {
-	correct: "<h2>Correct!</h2>",
-	incorrect: "<h3>Incorrect.</h3>",
-	timeUp: "<h2>Time is up!</h2>",
+	correct: "<h2 id='greenText'>Correct!</h2>",
+	incorrect: "<h3 id='redText'>Incorrect.</h3>",
+	timeUp: "<h2 id='redText'>Time is up!</h2>",
 	finished: "<h2>Your score:</h2>"
 }
 // End Global Variables
@@ -69,7 +69,7 @@ function newQuestion(){
 		var results = response.data;
 		// Each theme will have 12 random search results
 		var random = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
-		var image = $("<img src=" + results[random].images.fixed_height.url + ">");
+		var image = $("<img id='api' src=" + results[random].images.fixed_height.url + ">");
 		$("#questionImg").html(image);
 	})
 

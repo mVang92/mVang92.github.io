@@ -22,12 +22,20 @@ header {
     text-shadow: 3px 3px black;
 }
 
+.timerRow {
+    background: gray;
+    color: white;
+}
+
+#timer {
+    text-align: center;
+}
+
 .container {
     background-color: lightgray;
-    height: 475px;
     margin: auto;
     padding: 20px;
-    box-shadow: 7px 7px 25px darkgray;
+    border: 3px solid rgba(0,0,0,0.5);
 }
 
 #startBtn {
@@ -38,7 +46,12 @@ header {
     transition-duration: 0.3s;
 }
 
+#api {
+    height: 75%;
+}
+
 #reset {
+    transition-duration: 0.5s;
     border: 1px solid black;
 }
 
@@ -61,9 +74,40 @@ header {
     font-size: 20px;
 }
 
-.thisChoice:hover {
-    transition-duration: 0.2s;
-    background-color: rgb(255, 168, 168);
+.thisChoice {
+    transition-duration: 0.5s;
     font-weight: bold;
     cursor: pointer;
 }
+
+.thisChoice:hover {
+    transition-duration: 0.2s;
+    background-color: rgb(255, 168, 168);
+}
+
+#greenText {
+    color: lightgreen;
+}
+
+#redText {
+    color: red;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1199px) {
+    .thisChoice {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .thisChoice {
+        font-size: 40px;
+    }
+}
+
+/* @media only screen and (max-width: 767px) {
+    .thisChoice {
+        font-size: 50px;
+    }
+} */
