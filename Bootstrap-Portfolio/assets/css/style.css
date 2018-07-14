@@ -39,6 +39,7 @@ footer {
 .jumbotron {
     background: rgba(235, 235, 235, 0.7);
     border: 1px solid black;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5);
 }
 
 .nav-link {
@@ -47,8 +48,7 @@ footer {
 
 .nav-link:hover {
     transition-duration: 0.2s;
-    background: gray;
-    color: black !important;
+    background: rgb(255, 128, 128);
 }
 
 .navbar-toggler {
@@ -86,6 +86,18 @@ footer {
     background: rgba(235, 235, 235);
     border-radius: 0px 7px 7px 0px;
     font-size: 20px;
+}
+
+#portfolioDescBox{
+    background: rgb(255, 192, 192);
+    color: black;
+    border-radius: 7px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+}
+
+#portfolioDesc {
+    font-size: 26px;
+    font-weight: bold;
 }
 
 .projects {
@@ -263,6 +275,10 @@ footer {
         display: block;
         margin: auto;
         width: 40%;
+    }
+
+    #portfolioDesc {
+        font-size: 28px;
     }
 
     #submitBtn,
