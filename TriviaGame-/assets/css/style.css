@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: crimson;
+    background: rgba(128, 128, 128, 0.9);
     color: white;
     border-bottom: 1px solid black;
     text-align: center;
@@ -32,10 +32,10 @@ header {
 }
 
 .container {
-    background-color: lightgray;
+    background-color: rgba(200, 200, 200, 0.9);
     margin: auto;
     padding: 20px;
-    border: 3px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 25px rgba(255, 255, 255, 0.7);
 }
 
 #startBtn {
@@ -69,15 +69,12 @@ header {
     cursor: pointer;
 }
 
-.answerList {
-    display: inline-block;
-    font-size: 20px;
-}
-
 .thisChoice {
     transition-duration: 0.5s;
     font-weight: bold;
     cursor: pointer;
+    text-align: center;
+    font-size: 24px;
 }
 
 .thisChoice:hover {
@@ -96,13 +93,14 @@ header {
 /* Media queries */
 @media only screen and (max-width: 1199px) {
     .thisChoice {
-        font-size: 26px;
+        font-size: 28px;
     }
 }
 
 @media only screen and (max-width: 991px) {
     .thisChoice {
         font-size: 40px;
+        text-align: initial;
     }
 }
 
