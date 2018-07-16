@@ -152,7 +152,6 @@ footer {
     background: rgba(235, 235, 235, 0.9);
     border: 1px solid black;
     box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5);
-    background-size: cover;
     text-align: center;
     margin: auto;
     margin-top: 20%;
@@ -166,6 +165,29 @@ footer {
 
 #modalText {
     font-size: 38px;
+}
+
+.projectContent {
+    background: rgba(235, 235, 235, 0.9);
+    border: 1px solid black;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    margin-top: 3%;
+    width: 90%;
+    height: 90%;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.3s;
+    animation-name: animatetop;
+    animation-duration: 0.3s;
+}
+
+#projectModal {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid black;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5);
+    margin: auto;
 }
 
 /* Background Color when modal appears */
