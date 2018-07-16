@@ -149,15 +149,14 @@ footer {
 
 /* Begin Modal Content */
 .modal-content {
-    background: url("../images/Modal.jpg"); 
+    background: rgba(235, 235, 235, 0.9);
+    border: 1px solid black;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5);
     background-size: cover;
     text-align: center;
-    color: white;
-    text-shadow: 2px 3px 5px rgb(32, 32, 32);
     margin: auto;
     margin-top: 20%;
     padding: 20px;
-    border: 1px solid #888;
     width: 650px;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.3s;
@@ -171,7 +170,7 @@ footer {
 
 /* Background Color when modal appears */
 #modalBox {
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(128,128,128,0.6);
 }
 
 /* Modal Animation */
@@ -308,7 +307,7 @@ footer {
     }
 
     .modal-content {
-        width: 750px;
+        width: 85%;
     }
 
     #modalText {
