@@ -1,19 +1,34 @@
-var projectModal = document.getElementById("projectModal");
-var modal = document.getElementById("modal");
+var project1ModalContent = document.getElementById("project1ModalContent");
+var project2ModalContent = document.getElementById("project2ModalContent");
+var project1Modal = document.getElementById("project1Modal");
+var project2Modal = document.getElementById("project2Modal");
 
-modal.onclick = function () {
-    projectModal.style.display = "block";
+project1Modal.onclick = function () {
+    project1ModalContent.style.display = "block";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+project2Modal.onclick = function () {
+    project2ModalContent.style.display = "block";
+}
+
 window.onclick = function (event) {
-    if (event.target == projectModal) {
-        projectModal.style.display = "none";
+    if (event.target == project1ModalContent) {
+        project1ModalContent.style.display = "none";
     }
 }
 
+window.onclick = function (event) {
+    if (event.target == project2ModalContent) {
+        project2ModalContent.style.display = "none";
+    }
+}
 
-$("#close").on("click", function () {
-    console.log("close")
-    projectModal.style.display = "none";
+$("#project1Close").on("click", function (evt) {
+    evt.stopImmediatePropagation();
+    project1ModalContent.style.display = "none";
+})
+
+$("#project2Close").on("click", function (evt) {
+    evt.stopImmediatePropagation();
+    project2ModalContent.style.display = "none";
 })
