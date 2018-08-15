@@ -4,6 +4,14 @@ Assignment 10 Node.js &amp; MySQL
 ## Program Description
 This program uses a MySQL database for customers and managers to interact with. This is a very basic program where customers can purchase items just like purchase something from an online website. In this program, customers may view the products and choose the products they want to purchase. Managers have a few more options, where they can view the products for sale, update inventory, and more. Let's take a look at how a customer interacts with the program.
 
+## Prerequisites
+1. To run the application on your local machine, you will need node.js, which can be downloaded via this link (https://nodejs.org/en/download/).
+2. If you are on Windows, please also download Git Bash (https://git-scm.com/downloads). Mac users can use the built-in Terminal.
+3. In Git Bash/Terminal, clone the repository for this app using this command line: git clone https://github.com/mVang92/Bamazon.git
+4. After the cloning is complete, run this command: npm install inquirer mysql
+5. To run the customer view, type this command: node bamazonCustomer.js
+6. To run the manager view, type this command: node bamazonManager.js
+
 #### Customer User Interface
 Upon running the program, the customer is greeted with three options. They can view the products for sale, make a purchase, or simply exit the program.
 
