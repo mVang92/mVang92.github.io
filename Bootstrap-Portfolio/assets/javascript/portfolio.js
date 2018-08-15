@@ -25,4 +25,7 @@ $(document).ready(function () {
         + " will take in several parameters and store them in the database. It will also calculate the next"
         + " train arrival. Then it captures a snapshot from the database and displays the data back to the"
         + " user.");
+
+    $("#project6").html("LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data."
+        + " More information on how to run the program can be found in the Github repository README.");
 })
