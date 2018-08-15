@@ -1,0 +1,36 @@
+<header>Eat-Da-Burger!</header>
+<div class="container">
+  <div class="jumbotron">
+    <img id="mainImg" src="assets/img/patty.gif">
+    <hr>
+    <form class="createForm">
+      <div class="row inputRow">
+        <div class="col-md-12">
+          <label for="newBurger">New Burger</label>
+          <input type="text" id="newBurger">
+          <input id="submit" class="btn" type="submit" value="Submit Burger">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <h2 style="text-align: center">Burgers to Eat</h2>
+          <hr> {{#each burgers}} {{#unless devoured}}
+          <p>{{> burgers/burger-block}}</p>
+          <hr> {{/unless}} {{/each}}
+        </div>
+        <div class="col-md-6">
+          <h2 style="text-align: center">Devoured Burgers</h2>
+          <hr> {{#each burgers}} {{#if devoured}}
+          <p>{{> burgers/burger-block}}</p>
+          <hr> {{/if}} {{/each}}
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<footer class="modal-footer">
+  <div class="container text-center">
+    <span class="text-muted">Copyright 2018 - Meng Vang</span>
+  </div>
+</footer>

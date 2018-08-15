@@ -1,0 +1,8 @@
+<p>
+    {{#unless devoured}}
+    <p class="devourBurger" data-id="{{this.id}}"><img id="eat" src="./assets/img/eat.png"></p>
+    {{/unless}}
+
+    <p class="deleteBurger" data-id="{{this.id}}"><img id="delete" src="./assets/img/delete.png"></p>
+    {{burger_name}} {{#unless devoured}} <span id="readyEat">Ready to eat!</span> {{/unless}} {{#if devoured}} <span id="devoured">Devoured!</span> {{/if}}
+</p>

@@ -28,4 +28,17 @@ $(document).ready(function () {
 
     $("#project6").html("LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data."
         + " More information on how to run the program can be found in the Github repository README.");
+
+    $("#project7").html("This node app uses a MySQL database for customers and managers to interact with."
+        + " This is a very basic program where customers can purchase items just like purchase something from an online website."
+        + " Customers may view and purchase products, while managers have a few more options."
+        + " Managers can view the products for sale, update inventory, and more."
+        + " More information on how to run the program can be found in the Github repository README.");
+
+    $("#project8").html("This full-stack site will take in results from different surveys, then compare answers with those from other users."
+        + " The app will then display the name and picture of the user with the best overall match.");
+
+    $("#project9").html("This full stack site utilizes MySQL, Node, Express, Handlebars, an ORM, and Heroku with JawsDB for hosting the website."
+        + " A user can add their own burger to the list of burgers ready to eat. Once they click the burger they want to eat,"
+        + " the burger moves over to the right column and is categorized as devoured.");
 })

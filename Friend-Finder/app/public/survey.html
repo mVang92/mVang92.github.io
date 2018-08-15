@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!-- Compiled and minified Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-black bg-light text-center rounded">Survey Questions</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-black">
+                        <strong>Tell us about yourself.</strong>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>Name (Required)</h4>
+                    <input type="text" id="name" class="form-control" required>
+                    <h4>Link to Photo Image (Required)</h4>
+                    <input type="text" id="image" class="form-control" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Question 1</h3>
+                    <h4>You enjoy meeting and making new friends.</h4>
+                    <select class="chosen-select" id="q1">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Question 2</h3>
+                    <h4>You like trying new things even if they are risky.</h4>
+                    <select class="chosen-select" id="q2">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Question 3</h3>
+                    <h4>You do not like trying new things, and prefer to stick to what is currently available.</h4>
+                    <select class="chosen-select" id="q3">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Question 4</h3>
+                    <h4>The thought of having children in the future is exciting.</h4>
+                    <select class="chosen-select" id="q4">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Question 5</h3>
+                    <h4>You prefer to stick to the social norm; drinking on thirsty Thursday, partying Friday nights, etc.</h4>
+                    <select class="chosen-select" id="q5">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Question 6</h3>
+                    <h4>You like to set up goals and make plans for the future.</h4>
+                    <select class="chosen-select" id="q6">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Question 7</h3>
+                    <h4>You get along with people even when you just met them.</h4>
+                    <select class="chosen-select" id="q7">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Question 8</h3>
+                    <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+                    <select class="chosen-select" id="q8">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Question 9</h3>
+                    <h4>People can rarely upset you.</h4>
+                    <select class="chosen-select" id="q9">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Question 10</h3>
+                    <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+                    <select class="chosen-select" id="q10">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-12">
+                    <button id="submitBtn" class="btn btn-info btn-lg btn-block">
+                        <span class="glyphicon glyphicon-list-alt"></span> Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <hr>
+        <div class="container">
+            <p>
+                <a href="/api/friends" target="_blank">API Friends List</a> |
+                <a href="https://github.com/mVang92/Friend-Finder" target="_blank">GitHub Repo</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Modal Dialog Displaying Closest Friend Match -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="text-center">Closest Friend Match</h4>
+                    <div class="divider"></div>
+                    <h3 id="userMatch" class="text-center"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img id="userMatchImage" class="materialboxed" src="">
+                </div>
+            </div>
+            <a href="/survey" class="tryAgain">Close</a>
+
+        </div>
+    </div>
+    <!-- External logic -->
+    <script src="assets/logic.js"></script>
+</body>
+
+</html>
