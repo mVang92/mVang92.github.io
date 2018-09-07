@@ -1,7 +1,7 @@
 /*Check rows/columns*/
-/*div {
+/* div {
     border: 1px solid red;
-}*/
+} */
 
 body {
     background: url("../images/Background.jpg") no-repeat center center fixed;
@@ -92,25 +92,36 @@ body {
     font-size: 20px;
 }
 
-.projects {
+.cardBackGround {
     background: rgb(235, 235, 235);
-    transition-duration: 0.7s;
-    border: 1px solid rgba(235, 235, 235, 0.87);
-    border-radius: 7px;
 }
 
-.projects:hover{
-    transition-duration: 0.2s;
+.cards {
+    transition-duration: 0.3s;
+    border-radius: 7px;
+    border: 1px solid rgb(235, 235, 235);
+    padding: 5px;
+    cursor: pointer;
+}
+
+.cards:hover {
+    transition-duration: 0.1s;
+    border: 1px solid rgb(128, 128, 128);
     background: white;
-    border: 1px solid gray;
+}
+
+.projects {
+    background: rgb(235, 235, 235);
+    border-radius: 5px;
 }
 
 .projectImg {
-    margin: auto;
-    width: 100%;
+    margin: 5px;
+    width: 75%;
 }
 
-.projectName {
+.projectName,
+.cardProjectName {
     text-align: center;
     text-decoration: underline;
     font-size: 24px;
@@ -120,17 +131,17 @@ body {
 .projectBtn,
 .githubBtn {
     transition-duration: 0.6s;
-    border: 1px solid rgb(235, 235, 235);
-    margin-top: 20%;
-    background: white;
+    border: 1px solid white;
+    background: rgb(235, 235, 235);;
     width: 185px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .projectBtn:hover,
 .githubBtn:hover {
     transition-duration: 0.1s;
-    background: rgb(235, 235, 235);
+    background: white;
 }
 
 #close {
@@ -164,7 +175,7 @@ footer {
 
 /* Begin Modal Content */
 .modal-content {
-    background: rgba(235, 235, 235, 0.9);
+    background: rgba(235, 235, 235, 0.5);
     border: 1px solid black;
     box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5);
     background-size: cover;
@@ -172,7 +183,7 @@ footer {
     margin: auto;
     margin-top: 20%;
     padding: 20px;
-    width: 650px;
+    width: 800px;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.3s;
     animation-name: animatetop;
@@ -285,6 +296,10 @@ footer {
         font-size: 34px;
     }
 
+    .cardProjectName {
+        font-size: 18px;
+    }
+
     .projectDesc {
         font-size: 34px;
     }
@@ -295,13 +310,9 @@ footer {
         width: 40%;
     }
 
-    .btnBlock {
-        left: 10%;
-    }
-
     .projectBtn,
     .githubBtn {
-        width: 500px;
+        width: 310px;
         font-size: 36px;
         margin: auto;
         margin-bottom: 5%;
@@ -315,7 +326,9 @@ footer {
     }
 
     .modal-content {
-        width: 700px;
+        width: 750px;
+        padding: 4%;
+        left: -23%;
     }
 
     #modalText {
@@ -324,12 +337,14 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
-    .projectName {
+    .projectName,
+    .cardProjectName {
         font-size: 36px;
     }
 
     .modal-content {
-        width: 85%;
+        left: 0%;
+        width: 100%;
     }
 
     #modalText {
@@ -343,5 +358,6 @@ footer {
     .projectBtn,
     .githubBtn {
         width: 345px;
+        float: left;
     }
 }
