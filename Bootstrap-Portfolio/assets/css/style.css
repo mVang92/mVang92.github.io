@@ -361,3 +361,16 @@ footer {
         float: left;
     }
 }
+
+@media only screen and (max-width: 575px) {
+    .modal-content {
+        width: 80%;
+        left: 5px;
+    }
+
+    .projectBtn,
+    .githubBtn {
+        width: 75%;
+        float: left;
+    }
+}
