@@ -99,7 +99,7 @@ body {
 .cards {
     transition-duration: 0.3s;
     border-radius: 7px;
-    border: 1px solid rgb(235, 235, 235);
+    border: 1px solid rgb(240, 240, 240);
     padding: 5px;
     cursor: pointer;
 }
@@ -371,6 +371,6 @@ footer {
     .projectBtn,
     .githubBtn {
         width: 75%;
-        float: left;
+        font-size: 24px;
     }
 }
