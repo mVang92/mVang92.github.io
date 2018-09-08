@@ -356,12 +356,16 @@ footer {
     }
 
     .modal-content {
-        left: 0%;
-        width: 103%;
+        left: -1%;
+        width: 105%;
     }
 
     #modalText {
         font-size: 48px;
+    }
+
+    .boxContact {
+        font-size: 28px;
     }
 
     .btnBlock {
