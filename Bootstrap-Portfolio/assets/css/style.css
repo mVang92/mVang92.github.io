@@ -14,6 +14,10 @@ body {
     text-shadow: 2px 3px 5px rgb(92, 92, 92);
 }
 
+.picture {
+    margin-top: 15px;
+}
+
 #hello {
     font-size: 36px;
     font-weight: bold;
@@ -75,9 +79,14 @@ body {
 }
 
 .box {
+    font-size: 20px;
+}
+
+.box,
+.cardBackGround {
     background: rgb(235, 235, 235);
     border-radius: 7px;
-    font-size: 20px;
+    
 }
 
 .boxContact {
@@ -92,22 +101,18 @@ body {
     font-size: 20px;
 }
 
-.cardBackGround {
-    background: rgb(235, 235, 235);
-}
-
 .cards {
     transition-duration: 0.3s;
     border-radius: 7px;
-    border: 1px solid rgb(240, 240, 240);
+    border: 1px solid rgb(235, 235, 235);
     padding: 5px;
     cursor: pointer;
 }
 
 .cards:hover {
     transition-duration: 0.1s;
-    border: 1px solid rgb(128, 128, 128);
-    background: white;
+    border: 1px solid rgb(168, 168, 168);
+    background: rgb(245, 245, 245);
 }
 
 .projects {
@@ -118,6 +123,15 @@ body {
 .projectImg {
     margin: 5px;
     width: 75%;
+}
+
+.modalProjectImg {
+    padding: 5%;
+    width: 85%;
+}
+
+.projectDesc {
+    padding: 7px;
 }
 
 .projectName,
@@ -230,7 +244,8 @@ footer {
     .picture {
         width: 50%;
         margin: auto;
-        margin-bottom: 25px;
+        margin-top: 25px;
+        margin-bottom: 15px;
     }
 
     #name {
@@ -297,16 +312,14 @@ footer {
     }
 
     .cardProjectName {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .projectDesc {
         font-size: 34px;
     }
 
-    .projectImg {
-        display: block;
-        margin: auto;
+    .modalProjectImg {
         width: 40%;
     }
 
@@ -353,6 +366,10 @@ footer {
 
     .btnBlock {
         left: 10%;
+    }
+
+    .projectImg {
+        width: 45%;
     }
 
     .projectBtn,
