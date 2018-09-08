@@ -326,7 +326,7 @@ footer {
     }
 
     .modal-content {
-        width: 750px;
+        width: 746px;
         padding: 4%;
         left: -23%;
     }
@@ -344,7 +344,7 @@ footer {
 
     .modal-content {
         left: 0%;
-        width: 100%;
+        width: 103%;
     }
 
     #modalText {
@@ -357,7 +357,7 @@ footer {
 
     .projectBtn,
     .githubBtn {
-        width: 345px;
+        width: 375px;
         float: left;
     }
 }
