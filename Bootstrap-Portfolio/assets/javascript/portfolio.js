@@ -1,9 +1,4 @@
 $(document).ready(function () {
-    var portfolioDesc = ("<p>To visit the application websites, click on the project icons."
-        + " Each project also has a short desciption and a link to their Github repositories.</p>")
-
-    // $("#portfolioDesc").html(portfolioDesc);
-
     $("#project1").html("The Crystals Collector Game utilizes Javascript and jQuery code. A random number"
         + " is given to the user at the start of each round, and the user must use the four crystals to add"
         + " their total to equal the random number chosen. Each crystal will randomize every round"
