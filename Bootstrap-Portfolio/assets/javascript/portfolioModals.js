@@ -285,4 +285,41 @@ document.write('\
         </div>\
     </div>\
 </div>\
+<!-- Project 9 Modal -->\
+<div class="modal fade scraper" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">\
+    <div class="modal-dialog modal-lg">\
+        <div class="modal-content">\
+            <div class="projects">\
+                <div class="row">\
+                    <div class="col-lg-4">\
+                        <img class="modalProjectImg" src="assets/images/scraper.png" alt="Scraper News">\
+                    </div>\
+                    <div class="col-lg-8">\
+                        <p class="projectName">Scraper News</p>\
+                        <p id="project9" class="projectDesc"></p>\
+                    </div>\
+                </div>\
+                <div class="row">\
+                    <!-- Project Website button -->\
+                    <div class="col-md-6 btnBlock">\
+                        <a title="Scraper with Mongoose" href="https://scraper-mvang92.herokuapp.com/" target="_blank">\
+                            <button class="btn btn-default projectBtn">\
+                                <img class="projectImg" src="assets/images/scraper.png" style="width:25px"> View Project\
+                            </button>\
+                        </a>\
+                    </div>\
+                    <!-- Github button -->\
+                    <div class="col-md-6 btnBlock">\
+                        <a title="Github Repository" href="https://github.com/mVang92/Scraper"\
+                            target="_blank">\
+                            <button class="btn btn-default githubBtn">\
+                                <img class="projectImg" src="assets/images/github.png" style="width:25px"> Github Repo\
+                            </button>\
+                        </a>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>\
+    </div>\
+</div>\
 ');

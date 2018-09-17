@@ -33,4 +33,7 @@ $(document).ready(function () {
     $("#project8").html("This full stack site utilizes MySQL, Node, Express, Handlebars, an ORM, and Heroku with JawsDB for hosting the website."
         + " A user can add their own burger to the list of burgers ready to eat. Once they click the burger they want to eat,"
         + " the burger moves over to the right column and is categorized as devoured.");
+
+    $("#project9").html("Using Mongoose and Cheerio, this full stack site scrapes information from the National Public Radio (NPR) website and populates the results to the screen."
+        + " The user can save multiple articles for later, hide articles, and submit comments to specific articles.");
 })

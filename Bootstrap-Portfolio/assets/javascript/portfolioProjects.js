@@ -118,9 +118,18 @@ document.write('\
                     </div>\
                 </div>\
                 <!-- Project 9 -->\
-                <!-- <div class="col-md-4 cards">\
-                    \
-                </div> -->\
+                <div class="col-md-4 cards" data-toggle="modal" data-target=".scraper">\
+                    <div class="row">\
+                        <div class="col-md-12 cardProjectName">\
+                            Scraper News\
+                        </div>\
+                    </div>\
+                    <div class="row">\
+                        <div class="col-md-12">\
+                            <img class="projectImg" src="assets/images/scraper.png" alt="Scraper News">\
+                        </div>\
+                    </div>\
+                </div>\
             </div>\
         </div>\
 ')
