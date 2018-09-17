@@ -322,4 +322,42 @@ document.write('\
         </div>\
     </div>\
 </div>\
+\
+<!-- Group Project 1 Modal -->\
+<div class="modal fade bwaters" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">\
+    <div class="modal-dialog modal-lg">\
+        <div class="modal-content">\
+            <div class="projects">\
+                <div class="row">\
+                    <div class="col-lg-4">\
+                        <img class="modalProjectImg" src="assets/images/bwatersLogo.png" alt="BWCA Advanture Tours">\
+                    </div>\
+                    <div class="col-lg-8">\
+                        <p class="projectName">BWCA Advanture Tours</p>\
+                        <p id="groupProject1" class="projectDesc"></p>\
+                    </div>\
+                </div>\
+                <div class="row">\
+                    <!-- Project Website button -->\
+                    <div class="col-md-6 btnBlock">\
+                        <a title="BWCA Advanture Tours" href="https://code-camp-p2.herokuapp.com/" target="_blank">\
+                            <button class="btn btn-default projectBtn">\
+                                <img class="projectImg" src="assets/images/bwatersLogo.png" style="width:25px"> View Project\
+                            </button>\
+                        </a>\
+                    </div>\
+                    <!-- Github button -->\
+                    <div class="col-md-6 btnBlock">\
+                        <a title="Github Repository" href="https://github.com/mVang92/CodeCampProject2"\
+                            target="_blank">\
+                            <button class="btn btn-default githubBtn">\
+                                <img class="projectImg" src="assets/images/github.png" style="width:25px"> Github Repo\
+                            </button>\
+                        </a>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>\
+    </div>\
+</div>\
 ');

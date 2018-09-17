@@ -34,6 +34,12 @@ $(document).ready(function () {
         + " A user can add their own burger to the list of burgers ready to eat. Once they click the burger they want to eat,"
         + " the burger moves over to the right column and is categorized as devoured.");
 
-    $("#project9").html("Using Mongoose and Cheerio, this full stack site scrapes information from the National Public Radio (NPR) website and populates the results to the screen."
-        + " The user can save multiple articles for later, hide articles, and submit comments to specific articles.");
+    $("#project9").html("Using Mongoose and Cheerio, this full stack site scrapes information from the National Public Radio (NPR)"
+        + " website and populates the results to the screen. The user can save multiple articles for later, hide articles,"
+        + " and submit comments to specific articles.");
+
+    $("#groupProject1").html("With the participation of four group members, we built this full-stack website to allow"
+        + " users to plan a camping, hiking, and mountain biking trip. An API is used to allow users to see trip information and the weather forecast"
+        + " around Duluth, MN. Although the review section is not complete, users can submit reviews then further edit/delete them."
+        + " The D3 library was used to calculate the average of the user expericence.");
 })
