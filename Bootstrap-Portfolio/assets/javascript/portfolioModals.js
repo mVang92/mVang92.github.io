@@ -1,43 +1,5 @@
 document.write('\
-    <div class="modal fade crystalGame" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">\
-    <div class="modal-dialog modal-lg">\
-        <div class="modal-content">\
-            <div class="projects">\
-                <div class="row">\
-                    <div class="col-lg-4">\
-                        <img class="modalProjectImg" src="assets/images/crystalsCollector.png" alt="Crystals Collector Game">\
-                    </div>\
-                    <div class="col-lg-8">\
-                        <p class="projectName">Crystal Collector Game</p>\
-                        <p id="project1" class="projectDesc"></p>\
-                    </div>\
-                </div>\
-                <div class="row">\
-                    <!-- Project Website button -->\
-                    <div class="col-md-6 btnBlock">\
-                        <a title="Crystals Collector Game with jQuery" href="https://mvang92.github.io/Crystals-Game/"\
-                            target="_blank">\
-                            <button class="btn btn-default projectBtn">\
-                                <img class="projectImg" src="assets/images/crystalsCollector.png" style="width:25px">View\
-                                Project\
-                            </button>\
-                        </a>\
-                    </div>\
-                    <!-- Github button -->\
-                    <div class="col-md-6 btnBlock">\
-                        <a title="Crystals Collector Game Github Repository" href="https://github.com/mVang92/mVang92.github.io/tree/master/Crystals-Game"\
-                            target="_blank">\
-                            <button class="btn btn-default githubBtn">\
-                                <img class="projectImg" src="assets/images/github.png" style="width:25px"> Github Repo\
-                            </button>\
-                        </a>\
-                    </div>\
-                </div>\
-            </div>\
-        </div>\
-    </div>\
-</div>\
-<!-- Project 2 Modal -->\
+<!-- Project 1 Modal -->\
 <div class="modal fade triviaGame" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">\
     <div class="modal-dialog modal-lg">\
         <div class="modal-content">\
@@ -48,7 +10,7 @@ document.write('\
                     </div>\
                     <div class="col-lg-8">\
                         <p class="projectName">Astronomy Trivia Game</p>\
-                        <p id="project2" class="projectDesc"></p>\
+                        <p id="triviaGame" class="projectDesc"></p>\
                     </div>\
                 </div>\
                 <div class="row">\
@@ -75,7 +37,7 @@ document.write('\
         </div>\
     </div>\
 </div>\
-<!-- Project 3 Modal -->\
+<!-- Project 2 Modal -->\
 <div class="modal fade giftastic" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">\
     <div class="modal-dialog modal-lg">\
         <div class="modal-content">\
@@ -86,7 +48,7 @@ document.write('\
                     </div>\
                     <div class="col-lg-8">\
                         <p class="projectName">GifTastic</p>\
-                        <p id="project3" class="projectDesc"></p>\
+                        <p id="giftastic" class="projectDesc"></p>\
                     </div>\
                 </div>\
                 <div class="row">\
@@ -113,103 +75,7 @@ document.write('\
         </div>\
     </div>\
 </div>\
-<!-- Project 4 Modal -->\
-<div class="modal fade trainScheduler" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">\
-    <div class="modal-dialog modal-lg">\
-        <div class="modal-content">\
-            <div class="projects">\
-                <div class="row">\
-                    <div class="col-lg-4">\
-                        <img class="modalProjectImg" src="assets/images/TrainScheduler.png" alt="Train Scheduler">\
-                    </div>\
-                    <div class="col-lg-8">\
-                        <p class="projectName">Train Scheduler</p>\
-                        <p id="project4" class="projectDesc"></p>\
-                    </div>\
-                </div>\
-                <div class="row">\
-                    <!-- Project Website button -->\
-                    <div class="col-md-6 btnBlock">\
-                        <a title="Train Scheduler with Firebase" href="https://mvang92.github.io/Train-Scheduler-/"\
-                            target="_blank">\
-                            <button class="btn btn-default projectBtn">\
-                                <img class="projectImg" src="assets/images/TrainScheduler.png" style="width:25px"> View\
-                                Project\
-                            </button>\
-                        </a>\
-                    </div>\
-                    <!-- Github button -->\
-                    <div class="col-md-6 btnBlock">\
-                        <a title="Train Scheduler Github Repository" href="https://github.com/mVang92/mVang92.github.io/tree/master/Train-Scheduler-"\
-                            target="_blank">\
-                            <button class="btn btn-default githubBtn">\
-                                <img class="projectImg" src="assets/images/github.png" style="width:25px"> Github Repo\
-                            </button>\
-                        </a>\
-                    </div>\
-                </div>\
-            </div>\
-        </div>\
-    </div>\
-</div>\
-<!-- Project 5 Modal -->\
-<div class="modal fade liri" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">\
-    <div class="modal-dialog modal-lg">\
-        <div class="modal-content">\
-            <div class="projects">\
-                <div class="row">\
-                    <div class="col-lg-4">\
-                        <img class="modalProjectImg" src="assets/images/liri.png" alt="LIRI">\
-                    </div>\
-                    <div class="col-lg-8">\
-                        <p class="projectName">LIRI</p>\
-                        <p id="project5" class="projectDesc"></p>\
-                    </div>\
-                </div>\
-                <div class="row">\
-                    <!-- Github button -->\
-                    <div class="col-md-12 btnBlock">\
-                        <a title="Language Interpretation and Recognition Interface (LIRI) Github Repository" href="https://github.com/mVang92/Liri"\
-                            target="_blank">\
-                            <button class="btn btn-default githubBtn">\
-                                <img class="projectImg" src="assets/images/github.png" style="width:25px"> Github Repo\
-                            </button>\
-                        </a>\
-                    </div>\
-                </div>\
-            </div>\
-        </div>\
-    </div>\
-</div>\
-<!-- Project 6 Modal -->\
-<div class="modal fade bamazon" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">\
-    <div class="modal-dialog modal-lg">\
-        <div class="modal-content">\
-            <div class="projects">\
-                <div class="row">\
-                    <div class="col-lg-4">\
-                        <img class="modalProjectImg" src="assets/images/bamazon.png" alt="Bamazon">\
-                    </div>\
-                    <div class="col-lg-8">\
-                        <p class="projectName">Bamazon</p>\
-                        <p id="project6" class="projectDesc"></p>\
-                    </div>\
-                </div>\
-                <div class="row">\
-                    <!-- Github button -->\
-                    <div class="col-md-12 btnBlock">\
-                        <a title="Bamazon Github Repository" href="https://github.com/mVang92/Bamazon" target="_blank">\
-                            <button class="btn btn-default githubBtn">\
-                                <img class="projectImg" src="assets/images/github.png" style="width:25px"> Github Repo\
-                            </button>\
-                        </a>\
-                    </div>\
-                </div>\
-            </div>\
-        </div>\
-    </div>\
-</div>\
-<!-- Project 7 Modal -->\
+<!-- Project 3 Modal -->\
 <div class="modal fade friendFinder" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">\
     <div class="modal-dialog modal-lg">\
         <div class="modal-content">\
@@ -220,7 +86,7 @@ document.write('\
                     </div>\
                     <div class="col-lg-8">\
                         <p class="projectName">Friend Finder</p>\
-                        <p id="project7" class="projectDesc"></p>\
+                        <p id="friendFinder" class="projectDesc"></p>\
                     </div>\
                 </div>\
                 <div class="row">\
@@ -248,7 +114,7 @@ document.write('\
         </div>\
     </div>\
 </div>\
-<!-- Project 8 Modal -->\
+<!-- Project 4 Modal -->\
 <div class="modal fade burger" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">\
     <div class="modal-dialog modal-lg">\
         <div class="modal-content">\
@@ -259,7 +125,7 @@ document.write('\
                     </div>\
                     <div class="col-lg-8">\
                         <p class="projectName">Eat-Da-Burger</p>\
-                        <p id="project8" class="projectDesc"></p>\
+                        <p id="burger" class="projectDesc"></p>\
                     </div>\
                 </div>\
                 <div class="row">\
@@ -285,32 +151,32 @@ document.write('\
         </div>\
     </div>\
 </div>\
-<!-- Project 9 Modal -->\
-<div class="modal fade scraper" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">\
+<!-- Project 5 Modal -->\
+<div class="modal fade nytScrubber" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">\
     <div class="modal-dialog modal-lg">\
         <div class="modal-content">\
             <div class="projects">\
                 <div class="row">\
                     <div class="col-lg-4">\
-                        <img class="modalProjectImg" src="assets/images/scraper.png" alt="Scraper News">\
+                        <img class="modalProjectImg" src="../nyt-react-search/client/public/favicon.png" alt="New York Times Scrubber">\
                     </div>\
                     <div class="col-lg-8">\
-                        <p class="projectName">Scraper News</p>\
-                        <p id="project9" class="projectDesc"></p>\
+                        <p class="projectName">New York Times Scrubber</p>\
+                        <p id="nytScrubber" class="projectDesc"></p>\
                     </div>\
                 </div>\
                 <div class="row">\
                     <!-- Project Website button -->\
                     <div class="col-md-6 btnBlock">\
-                        <a title="Scraper with Mongoose" href="https://scraper-mvang92.herokuapp.com/" target="_blank">\
+                        <a title="New York Times Scrubber with MERN" href="https://nty-scrubber-mvang92.herokuapp.com/" target="_blank">\
                             <button class="btn btn-default projectBtn">\
-                                <img class="projectImg" src="assets/images/scraper.png" style="width:25px"> View Project\
+                                <img class="projectImg" src="../nyt-react-search/client/public/favicon.png" style="width:25px"> View Project\
                             </button>\
                         </a>\
                     </div>\
                     <!-- Github button -->\
                     <div class="col-md-6 btnBlock">\
-                        <a title="Github Repository" href="https://github.com/mVang92/Scraper"\
+                        <a title="Github Repository" href="https://github.com/mVang92/nyt-react-search"\
                             target="_blank">\
                             <button class="btn btn-default githubBtn">\
                                 <img class="projectImg" src="assets/images/github.png" style="width:25px"> Github Repo\
@@ -322,7 +188,43 @@ document.write('\
         </div>\
     </div>\
 </div>\
-\
+<!-- Project 6 Modal -->\
+<div class="modal fade clicky" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">\
+    <div class="modal-dialog modal-lg">\
+        <div class="modal-content">\
+            <div class="projects">\
+                <div class="row">\
+                    <div class="col-lg-4">\
+                        <img class="modalProjectImg" src="../clicky/public/assets/images/crystalF.png" alt="Crystal Clicky Game">\
+                    </div>\
+                    <div class="col-lg-8">\
+                        <p class="projectName">Crystal Clicky Game</p>\
+                        <p id="clicky" class="projectDesc"></p>\
+                    </div>\
+                </div>\
+                <div class="row">\
+                    <!-- Project Website button -->\
+                    <div class="col-md-6 btnBlock">\
+                        <a title="Crystal Clicky Game with React" href="https://mvang92.github.io/clickylive/" target="_blank">\
+                            <button class="btn btn-default projectBtn">\
+                                <img class="projectImg" src="../clicky/public/assets/images/crystalF.png" style="width:25px"> View Project\
+                            </button>\
+                        </a>\
+                    </div>\
+                    <!-- Github button -->\
+                    <div class="col-md-6 btnBlock">\
+                        <a title="Github Repository" href="https://github.com/mVang92/clickylive"\
+                            target="_blank">\
+                            <button class="btn btn-default githubBtn">\
+                                <img class="projectImg" src="assets/images/github.png" style="width:25px"> Github Repo\
+                            </button>\
+                        </a>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>\
+    </div>\
+</div>\
 <!-- Group Project 1 Modal -->\
 <div class="modal fade bwaters" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">\
     <div class="modal-dialog modal-lg">\
@@ -334,7 +236,7 @@ document.write('\
                     </div>\
                     <div class="col-lg-8">\
                         <p class="projectName">BWCA Advanture Tours</p>\
-                        <p id="groupProject1" class="projectDesc"></p>\
+                        <p id="bwaters" class="projectDesc"></p>\
                     </div>\
                 </div>\
                 <div class="row">\

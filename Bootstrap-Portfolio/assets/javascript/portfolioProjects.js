@@ -8,21 +8,6 @@ document.write('\
     <!-- Project Row 1 -->\
     <div class="row text-center box collapse multi-collapse projectCollapse">\
         <!-- Project 1 -->\
-        <div class="col-md-4 cards" data-toggle="modal" data-target=".crystalGame">\
-            <div class="row">\
-                <div class="col-md-12">\
-                    <div class="col-md-12 cardProjectName">\
-                        Crystal Collector\
-                    </div>\
-                </div>\
-            </div>\
-            <div class="row">\
-                <div class="col-md-12">\
-                    <img class="projectImg" src="assets/images/crystalsCollector.png" alt="Crystals Collector Game">\
-                </div>\
-            </div>\
-        </div>\
-        <!-- Project 2 -->\
         <div class="col-md-4 cards" data-toggle="modal" data-target=".triviaGame">\
             <div class="row">\
                 <div class="col-md-12">\
@@ -37,7 +22,7 @@ document.write('\
                 </div>\
             </div>\
         </div>\
-        <!-- Project 3 -->\
+        <!-- Project 2 -->\
         <div class="col-md-4 cards" data-toggle="modal" data-target=".giftastic">\
             <div class="row">\
                 <div class="col-md-12 cardProjectName">\
@@ -50,52 +35,7 @@ document.write('\
                 </div>\
             </div>\
         </div>\
-    </div>\
-    <!-- Project Row 2 -->\
-    <div class="row text-center cardBackGround collapse multi-collapse projectCollapse">\
-        <!-- Project 4 -->\
-        <div class="col-md-4 cards" data-toggle="modal" data-target=".trainScheduler">\
-            <div class="row">\
-                <div class="col-md-12 cardProjectName">\
-                    Train Scheduler\
-                </div>\
-            </div>\
-            <div class="row">\
-                <div class="col-md-12">\
-                    <img class="projectImg" src="assets/images/TrainScheduler.png" alt="Train Scheduler">\
-                </div>\
-            </div>\
-        </div>\
-        <!-- Project 5 -->\
-        <div class="col-md-4 cards" data-toggle="modal" data-target=".liri">\
-            <div class="row">\
-                <div class="col-md-12 cardProjectName">\
-                    LIRI\
-                </div>\
-            </div>\
-            <div class="row">\
-                <div class="col-md-12">\
-                    <img class="projectImg" src="assets/images/liri.png" alt="LIRI">\
-                </div>\
-            </div>\
-        </div>\
-        <!-- Project 6 -->\
-        <div class="col-md-4 cards" data-toggle="modal" data-target=".bamazon">\
-            <div class="row">\
-                <div class="col-md-12 cardProjectName">\
-                    Bamazon\
-                </div>\
-            </div>\
-            <div class="row">\
-                <div class="col-md-12">\
-                    <img class="projectImg" src="assets/images/bamazon.png" alt="Bamazon">\
-                </div>\
-            </div>\
-        </div>\
-    </div>\
-    <!-- Project Row 3 -->\
-    <div class="row text-center cardBackGround collapse multi-collapse projectCollapse">\
-        <!-- Project 7 -->\
+        <!-- Project 3 -->\
         <div class="col-md-4 cards" data-toggle="modal" data-target=".friendFinder">\
             <div class="row">\
                 <div class="col-md-12 cardProjectName">\
@@ -108,7 +48,10 @@ document.write('\
                 </div>\
             </div>\
         </div>\
-        <!-- Project 8 -->\
+    </div>\
+    <!-- Project Row 2 -->\
+    <div class="row text-center cardBackGround collapse multi-collapse projectCollapse">\
+        <!-- Project 4 -->\
         <div class="col-md-4 cards" data-toggle="modal" data-target=".burger">\
             <div class="row">\
                 <div class="col-md-12 cardProjectName">\
@@ -121,16 +64,29 @@ document.write('\
                 </div>\
             </div>\
         </div>\
-        <!-- Project 9 -->\
-        <div class="col-md-4 cards" data-toggle="modal" data-target=".scraper">\
+        <!-- Project 5 -->\
+        <div class="col-md-4 cards" data-toggle="modal" data-target=".nytScrubber">\
             <div class="row">\
                 <div class="col-md-12 cardProjectName">\
-                    Scraper News\
+                    NYT Scrubber\
                 </div>\
             </div>\
             <div class="row">\
                 <div class="col-md-12">\
-                    <img class="projectImg" src="assets/images/scraper.png" alt="Scraper News">\
+                    <img class="projectImg" src="../nyt-react-search/client/public/favicon.png" alt="New York Times Scrubber">\
+                </div>\
+            </div>\
+        </div>\
+        <!-- Project 6 -->\
+        <div class="col-md-4 cards" data-toggle="modal" data-target=".clicky">\
+            <div class="row">\
+                <div class="col-md-12 cardProjectName">\
+                    Crystal Clicky Game\
+                </div>\
+            </div>\
+            <div class="row">\
+                <div class="col-md-12">\
+                    <img class="projectImg" src="../clicky/public/assets/images/crystalF.png" alt="Crystal Clicky Game">\
                 </div>\
             </div>\
         </div>\

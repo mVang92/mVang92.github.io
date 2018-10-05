@@ -1,44 +1,31 @@
 $(document).ready(function () {
-    $("#project1").html("The Crystals Collector Game utilizes Javascript and jQuery code. A random number"
-        + " is given to the user at the start of each round, and the user must use the four crystals to add"
-        + " their total to equal the random number chosen. Each crystal will randomize every round"
-        + ", so keep track of the number behind the crystals.");
-
-    $("#project2").html("This application utilizes a combination of Javascript, jQuery, and an API. The user must answer a"
+    $("#triviaGame").html("This application utilizes a combination of Javascript, jQuery, and an API. The user must answer a"
         + " series of astronomy/physics based questions in a limited amount of time. Scores are displayed"
         + " at the end, and the user may replay the game if they want.");
 
-    $("#project3").html("GifTastic was built around Javascript, jQuery, and API calls. This application appends new buttons"
+    $("#giftastic").html("GifTastic was built around Javascript, jQuery, and API calls. This application appends new buttons"
         + " next to the predefined buttons and allows the user to click and generate 10 Gif images at a time."
         + " The application talks to an API, which returns the appropriate search results as searched. The"
         + " Gif images are initially still, but once clicked, they become animated.");
 
-    $("#project4").html("Train Scheduler utilizes the Moment.js library along with a Firebase database to store data on travel information. The application"
-        + " will take in several parameters and store them in the database. It will also calculate the next"
-        + " train arrival. Then it captures a snapshot from the database and displays the data back to the"
-        + " user.");
-
-    $("#project5").html("LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data."
-        + " More information on how to run the program can be found in the Github repository README.");
-
-    $("#project6").html("This node app uses a MySQL database for customers and managers to interact with."
-        + " This is a very basic program where customers can purchase items just like purchase something from an online website."
-        + " Customers may view and purchase products, while managers have a few more options."
-        + " Managers can view the products for sale, update inventory, and more."
-        + " More information on how to run the program can be found in the Github repository README.");
-
-    $("#project7").html("This full-stack site will take in results from different surveys, then compare answers with those from other users."
+    $("#friendFinder").html("This full-stack site will take in results from different surveys, then compare answers with those from other users."
         + " The app will then display the name and picture of the user with the best overall match.");
 
-    $("#project8").html("This full stack site utilizes MySQL, Node, Express, Handlebars, an ORM, and Heroku with JawsDB for hosting the website."
+    $("#burger").html("This full stack site utilizes MySQL, Node, Express, Handlebars, an ORM, and Heroku with JawsDB for hosting the website."
         + " A user can add their own burger to the list of burgers ready to eat. Once they click the burger they want to eat,"
         + " the burger moves over to the right column and is categorized as devoured.");
 
-    $("#project9").html("Using Mongoose and Cheerio, this full stack site scrapes information from the National Public Radio (NPR)"
-        + " website and populates the results to the screen. The user can save multiple articles for later, hide articles,"
-        + " and submit comments to specific articles.");
+    $("#nytScrubber").html("This full-stack React-based application is a rendition of the New York Times Article Search application."
+        + " This application utilizes React components, helper/util functions, and the React mounting lifecycle to query and display articles based on user searches."
+        + " Other technologies include Node, Express, and MongoDB so that users can save articles to read later."
+        + " Materialize was also used for styling.");
 
-    $("#groupProject1").html("With the participation of four group members, we built this full-stack website to allow"
+    $("#clicky").html("Crystal Clicky Game is a memory based game built with React. The UI is broken into components,"
+        + " and the application manages component states to respond to user events. The user must reach a score of 12 to"
+        + " win without clicking on the same crystals twice per round. A message will also inform the user if they currently"
+        + " hold the highest score or to try again");
+
+    $("#bwaters").html("With the participation of four group members, we built this full-stack website to allow"
         + " users to plan a camping, hiking, and mountain biking trip. An API is used to allow users to see trip information and the weather forecast"
         + " around Duluth, MN. Although the review section is not complete, users can submit reviews then further edit/delete them."
         + " The D3 library was used to calculate the average of the user expericence.");
