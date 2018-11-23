@@ -37,19 +37,19 @@ $(document).ready(function () {
             comment: comment
         })
         reset();
-    })
+    });
 
     // Reset button click function
     $("#resetBtn").on("click", function () {
         reset();
-    })
+    });
 
     // Reset function
     function reset() {
         $("#submitBtn").prop("disabled", true);
         $("#commentInput").val("");
-    }
-})
+    };
+});
 
 // Modal content
 var modal = document.getElementById("modalBox");
@@ -63,19 +63,18 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal 
 submitBtn.onclick = function () {
     modal.style.display = "block";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
-    }
-}
+    };
+};
 
 // When the user clicks the close button,
 // remove the modal and disable the sumbit button
 $("#close").on("click", function () {
     modal.style.display = "none";
     $("#submitBtn").prop("disabled", true);
-})
-
+});
