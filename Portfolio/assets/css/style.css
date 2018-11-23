@@ -21,18 +21,20 @@ body {
     margin-bottom: 15px;
 }
 
-#hello {
-    font-weight: bold;
-}
-
 #headLine {
+    text-align: center;
     font-size: 26px;
 }
 
 #headLineName {
+    text-align: center;
     font-size: 44px;
     font-weight: bold;
     line-height: 45px;
+}
+
+#desc {
+    text-align: center;
 }
 
 .navbar {
@@ -58,11 +60,11 @@ body {
     margin-top: 60px;
 }
 
-.nav-link {
+.nav-link{
     transition-duration: 0.5s;
 }
 
-.nav-link:hover {
+.nav-link:hover{
     transition-duration: 0.2s;
     background: rgb(255, 128, 128);
 }
@@ -75,6 +77,26 @@ body {
 .navbar-toggler:hover {
     transition-duration: 0.2s;
     background: rgb(255, 128, 128);
+}
+
+a.underline:link {
+    color: black;
+    text-decoration: none;
+}
+
+a.underline:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a.underline:hover {
+    color: black;
+    text-decoration: none;
+}
+
+a.underline:active {
+    color: black;
+    text-decoration: none;
 }
 
 .aboutMeInfo {
@@ -94,7 +116,6 @@ body {
 .cardBackGround {
     background: rgb(235, 235, 235);
     border-radius: 7px;
-    
 }
 
 .boxContact {
@@ -212,6 +233,43 @@ footer {
     margin: auto;
 }
 
+.underline {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .underline:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: rgb(255, 128, 128);
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  
+  .underline:hover:before,
+  .underline:focus:before,
+  .underline:active:before {
+    left: 0;
+    right: 0;
+  }
+
 /* Begin Modal Content */
 .modal-content {
     background: rgba(235, 235, 235, 0.5);
@@ -258,8 +316,8 @@ footer {
 }
 
 @media only screen and (max-width: 991px) {
-    #hello {
-        font-size: 32px;
+    .container {
+        max-width: 975px;
     }
 
     #headLineName {
@@ -267,15 +325,13 @@ footer {
         color: white;
         font-size: 60px;
         line-height: initial;
-        text-align: center;
         background: lightgray;
         padding-bottom: 10px;
     }
 
     #headLine {
         margin-top: 5px;
-        font-size: 40px;
-        text-align: center;
+        font-size: 44px;
         background: lightgray;
     }
 
@@ -309,26 +365,22 @@ footer {
     }
 
     .aboutMeInfo,
-    #hello {
-        font-size: 44px;
+    #phrase {
         line-height: 2;
         text-align: center;
+        font-size: 34px;
     }
 
-    #hello {
-        text-shadow: 5px 4px 7px rgb(255, 200, 200);
-    }
-
-    #skills {
-        font-size: 36px;
+    .skills {
+        font-size: 30px;
         text-align: initial;
-        background: lightgrey;
     }
 
     #desc {
         background: lightgrey;
         margin-top: 5px;
         margin-bottom: 5px;
+        font-size: 34px;
     }
 
     .inputType {
@@ -417,6 +469,10 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
+    .container {
+        max-width: 900px;
+    }
+
     .projectName,
     .cardProjectName {
         font-size: 36px;
@@ -451,9 +507,9 @@ footer {
 
     #indivProjects,
     #groupProjects {
-        width: 150px;
-        height: initial;
-        font-size: initial;
+        width: 190px;
+        height: 50px;
+        font-size: 20px;
     }
 }
 
@@ -467,5 +523,15 @@ footer {
     .githubBtn {
         width: 75%;
         font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    #indivProjects,
+    #groupProjects {
+        margin-top: 5px;
+        width: 170px;
+        height: 35px;
+        font-size: 16px;
     }
 }
