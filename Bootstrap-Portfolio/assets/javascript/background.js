@@ -1,7 +1,8 @@
 $(document).ready(function () {
     function getBgSeasons() {
-        var date = new Date();
-        var month = date.getMonth();
+        // var date = new Date();
+        // var month = date.getMonth();
+        var month = 5;
         // console.log(month)
         if (month >= 0 && month < 2) {
             document.body.style.backgroundImage = "url('assets/images/winter.jpg')";
