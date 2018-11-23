@@ -1,7 +1,8 @@
 # Welcome
 
 You are currently viewing the readme.md file for mVang92.github.io.
-To be redirected, please click on any of the following links to check out the viewable web applications. Thank you.
+
+To be redirected, please click on any of the following links below to check out the viewable web applications.
 
 ### [Portfolio](https://mvang92.github.io/Portfolio/index.html)
 
@@ -18,3 +19,5 @@ To be redirected, please click on any of the following links to check out the vi
 ### [React Clicky Game](https://mvang92.github.io/clickylive/)
 
 ### [React NYT Scrubber](https://nty-scrubber-mvang92.herokuapp.com/)
+
+Thank you for visiting!
