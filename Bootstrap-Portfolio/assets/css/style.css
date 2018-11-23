@@ -18,15 +18,21 @@ body {
 
 .picture {
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 #hello {
-    font-size: 36px;
     font-weight: bold;
 }
 
-.aboutMe {
-    padding-bottom: 2%;
+#headLine {
+    font-size: 26px;
+}
+
+#headLineName {
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 45px;
 }
 
 .navbar {
@@ -72,7 +78,7 @@ body {
 }
 
 .aboutMeInfo {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2;
 }
 
@@ -253,7 +259,24 @@ footer {
 
 @media only screen and (max-width: 991px) {
     #hello {
-        font-size: 38px;
+        font-size: 32px;
+    }
+
+    #headLineName {
+        text-shadow: 2px 3px 5px rgb(92, 92, 92);
+        color: white;
+        font-size: 60px;
+        line-height: initial;
+        text-align: center;
+        background: lightgray;
+        padding-bottom: 10px;
+    }
+
+    #headLine {
+        margin-top: 5px;
+        font-size: 40px;
+        text-align: center;
+        background: lightgray;
     }
 
     .pageDesc {
@@ -285,9 +308,27 @@ footer {
         margin-top: 90px;
     }
 
-    .aboutMeInfo {
-        font-size: 30px;
+    .aboutMeInfo,
+    #hello {
+        font-size: 44px;
         line-height: 2;
+        text-align: center;
+    }
+
+    #hello {
+        text-shadow: 5px 4px 7px rgb(255, 200, 200);
+    }
+
+    #skills {
+        font-size: 36px;
+        text-align: initial;
+        background: lightgrey;
+    }
+
+    #desc {
+        background: lightgrey;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     .inputType {
