@@ -118,18 +118,6 @@ a.underline:active {
     border-radius: 7px;
 }
 
-.boxContact {
-    background: rgba(235, 235, 235);
-    border-radius: 7px 0px 0px 7px;
-    font-size: 20px;
-}
-
-.boxConnect {
-    background: rgba(235, 235, 235);
-    border-radius: 0px 7px 7px 0px;
-    font-size: 20px;
-}
-
 .cards {
     transition-duration: 0.3s;
     border-radius: 7px;
@@ -396,14 +384,6 @@ footer {
         font-size: 48px;
     }
 
-    .boxContact {
-        border-radius: 7px 7px 0px 0px;
-    }
-    
-    .boxConnect {
-        border-radius: 0px 0px 7px 7px;
-    }
-
     .links {
         font-size: 32px;
     }
@@ -485,10 +465,6 @@ footer {
 
     #modalText {
         font-size: 48px;
-    }
-
-    .boxContact {
-        font-size: 28px;
     }
 
     .btnBlock {

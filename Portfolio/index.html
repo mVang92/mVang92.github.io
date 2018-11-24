@@ -14,6 +14,8 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
     <!-- External style sheet -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <!-- Google Fonts -->
@@ -21,6 +23,7 @@
 </head>
 
 <body>
+    <span id="aboutMe"></span>
     <!-- Navigation Bar -->
     <script src="assets/javascript/navBar.js"></script>
     <!-- End Navigation Bar -->
@@ -66,10 +69,10 @@
                                 <strong>Links</strong>
                                 <ul class="bulletPoints">
                                     <li>
-                                        <a class="underline" href="portfolio.html">Check out my work</a>
+                                        <a class="underline" href="#portfolio">Check out my work</a>
                                     </li>
                                     <li>
-                                        <a class="underline" href="contact.html">Contact me here</a>
+                                        <a class="underline" href="#contact">Contact me here</a>
                                     </li>
                                     <li>
                                         <a class="underline" href="assets/images/mengVangResume.pdf" target="_blank">View
@@ -82,12 +85,124 @@
                 </div>
             </div>
         </div>
-        <!-- Footer -->
-        <script src="assets/javascript/footer.js"></script>
-        <!-- End Footer -->
     </div>
-    <script type="text/javascript" src="assets/javascript/background.js"></script>
+
+    <!-- Projects -->
+    <div id="portfolio" class="container">
+        <script src="assets/javascript/portfolioProjects.js"></script>
+    </div>
+    <!-- End Projects -->
+
+    <!-- Modal Content -->
+    <script src="assets/javascript/portfolioModals.js"></script>
+    <!-- End Modal Content -->
+
+    <!-- Contact Content -->
+    <div id="contact" class="container">
+        <!--Things about me-->
+        <div class="jumbotron" style="margin-bottom:6%;">
+            <div class="container">
+                <div class="row">
+                    <!-- Contact Column -->
+                    <div class="col-lg-12">
+                        <h2 class="text-center rounded pageDesc">Contact</h2>
+                        <div class="box boxContact">
+                            <div class="text-center">
+                                <strong>Reach out to me at:</strong>
+                                <strong>meng.vang92@yahoo.com</strong>
+                                <hr>
+                            </div>
+
+                            <!-- Comments -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <strong class="inputType">Comments</strong>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <textarea id="commentInput" class="input"></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- Comment -->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <button type="button" id="resetBtn" class="btn btn-primary">Reset</button>
+                                        <button type="submit" id="submitBtn" class="btn btn-danger">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Connect with Me Column -->
+                    <div class="col-lg-12">
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 class="text-center rounded pageDesc">Connect with Me</h2>
+                            </div>
+                        </div>
+                        <!-- Github link -->
+                        <div class="box boxConnect text-center">
+                            <div class="row">
+                                <div id="gitHub" class="col-lg-12">
+                                    <img src="assets/images/github.png" width=30px alt="Github">
+                                    <a class="underline" href="https://github.com/mVang92" target="_blank">
+                                        <span class="links"> GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+                            <!-- LinkedIn link -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <img src="assets/images/linkedin.png" width=30px; alt="Linkedin">
+                                    <a class="underline" href="https://www.linkedin.com/in/meng-vang-93ba18a4/" target="_blank">
+                                        <span class="links"> LinkedIn</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+                            <!-- StackOverFlow link -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <img src="assets/images/stackoverflow.png" width=30px; alt="StackOverFlow">
+                                    <a class="underline" href="https://stackoverflow.com/users/9665679/meng-vang?tab=profile"
+                                        target="_blank">
+                                        <span class="links"> StackOverFlow</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Content -->
+
+    <!-- Modal -->
+    <div id="modalBox" class="modal">
+        <div class="modal-content" style="left:0">
+            <form style="padding: 5px;">
+                <div class="modalText">
+                    <p id="modalText">Thank you for your comments!</p>
+                </div>
+                <button type="button" class="btn btn-default" id="close">Close</button>
+            </form>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- Footer -->
+    <script src="assets/javascript/footer.js"></script>
+    <!-- End Footer -->
+
+    <!-- External JS files -->
     <script type="text/javascript" src="assets/javascript/index.js"></script>
+    <script type="text/javascript" src="assets/javascript/portfolio.js"></script>
+    <script type="text/javascript" src="assets/javascript/contact.js"></script>
 </body>
 
 </html>

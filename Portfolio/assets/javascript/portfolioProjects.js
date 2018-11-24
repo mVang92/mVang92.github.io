@@ -1,6 +1,6 @@
 document.write('\
 <div class="jumbotron" style="margin-bottom:6%;">\
-    <h2 class="text-black text-center rounded pageDesc">Portfolio</h2>\
+    <h2 class="text-black text-center rounded pageDesc">My Work</h2>\
     <div id="portfolioBtn" class="text-center">\
         <button id="indivProjects" class="btn" data-toggle="collapse" href=".projectCollapse" role="button" aria-expanded="false">Individual Projects</button>\
         <button id="groupProjects" class="btn" data-toggle="collapse" href=".groupCollapse" role="button" aria-expanded="false">Group Projects</button>\

@@ -11,13 +11,13 @@ document.write('\
             <ul class="mr-auto"></ul>\
             <ul class="navbar-nav nav justify-content-end text-center mr-5">\
                 <li class="nav-item">\
-                    <a class="nav-link" href="index.html">About</a>\
+                    <a class="nav-link" href="#aboutMe">About</a>\
                 </li>\
                 <li class="nav-item">\
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>\
+                    <a class="nav-link" href="#portfolio">My Work</a>\
                 </li>\
                 <li class="nav-item">\
-                    <a class="nav-link" href="contact.html">Contact</a>\
+                    <a class="nav-link" href="#contact">Contact</a>\
                 </li>\
                 <li class="nav-item">\
                     <a title="Meng Vang Resume" class="nav-link" href="assets/images/mengVangResume.pdf" target="_blank">Resume</a>\
