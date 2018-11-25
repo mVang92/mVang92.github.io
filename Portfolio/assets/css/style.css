@@ -51,6 +51,7 @@ body {
     background: url("../images/PageDescription.jpg");
     background-size: cover;
     color: white;
+    text-shadow: 2px 3px 5px rgb(92, 92, 92);
 }
 
 .jumbotron {
@@ -114,14 +115,14 @@ a.underline:active {
 
 .box,
 .cardBackGround {
-    background: rgb(235, 235, 235);
+    background: rgb(220, 220, 220);
     border-radius: 7px;
 }
 
 .cards {
     transition-duration: 0.3s;
     border-radius: 7px;
-    border: 1px solid rgb(235, 235, 235);
+    border: 1px solid rgb(220, 220, 220);
     padding: 5px;
     cursor: pointer;
 }
