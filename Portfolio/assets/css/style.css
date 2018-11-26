@@ -67,17 +67,17 @@ body {
 
 .nav-link:hover{
     transition-duration: 0.2s;
-    background: rgb(255, 128, 128);
+    background: rgb(255, 255, 255);
 }
 
 .navbar-toggler {
     transition-duration: 0.3s;
-    background: white;
+    background: rgb(200, 200, 200);
 }
 
 .navbar-toggler:hover {
     transition-duration: 0.2s;
-    background: rgb(255, 128, 128);
+    background: rgb(255, 255, 255);
 }
 
 a.underline:link {
@@ -184,7 +184,7 @@ a.underline:active {
 #indivProjects,
 #groupProjects {
     transition-duration: 0.6s;
-    background: white;
+    background: lightgrey;
 }
 
 #indivProjects,
@@ -194,18 +194,38 @@ a.underline:active {
 
 #close:hover {
     transition-duration: 0.1s;
-    background: rgb(255, 128, 128);
+    background: rgb(255, 255, 255);
 }
 
 #indivProjects:hover,
 #groupProjects:hover {
     transition-duration: 0.1s;
-    background: rgb(255, 128, 128);
+    background: rgb(255, 255, 255);
 }
 
 #submitBtn,
 #resetBtn {
     margin-bottom: 2%;
+}
+
+.links {
+    color: white;
+}
+
+#backToTop {
+    margin-top: 20%;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+#topImg{
+    opacity: 0.7;
+}
+
+#connect {
+    padding: 5px;
+    background: grey;
+    margin-bottom: 50px;
 }
 
 footer {
@@ -242,7 +262,7 @@ footer {
     left: 50%;
     right: 50%;
     bottom: 0;
-    background: rgb(255, 128, 128);
+    background: rgb(255, 255, 255);
     height: 4px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
@@ -346,7 +366,7 @@ footer {
 
     .nav-link:hover {
         transition-duration: 0.2s;
-        background: rgb(255, 128, 128);
+        background: rgb(255, 255, 255);
     }
 
     .jumbotron {
@@ -386,7 +406,8 @@ footer {
     }
 
     .links {
-        font-size: 32px;
+        color: white;
+        font-size: 38px;
     }
 
     #commentInput {
@@ -436,6 +457,14 @@ footer {
         width: 125px;
         height: 55px;
         font-size: 24px;
+    }
+
+    #backToTop {
+        margin-top: 85%;
+    }
+
+    #topImg {
+        width: 75px;
     }
 
     .modal-content {

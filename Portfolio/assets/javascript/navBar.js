@@ -20,6 +20,9 @@ document.write('\
                     <a class="nav-link" href="#contact">Contact</a>\
                 </li>\
                 <li class="nav-item">\
+                    <a class="nav-link" href="#connect">Connect</a>\
+                </li>\
+                <li class="nav-item">\
                     <a title="Meng Vang Resume" class="nav-link" href="assets/images/mengVangResume.pdf" target="_blank">Resume</a>\
                 </li>\
             </ul>\
