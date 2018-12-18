@@ -8,7 +8,7 @@ document.write('\
     <!-- Project Row 1 -->\
     <div class="row text-center box collapse multi-collapse projectCollapse">\
         <!-- Project 1 -->\
-        <div id="block1" class="col-md-4 cards" data-toggle="modal" data-target="">\
+        <div id="target1" class="col-md-4 cards" data-toggle="modal" data-target="">\
             <div class="row">\
                 <div class="col-md-12">\
                     <div id="project1" class="col-md-12 cardProjectName"></div>\
@@ -21,7 +21,7 @@ document.write('\
             </div>\
         </div>\
         <!-- Project 2 -->\
-        <div id="block2" class="col-md-4 cards" data-toggle="modal" data-target="">\
+        <div id="target2" class="col-md-4 cards" data-toggle="modal" data-target="">\
             <div class="row">\
                 <div id="project2" class="col-md-12 cardProjectName"></div>\
             </div>\
@@ -32,7 +32,7 @@ document.write('\
             </div>\
         </div>\
         <!-- Project 3 -->\
-        <div id="block3" class="col-md-4 cards" data-toggle="modal" data-target="">\
+        <div id="target3" class="col-md-4 cards" data-toggle="modal" data-target="">\
             <div class="row">\
                 <div id="project3" class="col-md-12 cardProjectName"></div>\
             </div>\
@@ -46,7 +46,7 @@ document.write('\
     <!-- Project Row 2 -->\
     <div class="row text-center cardBackGround collapse multi-collapse projectCollapse">\
         <!-- Project 4 -->\
-        <div id="block4" class="col-md-4 cards" data-toggle="modal" data-target="">\
+        <div id="target4" class="col-md-4 cards" data-toggle="modal" data-target="">\
             <div class="row">\
                 <div id="project4" class="col-md-12 cardProjectName"></div>\
             </div>\
@@ -57,7 +57,7 @@ document.write('\
             </div>\
         </div>\
         <!-- Project 5 -->\
-        <div id="block5" class="col-md-4 cards" data-toggle="modal" data-target="">\
+        <div id="target5" class="col-md-4 cards" data-toggle="modal" data-target="">\
             <div class="row">\
                 <div id="project5" class="col-md-12 cardProjectName"></div>\
             </div>\
@@ -68,7 +68,7 @@ document.write('\
             </div>\
         </div>\
         <!-- Project 6 -->\
-        <div id="block6" class="col-md-4 cards" data-toggle="modal" data-target="">\
+        <div id="target6" class="col-md-4 cards" data-toggle="modal" data-target="">\
             <div class="row">\
                 <div id="project6" class="col-md-12 cardProjectName"></div>\
             </div>\
@@ -83,15 +83,13 @@ document.write('\
     <!-- Group Project Row 1 -->\
     <div class="row text-center cardBackGround collapse multi-collapse groupCollapse">\
         <!-- Project 1 -->\
-        <div class="col-md-4 cards" data-toggle="modal" data-target=".bwaters">\
+        <div id="gTarget1" class="col-md-4 cards" data-toggle="modal" data-target="">\
             <div class="row">\
-                <div class="col-md-12 cardProjectName">\
-                BWCA Advanture Tours\
-                </div>\
+                <div id="gProject1" class="col-md-12 cardProjectName"></div>\
             </div>\
             <div class="row">\
                 <div class="col-md-12">\
-                    <img class="projectImg" src="assets/images/bwatersLogo.png" alt="BWCA Advanture Tours">\
+                    <img id="gProjectImg1" class="projectImg">\
                 </div>\
             </div>\
         </div>\

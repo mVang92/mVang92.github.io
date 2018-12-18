@@ -42,10 +42,12 @@ $(document).ready(function () {
         {
             title: "BWCA Advanture Tours",
             projectImg: "assets/images/bwatersLogo.png",
-            alt: "BWCA Advanture Tours"
+            alt: "BWCA Advanture Tours",
+            target: ".bwaters"
         }
     ];
 
+    // For individual projects
     for (var i = 0; i < projects.length; i++) {
         var title = projects[i].title;
         var img = projects[i].projectImg;
@@ -55,6 +57,19 @@ $(document).ready(function () {
         $("#project" + (1 + i)).html(title);
         $("#projectImg" + (1 + i)).attr("src", img);
         $("#projectImg" + (1 + i)).attr("alt", alt);
-        $("#block" + (1 + i)).attr("data-target", target);
+        $("#target" + (1 + i)).attr("data-target", target);
     };
+
+    // For group projects
+    for (var j = 0; j < groupProjects.length; j++) {
+        var gTitle = groupProjects[j].title;
+        var gImg = groupProjects[j].projectImg;
+        var gAlt = groupProjects[j].alt;
+        var gTarget = groupProjects[j].target;
+
+        $("#gProject" + (1 + j)).html(gTitle);
+        $("#gProjectImg" + (1 + j)).attr("src", gImg);
+        $("#gProjectImg" + (1 + j)).attr("alt", gAlt);
+        $("#gTarget" + (1 + j)).attr("data-target", gTarget);
+    }
 });
