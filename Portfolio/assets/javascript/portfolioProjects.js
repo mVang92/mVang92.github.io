@@ -8,43 +8,37 @@ document.write('\
     <!-- Project Row 1 -->\
     <div class="row text-center box collapse multi-collapse projectCollapse">\
         <!-- Project 1 -->\
-        <div class="col-md-4 cards" data-toggle="modal" data-target=".triviaGame">\
+        <div id="block1" class="col-md-4 cards" data-toggle="modal" data-target="">\
             <div class="row">\
                 <div class="col-md-12">\
-                    <div class="col-md-12 cardProjectName">\
-                        Astronomy Trivia\
-                    </div>\
+                    <div id="project1" class="col-md-12 cardProjectName"></div>\
                 </div>\
             </div>\
             <div class="row">\
                 <div class="col-md-12">\
-                    <img class="projectImg" src="assets/images/TriviaGame.png" alt="Astronomy Trivia Game">\
+                    <img id="projectImg1" class="projectImg">\
                 </div>\
             </div>\
         </div>\
         <!-- Project 2 -->\
-        <div class="col-md-4 cards" data-toggle="modal" data-target=".giftastic">\
+        <div id="block2" class="col-md-4 cards" data-toggle="modal" data-target="">\
             <div class="row">\
-                <div class="col-md-12 cardProjectName">\
-                    GifTastic\
-                </div>\
+                <div id="project2" class="col-md-12 cardProjectName"></div>\
             </div>\
             <div class="row">\
                 <div class="col-md-12">\
-                    <img class="projectImg" src="assets/images/pbjTime.gif" alt="GifTastic">\
+                    <img id="projectImg2" class="projectImg">\
                 </div>\
             </div>\
         </div>\
         <!-- Project 3 -->\
-        <div class="col-md-4 cards" data-toggle="modal" data-target=".friendFinder">\
+        <div id="block3" class="col-md-4 cards" data-toggle="modal" data-target="">\
             <div class="row">\
-                <div class="col-md-12 cardProjectName">\
-                    Friend Finder\
-                </div>\
+                <div id="project3" class="col-md-12 cardProjectName"></div>\
             </div>\
             <div class="row">\
                 <div class="col-md-12">\
-                    <img class="projectImg" src="assets/images/friendFinder.png" alt="Friend Finder">\
+                    <img id="projectImg3" class="projectImg">\
                 </div>\
             </div>\
         </div>\
@@ -52,41 +46,35 @@ document.write('\
     <!-- Project Row 2 -->\
     <div class="row text-center cardBackGround collapse multi-collapse projectCollapse">\
         <!-- Project 4 -->\
-        <div class="col-md-4 cards" data-toggle="modal" data-target=".burger">\
+        <div id="block4" class="col-md-4 cards" data-toggle="modal" data-target="">\
             <div class="row">\
-                <div class="col-md-12 cardProjectName">\
-                    Eat-Da-Burger\
-                </div>\
+                <div id="project4" class="col-md-12 cardProjectName"></div>\
             </div>\
             <div class="row">\
                 <div class="col-md-12">\
-                    <img class="projectImg" src="assets/images/burger.png" alt="Eat-Da-Burger">\
+                    <img id="projectImg4" class="projectImg">\
                 </div>\
             </div>\
         </div>\
         <!-- Project 5 -->\
-        <div class="col-md-4 cards" data-toggle="modal" data-target=".nytScrubber">\
+        <div id="block5" class="col-md-4 cards" data-toggle="modal" data-target="">\
             <div class="row">\
-                <div class="col-md-12 cardProjectName">\
-                    NYT Scrubber\
-                </div>\
+                <div id="project5" class="col-md-12 cardProjectName"></div>\
             </div>\
             <div class="row">\
                 <div class="col-md-12">\
-                    <img class="projectImg" src="../nyt-react-search/client/public/favicon.png" alt="New York Times Scrubber">\
+                    <img id="projectImg5" class="projectImg">\
                 </div>\
             </div>\
         </div>\
         <!-- Project 6 -->\
-        <div class="col-md-4 cards" data-toggle="modal" data-target=".clicky">\
+        <div id="block6" class="col-md-4 cards" data-toggle="modal" data-target="">\
             <div class="row">\
-                <div class="col-md-12 cardProjectName">\
-                    Crystal Clicky Game\
-                </div>\
+                <div id="project6" class="col-md-12 cardProjectName"></div>\
             </div>\
             <div class="row">\
                 <div class="col-md-12">\
-                    <img class="projectImg" src="../clicky/public/assets/images/crystalF.png" alt="Crystal Clicky Game">\
+                    <img id="projectImg6" class="projectImg">\
                 </div>\
             </div>\
         </div>\
