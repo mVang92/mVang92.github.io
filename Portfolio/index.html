@@ -90,7 +90,24 @@
 
     <!-- Projects -->
     <div id="portfolio" class="container">
-        <script src="assets/javascript/portfolioProjects.js"></script>
+        <div class="jumbotron" style="margin-bottom:6%;">
+            <h2 class="text-black text-center rounded pageDesc">My Work</h2>
+            <div id="portfolioBtn" class="text-center">
+                <button id="indivProjects" class="btn" data-toggle="collapse" href=".projectCollapse" role="button"
+                    aria-expanded="false">Individual Projects</button>
+                <button id="groupProjects" class="btn" data-toggle="collapse" href=".groupCollapse" role="button"
+                    aria-expanded="false">Group Projects</button>
+            </div>
+            <!-- Project Row -->
+            <div class="text-center box collapse multi-collapse projectCollapse">
+                <div id="iProjects"></div>
+            </div>
+            <hr>
+            <!-- Group Project Row -->
+            <div class="text-center cardBackGround collapse multi-collapse groupCollapse">
+                <div id="gProjects"></div>
+            </div>
+        </div>
     </div>
     <!-- End Projects -->
 
