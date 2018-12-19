@@ -33,4 +33,4 @@ $(document).ready(function () {
     $("#menuNow").html("With the participation of five group members, this full-stack web application allow restaurant owners to create menus, update them,"
         + " remove items, and add them back in a simple, user-friendly way. Technologies used in this application includes HTML, CSS, React-Bootstrap,"
         + " JavaScript, JSX, React, Firebase Authentication, Node, Express, and MongoDB.");
-})
+});

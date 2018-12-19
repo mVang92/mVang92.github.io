@@ -76,7 +76,7 @@ $(document).ready(function () {
             class: "menuNow",
             hrefLive: "https://menunow.herokuapp.com/",
             hrefRepo: "https://github.com/mVang92/menuNow"
-        }
+        },
     ];
 
     function createCard() {
@@ -112,15 +112,7 @@ $(document).ready(function () {
             var alt = projects[i].alt;
             var hrefLive = projects[i].hrefLive;
             var hrefRepo = projects[i].hrefRepo;
-            var iModal = "<div class='modal fade " + modalClassTarget + "' tabindex='-1' role='dialog' aria-labelledby='myLargeModalLabel' aria-hidden='true'>"
-                + "<div class='modal-dialog modal-lg'><div class='modal-content'><div class='projects'><div class='row'><div class='col-lg-4'>"
-                + "<img class='modalProjectImg' src='" + img + "' alt='" + alt + "'></div>"
-                + "<div class='col-lg-8'><p class='projectName'>" + title + "</p><p id='" + modalClassTarget + "' class='projectDesc'></p></div></div>"
-                + "<div class='row'><div class='col-md-6 btnBlock'><a title='" + title + " Live App' href='" + hrefLive + "' target='_blank'>"
-                + "<button class='btn btn-default projectBtn'>"
-                + "<img class='projectImg' src='" + img + "' style='width:25px'> View Project </button></a></div><div class='col-md-6 btnBlock'>"
-                + "<a title='" + title + " Github Repository' href='" + hrefRepo + "' target='_blank'><button class='btn btn-default githubBtn'>"
-                + "<img class='projectImg' src='assets/images/github.png' style='width:25px'> Github Repo </button></a></div></div></div></div></div></div>";
+            var iModal = generateModal(title, modalClassTarget, img, alt, hrefLive, hrefRepo);
             $("#iModals").append(iModal);
         };
 
@@ -136,15 +128,7 @@ $(document).ready(function () {
             var alt = groupProjects[j].alt;
             var hrefLive = groupProjects[j].hrefLive;
             var hrefRepo = groupProjects[j].hrefRepo;
-            var gModal = "<div class='modal fade " + modalClassTarget + "' tabindex='-1' role='dialog' aria-labelledby='myLargeModalLabel' aria-hidden='true'>"
-                + "<div class='modal-dialog modal-lg'><div class='modal-content'><div class='projects'><div class='row'><div class='col-lg-4'>"
-                + "<img class='modalProjectImg' src='" + img + "' alt='" + alt + "'></div>"
-                + "<div class='col-lg-8'><p class='projectName'>" + title + "</p><p id='" + modalClassTarget + "' class='projectDesc'></p></div></div>"
-                + "<div class='row'><div class='col-md-6 btnBlock'><a title='" + title + " Live App' href='" + hrefLive + "' target='_blank'>"
-                + "<button class='btn btn-default projectBtn'>"
-                + "<img class='projectImg' src='" + img + "' style='width:25px'> View Project </button></a></div><div class='col-md-6 btnBlock'>"
-                + "<a title='" + title + " Github Repository' href='" + hrefRepo + "' target='_blank'><button class='btn btn-default githubBtn'>"
-                + "<img class='projectImg' src='assets/images/github.png' style='width:25px'> Github Repo </button></a></div></div></div></div></div></div>";
+            var gModal = generateModal(title, modalClassTarget, img, alt, hrefLive, hrefRepo);
             $("#iModals").append(gModal);
         };
 
@@ -155,29 +139,44 @@ $(document).ready(function () {
     // For individual projects
     function getIndividualProjects() {
         for (var i = 0; i < projects.length; i++) {
+            var id = i + 1;
             var title = projects[i].title;
             var img = projects[i].projectImg;
             var alt = projects[i].alt;
             var target = projects[i].target;
-            $("#project" + (1 + i)).html(title);
-            $("#projectImg" + (1 + i)).attr("src", img);
-            $("#projectImg" + (1 + i)).attr("alt", alt);
-            $("#target" + (1 + i)).attr("data-target", target);
+            $("#project" + id).html(title);
+            $("#projectImg" + id).attr("src", img);
+            $("#projectImg" + id).attr("alt", alt);
+            $("#target" + id).attr("data-target", target);
         };
     };
 
     // For group projects
     function getGroupProjects() {
         for (var j = 0; j < groupProjects.length; j++) {
+            var id = j + 1;
             var gTitle = groupProjects[j].title;
             var gImg = groupProjects[j].projectImg;
             var gAlt = groupProjects[j].alt;
             var gTarget = groupProjects[j].target;
-            $("#gProject" + (1 + j)).html(gTitle);
-            $("#gProjectImg" + (1 + j)).attr("src", gImg);
-            $("#gProjectImg" + (1 + j)).attr("alt", gAlt);
-            $("#gTarget" + (1 + j)).attr("data-target", gTarget);
+            $("#gProject" + id).html(gTitle);
+            $("#gProjectImg" + id).attr("src", gImg);
+            $("#gProjectImg" + id).attr("alt", gAlt);
+            $("#gTarget" + id).attr("data-target", gTarget);
         };
+    };
+
+    // Create modals for each project while taking in their respected parameters
+    function generateModal(title, modalClassTarget, img, alt, hrefLive, hrefRepo) {
+        var modal = "<div class='modal fade " + modalClassTarget + "' tabindex='-1' role='dialog' aria-labelledby='myLargeModalLabel' aria-hidden='true'>"
+            + "<div class='modal-dialog modal-lg'><div class='modal-content'><div class='projects'><div class='row'><div class='col-lg-4'>"
+            + "<img class='modalProjectImg' src='" + img + "' alt='" + alt + "'></div><div class='col-lg-8'><p class='projectName'>" + title + "</p>"
+            + "<p id='" + modalClassTarget + "' class='projectDesc'></p></div></div><div class='row'><div class='col-md-6 btnBlock'>"
+            + "<a title='" + title + " Live App' href='" + hrefLive + "' target='_blank'><button class='btn btn-default projectBtn'>"
+            + "<img class='projectImg' src='" + img + "' style='width:25px'> View Project </button></a></div><div class='col-md-6 btnBlock'>"
+            + "<a title='" + title + " Github Repository' href='" + hrefRepo + "' target='_blank'><button class='btn btn-default githubBtn'>"
+            + "<img class='projectImg' src='assets/images/github.png' style='width:25px'> Github Repo </button></a></div></div></div></div></div></div>";
+        return modal;
     };
 
     // Create the cards for the projects
