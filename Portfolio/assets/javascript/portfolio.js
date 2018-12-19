@@ -29,4 +29,8 @@ $(document).ready(function () {
         + " users to plan a camping, hiking, and mountain biking trip. An API is used to allow users to see trip information and the weather forecast"
         + " around Duluth, MN. Although the review section is not complete, users can submit reviews then further edit/delete them."
         + " The D3 library was used to calculate the average of the user expericence.");
+
+    $("#menuNow").html("With the participation of five group members, this full-stack web application allow restaurant owners to create menus, update them,"
+        + " remove items, and add them back in a simple, user-friendly way. Technologies used in this application includes HTML, CSS, React-Bootstrap,"
+        + " JavaScript, JSX, React, Firebase Authentication, Node, Express, and MongoDB");
 })

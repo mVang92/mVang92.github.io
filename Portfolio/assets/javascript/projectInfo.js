@@ -67,6 +67,15 @@ $(document).ready(function () {
             class: "bwaters",
             hrefLive: "https://code-camp-p2.herokuapp.com/",
             hrefRepo: "https://github.com/mVang92/CodeCampProject2"
+        },
+        {
+            title: "menuNOW",
+            projectImg: "assets/images/menuNow.png",
+            alt: "menuNOW",
+            target: ".menuNow",
+            class: "menuNow",
+            hrefLive: "https://menunow.herokuapp.com/",
+            hrefRepo: "https://github.com/mVang92/menuNow"
         }
     ];
 
