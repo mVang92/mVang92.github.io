@@ -150,7 +150,7 @@ $(document).ready(function () {
 
         // After creating the modals, get the projects
         getGroupProjects();
-    }
+    };
 
     // For individual projects
     function getIndividualProjects() {
