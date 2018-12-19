@@ -3,7 +3,7 @@ $(document).ready(function () {
         + " series of astronomy/physics based questions in a limited amount of time. Scores are displayed"
         + " at the end, and the user may replay the game if they want.");
 
-    $("#giftastic").html("GifTastic was built around Javascript, jQuery, and API calls. This application appends new buttons"
+    $("#gifTastic").html("GifTastic was built around Javascript, jQuery, and API calls. This application appends new buttons"
         + " next to the predefined buttons and allows the user to click and generate 10 Gif images at a time."
         + " The application talks to an API, which returns the appropriate search results as searched. The"
         + " Gif images are initially still, but once clicked, they become animated.");
