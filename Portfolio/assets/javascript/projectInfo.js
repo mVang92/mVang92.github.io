@@ -113,7 +113,7 @@ $(document).ready(function () {
             var hrefLive = projects[i].hrefLive;
             var hrefRepo = projects[i].hrefRepo;
             var iModal = generateModal(title, modalClassTarget, img, alt, hrefLive, hrefRepo);
-            $("#iModals").append(iModal);
+            $("#createModals").append(iModal);
         };
 
         // After creating the modals, get the projects
@@ -129,7 +129,7 @@ $(document).ready(function () {
             var hrefLive = groupProjects[j].hrefLive;
             var hrefRepo = groupProjects[j].hrefRepo;
             var gModal = generateModal(title, modalClassTarget, img, alt, hrefLive, hrefRepo);
-            $("#iModals").append(gModal);
+            $("#createModals").append(gModal);
         };
 
         // After creating the modals, get the projects
