@@ -23,14 +23,14 @@ $(document).ready(function () {
     $("#clicky").html("Crystal Clicky Game is a memory based game built with React. The UI is broken into components,"
         + " and the application manages component states to respond to user events. The user must reach a score of 12 to"
         + " win without clicking on the same crystals twice per round. A message will also inform the user if they currently"
-        + " hold the highest score or to try again");
+        + " hold the highest score or to try again.");
 
     $("#bwaters").html("With the participation of four group members, we built this full-stack website to allow"
         + " users to plan a camping, hiking, and mountain biking trip. An API is used to allow users to see trip information and the weather forecast"
         + " around Duluth, MN. Although the review section is not complete, users can submit reviews then further edit/delete them."
-        + " The D3 library was used to calculate the average of the user expericence.");
+        + " The D3 library was used to calculate the average of the user experience.");
 
     $("#menuNow").html("With the participation of five group members, this full-stack web application allow restaurant owners to create menus, update them,"
         + " remove items, and add them back in a simple, user-friendly way. Technologies used in this application includes HTML, CSS, React-Bootstrap,"
-        + " JavaScript, JSX, React, Firebase Authentication, Node, Express, and MongoDB");
+        + " JavaScript, JSX, React, Firebase Authentication, Node, Express, and MongoDB.");
 })
