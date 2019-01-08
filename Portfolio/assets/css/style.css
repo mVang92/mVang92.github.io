@@ -181,7 +181,12 @@ a.underline:active {
     background: white;
 }
 
+#myBackgroundBtn {
+    margin-bottom: 15px;
+}
+
 #close,
+#myBackgroundBtn,
 #indivProjects,
 #groupProjects {
     transition-duration: 0.6s;
@@ -198,6 +203,7 @@ a.underline:active {
     background: rgb(255, 255, 255);
 }
 
+#myBackgroundBtn:hover,
 #indivProjects:hover,
 #groupProjects:hover {
     transition-duration: 0.1s;
@@ -209,8 +215,16 @@ a.underline:active {
     margin-bottom: 2%;
 }
 
+.backgroundModal {
+     margin: auto;
+}
+
 .links {
     color: white;
+}
+
+.backgroundDesc {
+    text-align: initial;
 }
 
 #backToTop {
@@ -290,11 +304,16 @@ footer {
     margin: auto;
     margin-top: 20%;
     padding: 20px;
-    width: 800px;
+    /* width: 800px; */
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.3s;
     animation-name: animatetop;
     animation-duration: 0.3s;
+}
+
+.myBackgroundModalContent {
+    left: -40%;
+    width: 184%;
 }
 
 #modalText {

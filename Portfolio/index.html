@@ -83,6 +83,14 @@
                         </div>
                     </div>
                 </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button id="myBackgroundBtn" class="btn btn-default" data-toggle="modal" data-target="#myBackground">
+                            View My Background
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -114,6 +122,24 @@
     <!-- Projects Modal Content -->
     <div id="createModals"></div>
     <!-- End Projects Modal Content -->
+    <div class="backgroundModal">
+        <div class="modal fade" id="myBackground" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content myBackgroundModalContent">
+                    <div class="projects">
+                        <h3 class="modal-title" id="exampleModalLabel">Background</h3>
+                        <div id="myBackgroundInfo"></div>
+                        <hr />
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Contact Content -->
     <div id="contact" class="container">
@@ -209,6 +235,7 @@
     <!-- External JS files -->
     <script type="text/javascript" src="assets/javascript/index.js"></script>
     <script type="text/javascript" src="assets/javascript/contact.js"></script>
+    <script type="text/javascript" src="assets/javascript/myBackgroundInfo.js"></script>
     <script type="text/javascript" src="assets/javascript/projectInfo.js"></script>
     <script type="text/javascript" src="assets/javascript/projectDesc.js"></script>
 </body>
