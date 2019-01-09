@@ -60,7 +60,7 @@ $(document).ready(function () {
     // Group project information
     var groupProjects = [
         {
-            title: "BWCA Advanture Tours",
+            title: "BWCA",
             projectImg: "assets/images/bwatersLogo.png",
             alt: "BWCA Advanture Tours",
             target: ".bwaters",

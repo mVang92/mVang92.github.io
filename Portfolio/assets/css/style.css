@@ -195,7 +195,7 @@ a.underline:active {
 #indivProjects,
 #groupProjects {
     transition-duration: 0.6s;
-    background: lightgrey;
+    background: rgb(168, 168, 168);
 }
 
 #myBackgroundBtn,
@@ -230,7 +230,7 @@ a.underline:active {
 }
 
 .links {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .backgroundDesc {
