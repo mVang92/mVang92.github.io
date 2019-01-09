@@ -144,6 +144,11 @@ a.underline:active {
     width: 75%;
 }
 
+.myBackgroundImg {
+    margin-top: 5%;
+    width: 40%;
+}
+
 .modalProjectImg {
     padding: 5%;
     width: 85%;
@@ -213,6 +218,10 @@ a.underline:active {
 #submitBtn,
 #resetBtn {
     margin-bottom: 2%;
+}
+
+#myBackgroundTitle {
+    padding-top: 10px;
 }
 
 .backgroundModal {
@@ -368,6 +377,14 @@ footer {
         font-size: 48px;
     }
 
+    #myBackgroundTitle {
+        background: lightgrey;
+        padding-top: initial;
+        font-size: 44px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+
     .picture {
         width: 50%;
         margin: auto;
@@ -487,10 +504,19 @@ footer {
         width: 75px;
     }
 
+    .myBackgroundImg {
+        width: 70%;
+    }
+
     .modal-content {
         width: 746px;
         padding: 4%;
         left: -23%;
+    }
+
+    .myBackgroundModalContent {
+        width: 160%;
+        left: -28%;
     }
 
     #modalText {
@@ -522,6 +548,10 @@ footer {
     }
 
     .projectImg {
+        width: 45%;
+    }
+
+    .myBackgroundImg {
         width: 45%;
     }
 

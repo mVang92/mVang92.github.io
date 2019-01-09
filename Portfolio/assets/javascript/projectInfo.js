@@ -170,8 +170,8 @@ $(document).ready(function () {
     function generateModal(title, modalClassTarget, img, alt, hrefLive, hrefRepo) {
         var modal = "<div class='modal fade " + modalClassTarget + "' tabindex='-1' role='dialog' aria-labelledby='myLargeModalLabel' aria-hidden='true'>"
             + "<div class='modal-dialog modal-lg'><div class='modal-content'><div class='projects'><div class='row'><div class='col-lg-4'>"
-            + "<img class='modalProjectImg' src='" + img + "' alt='" + alt + "'></div><div class='col-lg-8'><p class='projectName'>" + title + "</p>"
-            + "<p id='" + modalClassTarget + "' class='projectDesc'></p></div></div><div class='row'><div class='col-md-6 btnBlock'>"
+            + "<img class='modalProjectImg' src='" + img + "' alt='" + alt + "'></div><div class='col-lg-8'><label><p class='projectName'>" + title + "</p></label>"
+            + "<label><p id='" + modalClassTarget + "' class='projectDesc'></p></label></div></div><div class='row'><div class='col-md-6 btnBlock'>"
             + "<a title='" + title + " Live App' href='" + hrefLive + "' target='_blank'><button class='btn btn-default projectBtn'>"
             + "<img class='projectImg' src='" + img + "' style='width:25px'> View Project </button></a></div><div class='col-md-6 btnBlock'>"
             + "<a title='" + title + " Github Repository' href='" + hrefRepo + "' target='_blank'><button class='btn btn-default githubBtn'>"

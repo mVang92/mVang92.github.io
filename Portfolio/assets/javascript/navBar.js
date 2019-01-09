@@ -1,7 +1,7 @@
 document.write('\
 <nav class="navbar navbar-expand-lg navbar-light">\
         <a class="navbar-brand ml-4 text-light">\
-            <strong id="name">Meng Vang</strong>\
+            <strong id="name"><label>Meng Vang</label></strong>\
         </a>\
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"\
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">\
