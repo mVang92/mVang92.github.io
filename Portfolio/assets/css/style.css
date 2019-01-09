@@ -198,6 +198,7 @@ a.underline:active {
     background: lightgrey;
 }
 
+#myBackgroundBtn,
 #indivProjects,
 #groupProjects {
     width: 160px;
@@ -321,8 +322,8 @@ footer {
 }
 
 .myBackgroundModalContent {
-    left: -40%;
-    width: 184%;
+    left: -42%;
+    width: 187%;
 }
 
 #modalText {
@@ -482,6 +483,7 @@ footer {
         margin-bottom: 5%;
     }
 
+    #myBackgroundBtn,
     #indivProjects,
     #groupProjects {
         width: 275px;
@@ -561,6 +563,7 @@ footer {
         float: left;
     }
 
+    #myBackgroundBtn,
     #indivProjects,
     #groupProjects {
         width: 190px;
@@ -583,6 +586,7 @@ footer {
 }
 
 @media only screen and (max-width: 468px) {
+    #myBackgroundBtn,
     #indivProjects,
     #groupProjects {
         margin-top: 5px;
