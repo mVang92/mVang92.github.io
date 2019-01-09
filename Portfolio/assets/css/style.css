@@ -322,6 +322,7 @@ footer {
 }
 
 .myBackgroundModalContent {
+    margin-top: initial;
     left: -42%;
     width: 187%;
 }

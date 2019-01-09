@@ -32,11 +32,11 @@ $(document).ready(function () {
             img: "assets/images/uwrfLogo.png",
             main: "Graduated from the University of Wisconsin - River Falls with a Bachelor of Science in Computer Science - Information Systems.",
             desc: "Took courses involving Introduction to Java, Object Oriented Programming with Java, Web Development (HTML, CSS, JavaScript), "
-                + "Database (SQL), and more."
+                + "Database Management Systems (SQL), and more."
         }
     ];
 
-    function printBackground() {
+    function printBackgroundInfo() {
         for (var i = 0; i < background.length; i++) {
             var info = "<hr><div class='row projectDesc'><div class='col-md-4'><div class='row'><div class='col-md-12'>"
                 + background[i].date + "</div><div class='col-md-12'><img class='myBackgroundImg' src='"
@@ -47,5 +47,5 @@ $(document).ready(function () {
         }
     };
 
-    printBackground();
+    printBackgroundInfo();
 });
