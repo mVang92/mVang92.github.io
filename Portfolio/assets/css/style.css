@@ -17,8 +17,14 @@ body {
 }
 
 .picture {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20%;
+    margin-left: 12%;
+    width: 75%;
+    border-radius: 7px;
+}
+
+.section {
+    margin-top: 64px;
 }
 
 #headLine {
@@ -45,6 +51,7 @@ body {
     position: fixed;
     width: 100%;
     z-index: 1;
+    padding: initial;
 }
 
 .pageDesc {
@@ -57,8 +64,9 @@ body {
 .jumbotron {
     background: rgba(220, 220, 220, 0.65);
     box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5);
-    border: 1px solid black;
-    margin-top: 60px;
+    margin-top: -8px;
+    margin-bottom: initial;
+    border-radius: initial;
 }
 
 .nav-link{
@@ -250,18 +258,7 @@ a.underline:active {
 #connect {
     padding: 5px;
     background: grey;
-    /* margin-bottom: 50px; */
 }
-
-/* footer {
-    background: rgba(215, 215, 215, 0.9);
-    border-top: 1px solid black !important;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    left: 0px;
-} */
 
 footer {
     background: rgba(215, 215, 215, 0.9);
@@ -366,6 +363,10 @@ footer {
         max-width: 975px;
     }
 
+    .section {
+        margin-top: 94px;
+    }
+
     #headLineName {
         text-shadow: 2px 3px 5px rgb(92, 92, 92);
         color: white;
@@ -394,10 +395,9 @@ footer {
     }
 
     .picture {
-        width: 50%;
-        margin: auto;
+        width: 40%;
         margin-top: 25px;
-        margin-bottom: 15px;
+        margin-left: 30%;
     }
 
     #name {
@@ -412,10 +412,6 @@ footer {
     .nav-link:hover {
         transition-duration: 0.2s;
         background: rgb(255, 255, 255);
-    }
-
-    .jumbotron {
-        margin-top: 90px;
     }
 
     .aboutMeInfo,

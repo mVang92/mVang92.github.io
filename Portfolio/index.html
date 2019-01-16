@@ -23,72 +23,73 @@
 </head>
 
 <body>
+    <script src="assets/javascript/navBar.js"></script>
     <span id="aboutMe"></span>
     <!-- Navigation Bar -->
-    <script src="assets/javascript/navBar.js"></script>
+
     <!-- End Navigation Bar -->
-    <br>
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="text-black text-center pageDesc section"><label>About Me</label></h2>
+        </div>
+    </div>
     <!-- About Me Content -->
-    <div class="container">
-        <!--Things about me-->
-        <div class="jumbotron" style="margin-bottom:6%;">
-            <!-- First row -->
+    <div class="jumbotron">
+        <!-- First row -->
+        <div class="container box">
+            <!-- Second row -->
             <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="text-black text-center rounded pageDesc"><label>About Me</label></h2>
-                </div>
-            </div>
-            <div class="container box">
-                <!-- Second row -->
-                <div class="row">
-                    <div class="col-lg-4 picture">
-                        <img class="shadow p-0 mb-0 bg-white rounded" width="90%" src="assets/images/picture.png" alt="Meng Vang">
-                    </div>
-                    <div class="col-lg-8 aboutMeInfo">
-                        <div id="headLineName"><label>Meng Vang</label></div>
-                        <div id="headLine"><label>Full-Stack Web Developer</label></div>
-                        <div id="desc">
-                            <label>I love building things that <span id="phrase"></span></label>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img class="picture" src="assets/images/picture.png" alt="Meng Vang">
                         </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label><strong>Achievements</strong></label>
-                                <ul class="bulletPoints">
-                                    <li>
-                                        <label>Full-Stack Web Developer</label>
-                                    </li>
-                                    <li>
-                                        <label>BS in Computer Science</label>
-                                    </li>
-                                    <li>
-                                        <label>Experienced Technical Writer</label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <label><strong>Skills</strong></label>
-                                <ul class="bulletPoints">
-                                    <li>
-                                        <label>Problem Solver</label>
-                                    </li>
-                                    <li>
-                                        <label>Proactive Mindset</label>
-                                    </li>
-                                    <li>
-                                        <label>Logical Thinker</label>
-                                    </li>
-                                </ul>
-                            </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button id="myBackgroundBtn" class="btn btn-default" data-toggle="modal" data-target="#myBackground">
+                                My Background
+                            </button>
                         </div>
                     </div>
                 </div>
-                <hr />
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <button id="myBackgroundBtn" class="btn btn-default" data-toggle="modal" data-target="#myBackground">
-                            My Background
-                        </button>
+                <div class="col-lg-8 aboutMeInfo">
+                    <div id="headLineName"><label>Meng Vang</label></div>
+                    <div id="headLine"><label>Full-Stack Web Developer</label></div>
+                    <div id="desc">
+                        <label>I love building things that <span id="phrase"></span></label>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label><strong>Achievements</strong></label>
+                            <ul class="bulletPoints">
+                                <li>
+                                    <label>Full-Stack Web Developer</label>
+                                </li>
+                                <li>
+                                    <label>BS in Computer Science</label>
+                                </li>
+                                <li>
+                                    <label>Experienced Technical Writer</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <label><strong>Skills</strong></label>
+                            <ul class="bulletPoints">
+                                <li>
+                                    <label>Problem Solver</label>
+                                </li>
+                                <li>
+                                    <label>Proactive Mindset</label>
+                                </li>
+                                <li>
+                                    <label>Logical Thinker</label>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -97,9 +98,9 @@
     <!-- End About Me Content -->
 
     <!-- Projects -->
-    <div id="portfolio" class="container">
-        <div class="jumbotron" style="margin-bottom:6%;">
-            <h2 class="text-black text-center rounded pageDesc"><label>My Work</label></h2>
+    <div id="portfolio">
+        <h2 class="text-black text-center pageDesc"><label>My Work</label></h2>
+        <div class="jumbotron">
             <div id="portfolioBtn" class="text-center">
                 <button id="indivProjects" class="btn" data-toggle="collapse" href=".projectCollapse" role="button"
                     aria-expanded="false">Individual Projects</button>
@@ -110,7 +111,7 @@
             <div class="text-center box collapse multi-collapse projectCollapse">
                 <div id="iProjects"></div>
             </div>
-            <hr>
+            <br>
             <!-- Group Project Row -->
             <div class="text-center cardBackGround collapse multi-collapse groupCollapse">
                 <div id="gProjects"></div>
@@ -146,14 +147,15 @@
     <!-- End my background modal -->
 
     <!-- Contact Content -->
-    <div id="contact" class="container">
+    <div id="contact">
+        <h2 class="text-center pageDesc"><label>Contact</label></h2>
         <!--Things about me-->
-        <div class="jumbotron" style="margin-bottom:6%;">
+        <div class="jumbotron">
             <div class="container">
                 <div class="row">
                     <!-- Contact Column -->
                     <div class="col-lg-12">
-                        <h2 class="text-center rounded pageDesc"><label>Contact</label></h2>
+
                         <div class="box boxContact">
                             <div class="text-center">
                                 <p><label>Reach out to me at:</label></p>
