@@ -11,6 +11,10 @@ body {
     font-family: 'Oxygen', sans-serif;
 }
 
+.rowCorrection {
+    margin-right: initial !important;
+}
+
 #name {
     font-size: 30px;
     text-shadow: 2px 3px 5px rgb(92, 92, 92);
@@ -46,7 +50,7 @@ body {
 .navbar {
     background: rgba(215, 215, 215, 0.9);
     box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5);
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     color: white;
     position: fixed;
     width: 100%;
@@ -59,6 +63,7 @@ body {
     background-size: cover;
     color: white;
     text-shadow: 2px 3px 5px rgb(92, 92, 92);
+    box-shadow: 0 10px 10px -6px black;
 }
 
 .jumbotron {
@@ -246,7 +251,7 @@ a.underline:active {
 }
 
 #backToTop {
-    margin-top: 20%;
+    margin-top: 5%;
     margin-bottom: 5px;
     margin-right: 5px;
 }
