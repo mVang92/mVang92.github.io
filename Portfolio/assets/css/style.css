@@ -250,10 +250,10 @@ a.underline:active {
 #connect {
     padding: 5px;
     background: grey;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
-footer {
+/* footer {
     background: rgba(215, 215, 215, 0.9);
     border-top: 1px solid black !important;
     position: fixed;
@@ -261,6 +261,12 @@ footer {
     width: 100%;
     height: 50px;
     left: 0px;
+} */
+
+footer {
+    background: rgba(215, 215, 215, 0.9);
+    margin-bottom: 0px;
+    height: 50px;
 }
 
 .footerText {
