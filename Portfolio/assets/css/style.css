@@ -129,7 +129,7 @@ a.underline:active {
 .box,
 .cardBackGround {
     background: rgb(220, 220, 220);
-    border-radius: 7px;
+    padding: 15px;
 }
 
 .cards {
@@ -507,7 +507,7 @@ footer {
     }
 
     #backToTop {
-        margin-top: 85%;
+        margin-top: 10%;
     }
 
     #topImg {
