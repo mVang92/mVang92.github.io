@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    $(".clickMeText").append("<label>Click on the buttons below to view some of my most significant "
+    + "individual and group projects.</label>")
     // Gretting phrases
     var greetings = [
         "make a difference.",
