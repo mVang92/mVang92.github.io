@@ -169,7 +169,7 @@ $(document).ready(function () {
     // Create modals for each project while taking in their respected parameters
     function generateModal(title, modalClassTarget, img, alt, hrefLive, hrefRepo) {
         var modal = "<div class='modal fade " + modalClassTarget + "' tabindex='-1' role='dialog' aria-labelledby='myLargeModalLabel' aria-hidden='true'>"
-            + "<div class='modal-dialog modal-lg'><div class='modal-content'><div class='projects modalBox'><div class='row'><div class='col-lg-4'>"
+            + "<div class='modal-dialog modal-lg'><div class='modal-content'><div class='projects'><div class='row'><div class='col-lg-4'>"
             + "<img class='modalProjectImg' src='" + img + "' alt='" + alt + "'></div><div class='col-lg-8'><p class='projectName'><label>" + title + "</label></p>"
             + "<label><p id='" + modalClassTarget + "' class='projectDesc'></p></label></div></div><div class='row'><div class='col-md-6 btnBlock'>"
             + "<a title='" + title + " Live App' href='" + hrefLive + "' target='_blank'><button class='btn btn-default projectBtn'>"

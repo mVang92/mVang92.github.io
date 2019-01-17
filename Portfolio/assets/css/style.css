@@ -61,9 +61,7 @@ body {
 .pageDesc {
     background: url("../images/PageDescription.jpg");
     background-size: cover;
-    color: white;
     text-shadow: 2px 3px 5px rgb(92, 92, 92);
-    box-shadow: 0 10px 10px -6px black;
 }
 
 .jumbotron {
@@ -133,13 +131,7 @@ a.underline:active {
 .box,
 .cardBackGround {
     background: rgb(220, 220, 220);
-    box-shadow: 0px 5px 25px 1px;
-    padding: 15px;
-}
-
-.clickMeBox {
-    text-align: center;
-    background: rgb(220, 220, 220);
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5);
     padding: 15px;
 }
 

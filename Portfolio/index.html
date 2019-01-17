@@ -97,18 +97,18 @@
     <div id="portfolio">
         <h2 class="text-center pageDesc"><label>My Work</label></h2>
         <div class="jumbotron">
-            <div class="container">
-                <div id="clickMe">
-                    <div class="clickMeText clickMeBox projectDesc"></div>
+            <div class="container box">
+                <div class="projectDesc text-center">
+                    <div id="clickMe"></div>
+                    <div id="portfolioBtn" class="text-center">
+                        <button id="indivProjects" class="btn" data-toggle="collapse" href=".projectCollapse" role="button"
+                            aria-expanded="false">Individual Projects</button>
+                        <button id="groupProjects" class="btn" data-toggle="collapse" href=".groupCollapse" role="button"
+                            aria-expanded="false">Group Projects</button>
+                    </div>
                 </div>
             </div>
             <br>
-            <div id="portfolioBtn" class="text-center">
-                <button id="indivProjects" class="btn" data-toggle="collapse" href=".projectCollapse" role="button"
-                    aria-expanded="false">Individual Projects</button>
-                <button id="groupProjects" class="btn" data-toggle="collapse" href=".groupCollapse" role="button"
-                    aria-expanded="false">Group Projects</button>
-            </div>
             <!-- Project Row -->
             <div class="text-center box collapse multi-collapse projectCollapse">
                 <div id="iProjects"></div>
@@ -174,8 +174,8 @@
                                 <!-- Comment -->
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <button type="button" id="resetBtn" class="btn btn-primary">Reset</button>
-                                        <button type="submit" id="submitBtn" class="btn btn-success">Submit</button>
+                                        <button type="button" id="resetBtn" class="btn btn-danger">Reset</button>
+                                        <button type="submit" id="submitBtn" class="btn btn-secondary">Submit</button>
                                     </div>
                                 </div>
                             </div>
