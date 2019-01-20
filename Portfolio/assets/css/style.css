@@ -137,7 +137,6 @@ a.underline:active {
 
 .cards {
     transition-duration: 0.3s;
-    border-radius: 7px;
     border: 1px solid rgb(220, 220, 220);
     padding: 5px;
     cursor: pointer;
@@ -157,7 +156,7 @@ a.underline:active {
 
 .projectImg {
     margin: 5px;
-    width: 75%;
+    width: 50%;
 }
 
 .myBackgroundImg {

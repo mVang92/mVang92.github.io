@@ -83,7 +83,7 @@ $(document).ready(function () {
         // Create the cards first for individual projects...
         for (var i = 0; i < projects.length; i++) {
             var iCounter = i + 1;
-            var iCard = "<div id='target" + iCounter + "' class='col-md-3 cards' data-toggle='modal' data-target=''>"
+            var iCard = "<div id='target" + iCounter + "' class='col-md-4 cards' data-toggle='modal' data-target=''>"
                 + "<div class='row'><div class='col-md-12'><div id='project" + iCounter + "' class='col-md-12 cardProjectName'></div></div></div>"
                 + "<div class='row'><div class='col-md-12'><img id='projectImg" + iCounter + "' class='projectImg'></div></div></div>";
             $("#iProjects").append(iCard);
@@ -92,7 +92,7 @@ $(document).ready(function () {
         // ...then group projects
         for (var j = 0; j < groupProjects.length; j++) {
             var gCounter = j + 1;
-            var gCard = "<div id='gTarget" + gCounter + "' class='col-md-3 cards' data-toggle='modal' data-target=''>"
+            var gCard = "<div id='gTarget" + gCounter + "' class='col-md-4 cards' data-toggle='modal' data-target=''>"
                 + "<div class='row'><div class='col-md-12'><div id='gProject" + gCounter + "' class='col-md-12 cardProjectName'></div></div></div>"
                 + "<div class='row'><div class='col-md-12'><img id='gProjectImg" + gCounter + "' class='projectImg'></div></div></div>";
             $("#gProjects").append(gCard);
