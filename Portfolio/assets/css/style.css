@@ -25,6 +25,7 @@ body {
     margin-left: 12%;
     width: 75%;
     border-radius: 7px;
+    box-shadow: 0px 2px 15px 1px;
 }
 
 .section {
@@ -149,6 +150,10 @@ a.underline:active {
     background: rgb(245, 245, 245);
 }
 
+.break {
+    margin-top: 10%;
+}
+
 .projects {
     background: rgb(235, 235, 235);
     border-radius: 5px;
@@ -248,8 +253,13 @@ a.underline:active {
     color: rgb(255, 255, 255);
 }
 
+.backgroundMain,
 .backgroundDesc {
     text-align: initial;
+}
+
+.backgroundDesc {
+    margin-top: 15px;
 }
 
 #backToTop {
