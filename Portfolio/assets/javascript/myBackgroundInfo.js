@@ -9,7 +9,7 @@ $(document).ready(function () {
         {
             date: "October 2018 - Present",
             img: "assets/images/allinaLogo.png",
-            main: "Working with Allina Health/Abbot Northwestern Hospital as an IT Consultant.",
+            main: "IT Consultant at Allina Health/Abbott Northwestern Hospital.",
             desc: "Contribute to testing and debugging software programs during Windows 7 to Windows 10 migration. "
                 + "Maintained consistency when reimaging new desktop/laptop computers for distribution."
         },
@@ -23,7 +23,7 @@ $(document).ready(function () {
         {
             date: "August 2015 - December 2017",
             img: "assets/images/geekSquadLogo.png",
-            main: "Worked with Best Buy stores as a Geek Squad Consultation Agent (CA).",
+            main: "Geek Squad Consultation Agent (CA) at Best Buy.",
             desc: "Increased sales by quickly helping customers and clients with their technological needs. Problem solved software/hardware issues "
                 + "to find solutions."
         },
