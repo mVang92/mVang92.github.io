@@ -28,7 +28,7 @@ $(document).ready(function () {
         } else if (greet == 7) {
             $("#phrase").append(greetings[6]);
         };
-    }
+    };
 
     // Change the background image depending on the season based on northern hemi months
     function getBgSeasons() {
