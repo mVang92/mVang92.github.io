@@ -20,9 +20,6 @@ document.write('\
                     <a class="nav-link" href="#contact">Contact</a>\
                 </li>\
                 <li class="nav-item">\
-                    <a title="Meng Vang Certificate" class="nav-link" href="assets/images/webDevCert.pdf" target="_blank">Certificate</a>\
-                </li>\
-                <li class="nav-item">\
                     <a title="Meng Vang Resume" class="nav-link" href="assets/images/mengVangResume.pdf" target="_blank">Resume</a>\
                 </li>\
             </ul>\
