@@ -28,7 +28,7 @@ $(document).ready(function () {
                 + "to find solutions."
         },
         {
-            date: "November 2013 - Present",
+            date: "November 2013 - February 2019",
             img: "assets/images/benchmarkReviewsLogo.png",
             main: "Contributing Editor/Senior Writer for Performance Computers.",
             desc: "Utilize WordPress and have written over 60 product review articles for major computer companies."
