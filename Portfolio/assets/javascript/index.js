@@ -13,21 +13,21 @@ $(document).ready(function () {
             "help other people.",
             "demonstrate my skills."];
         var greet = Math.floor(Math.random() * (7 - 1 + 1)) + 1;
-        if (greet == 1) {
-            $("#phrase").append(greetings[0]);
-        } else if (greet == 2) {
-            $("#phrase").append(greetings[1]);
-        } else if (greet == 3) {
-            $("#phrase").append(greetings[2]);
-        } else if (greet == 4) {
-            $("#phrase").append(greetings[3]);
-        } else if (greet == 5) {
-            $("#phrase").append(greetings[4]);
-        } else if (greet == 6) {
-            $("#phrase").append(greetings[5]);
-        } else if (greet == 7) {
-            $("#phrase").append(greetings[6]);
-        };
+        switch (greet) {
+            case 1: $("#phrase").append(greetings[0]);
+                break;
+            case 2: $("#phrase").append(greetings[1]);
+                break;
+            case 3: $("#phrase").append(greetings[2]);
+                break;
+            case 4: $("#phrase").append(greetings[3]);
+                break;
+            case 5: $("#phrase").append(greetings[4]);
+                break;
+            case 6: $("#phrase").append(greetings[5]);
+                break;
+            case 7: $("#phrase").append(greetings[6]);
+        }
     };
 
     // Change the background image depending on the season based on northern hemi months
