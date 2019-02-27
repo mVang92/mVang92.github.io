@@ -5,14 +5,20 @@
     <title>Meng Vang Portfolio: About</title>
     <link rel="icon" href="assets/images/favicon.png" type="favicon.png" size="16x16">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- jQuery UI-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Cloudflare -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
@@ -26,8 +32,8 @@
     <!-- Navigation Bar -->
     <script src="assets/javascript/navBar.js"></script>
     <!-- End Navigation Bar -->
-    
-    <span id="aboutMe"></span>    
+
+    <span id="aboutMe"></span>
     <h2 class="text-center pageDesc"><label class="section">About Me</label></h2>
     <!-- About Me Content -->
     <div class="jumbotron">
@@ -44,7 +50,8 @@
                     <br />
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <button id="myBackgroundBtn" class="btn btn-default" data-toggle="modal" data-target="#myBackground">
+                            <button id="myBackgroundBtn" class="btn btn-default" data-toggle="modal"
+                                data-target="#myBackground">
                                 My Background
                             </button>
                         </div>
@@ -101,10 +108,10 @@
                 <div class="projectDesc text-center">
                     <div id="clickMe"></div>
                     <div id="portfolioBtn" class="text-center">
-                        <button id="indivProjects" class="btn" data-toggle="collapse" href=".projectCollapse" role="button"
-                            aria-expanded="false">Individual Projects</button>
-                        <button id="groupProjects" class="btn" data-toggle="collapse" href=".groupCollapse" role="button"
-                            aria-expanded="false">Group Projects</button>
+                        <button id="indivProjects" class="btn" data-toggle="collapse" href=".projectCollapse"
+                            role="button" aria-expanded="false">Individual Projects</button>
+                        <button id="groupProjects" class="btn" data-toggle="collapse" href=".groupCollapse"
+                            role="button" aria-expanded="false">Group Projects</button>
                     </div>
                 </div>
             </div>
@@ -131,7 +138,7 @@
         <div class="modal fade" id="myBackground" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
-                <div class="modal-content myBackgroundModalContent">
+                <div class="modal-content myBackgroundModalContent draggable">
                     <div class="projects">
                         <h3 class="modal-title" id="myBackgroundTitle"><label>Background</label></h3>
                         <label>
@@ -166,7 +173,8 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <textarea id="commentInput" class="input" placeholder="Let's get to know each other!"></textarea>
+                                    <textarea id="commentInput" class="input"
+                                        placeholder="Let's get to know each other!"></textarea>
                                 </div>
                             </div>
                             <!-- Comment -->
@@ -210,7 +218,8 @@
             <!-- StackOverFlow link -->
             <div class="col-lg-4">
                 <img src="assets/images/stackoverflow.png" width=30px; alt="StackOverFlow">
-                <a class="underline" href="https://stackoverflow.com/users/9665679/meng-vang?tab=profile" target="_blank">
+                <a class="underline" href="https://stackoverflow.com/users/9665679/meng-vang?tab=profile"
+                    target="_blank">
                     <span class="links">StackOverFlow</span>
                 </a>
             </div>
@@ -220,7 +229,7 @@
 
     <!-- Thank You Modal -->
     <div id="modalBox" class="modal">
-        <div class="modal-content" style="left:0">
+        <div class="modal-content draggable" style="left:0">
             <form style="padding: 5px;">
                 <div class="modalText">
                     <p id="modalText">Thank you for your comments!</p>
