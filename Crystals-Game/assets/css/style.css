@@ -27,6 +27,7 @@ header {
     transition-duration: 0.6s;
     width: 50%;
     opacity: 0.6;
+    cursor: pointer;
 }
 
 .crystals:hover {
