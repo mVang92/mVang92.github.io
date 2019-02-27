@@ -31,7 +31,7 @@ $(document).ready(function () {
             date: "November 2013 - February 2019",
             img: "assets/images/benchmarkReviewsLogo.png",
             main: "Contributing Editor/Senior Writer for Performance Computers.",
-            desc: "Utilize WordPress and have written over 60 product review articles for major computer companies."
+            desc: "Utilized WordPress to write over 60 product review articles for major computer companies."
         },
         {
             date: "September 2010 - May 2015",
