@@ -48,7 +48,7 @@ $(document).ready(function () {
         },
         {
             title: "Crystal Clicky Game",
-            projectImg: "../clicky/public/assets/images/crystalF.png",
+            projectImg: "../clicky/public/assets/images/crystalG.png",
             alt: "Crystal Clicky Game",
             target: ".clicky",
             class: "clicky",
