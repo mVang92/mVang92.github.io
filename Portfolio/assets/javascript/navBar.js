@@ -14,7 +14,7 @@ document.write('\
                     <a class="nav-link" href="#aboutMe">About</a>\
                 </li>\
                 <li class="nav-item">\
-                    <a class="nav-link" href="#portfolio">My Work</a>\
+                    <a class="nav-link" href="#portfolio">My Projects</a>\
                 </li>\
                 <li class="nav-item">\
                     <a class="nav-link" href="#contact">Contact</a>\
