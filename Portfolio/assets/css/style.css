@@ -73,13 +73,14 @@ body {
     border-radius: initial;
 }
 
-.nav-link{
-    transition-duration: 0.5s;
+.nav-link {
+    transition-duration: 0.4s;
+    color: rgb(0, 0, 0) !important;
 }
 
-.nav-link:hover{
-    transition-duration: 0.2s;
-    background: rgb(255, 255, 255);
+.nav-link:hover {
+    transition-duration: 0.1s;
+    background: rgb(192, 192, 192);
 }
 
 .navbar-toggler {
