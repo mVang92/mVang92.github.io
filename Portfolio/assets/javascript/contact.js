@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // Initialize Firebase
-    var config = {
+    const config = {
         apiKey: "AIzaSyAMDmuZhf-oPcfOPoS9jRWyiDjrQ2mZr8s",
         authDomain: "portfolio-8415c.firebaseapp.com",
         databaseURL: "https://portfolio-8415c.firebaseio.com",
@@ -10,7 +10,7 @@ $(document).ready(function () {
     };
     firebase.initializeApp(config);
 
-    var database = firebase.database();
+    const database = firebase.database();
 
     // Initially set the submit button to disable
     $("#submitBtn").prop("disabled", true);
@@ -30,7 +30,7 @@ $(document).ready(function () {
         evt.preventDefault();
 
         // Take the inputs from the user and assign them to variables
-        var comment = $("#commentInput").val().trim();
+        const comment = $("#commentInput").val().trim();
 
         // Pushing the values to the database
         database.ref().push({
@@ -52,21 +52,21 @@ $(document).ready(function () {
 });
 
 // Modal content
-var modal = document.getElementById("modalBox");
+const modal = document.getElementById("modalBox");
 
 // Get the button that opens the modal
-var submitBtn = document.getElementById("submitBtn");
+const submitBtn = document.getElementById("submitBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-submitBtn.onclick = function () {
+submitBtn.onclick = () => {
     modal.style.display = "block";
 };
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
+window.onclick = event => {
     if (event.target == modal) {
         modal.style.display = "none";
     };
