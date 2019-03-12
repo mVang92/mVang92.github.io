@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // Individual projects information
-    var projects = [
+    const projects = [
         {
             title: "Astronomy Trivia",
             projectImg: "assets/images/TriviaGame.png",
@@ -58,7 +58,7 @@ $(document).ready(function () {
     ];
 
     // Group project information
-    var groupProjects = [
+    const groupProjects = [
         {
             title: "BWCA",
             projectImg: "assets/images/bwatersLogo.png",
@@ -81,18 +81,18 @@ $(document).ready(function () {
 
     function createCard() {
         // Create the cards first for individual projects...
-        for (var i = 0; i < projects.length; i++) {
-            var iCounter = i + 1;
-            var iCard = "<div id='target" + iCounter + "' class='col-md-4 cards' data-toggle='modal' data-target=''>"
+        for (let i = 0; i < projects.length; i++) {
+            let iCounter = i + 1;
+            const iCard = "<div id='target" + iCounter + "' class='col-md-4 cards' data-toggle='modal' data-target=''>"
                 + "<div class='row'><div class='col-md-12'><div id='project" + iCounter + "' class='col-md-12 cardProjectName'></div></div></div>"
                 + "<div class='row'><div class='col-md-12'><img id='projectImg" + iCounter + "' class='projectImg'></div></div></div>";
             $("#iProjects").append(iCard);
         };
 
         // ...then group projects
-        for (var j = 0; j < groupProjects.length; j++) {
-            var gCounter = j + 1;
-            var gCard = "<div id='gTarget" + gCounter + "' class='col-md-4 cards' data-toggle='modal' data-target=''>"
+        for (let j = 0; j < groupProjects.length; j++) {
+            let gCounter = j + 1;
+            const gCard = "<div id='gTarget" + gCounter + "' class='col-md-4 cards' data-toggle='modal' data-target=''>"
                 + "<div class='row'><div class='col-md-12'><div id='gProject" + gCounter + "' class='col-md-12 cardProjectName'></div></div></div>"
                 + "<div class='row'><div class='col-md-12'><img id='gProjectImg" + gCounter + "' class='projectImg'></div></div></div>";
             $("#gProjects").append(gCard);
@@ -105,14 +105,14 @@ $(document).ready(function () {
     };
 
     function createIndividualProjectModal() {
-        for (var i = 0; i < projects.length; i++) {
-            var title = projects[i].title;
-            var modalClassTarget = projects[i].class;
-            var img = projects[i].projectImg;
-            var alt = projects[i].alt;
-            var hrefLive = projects[i].hrefLive;
-            var hrefRepo = projects[i].hrefRepo;
-            var iModal = generateModal(title, modalClassTarget, img, alt, hrefLive, hrefRepo);
+        for (let i = 0; i < projects.length; i++) {
+            let title = projects[i].title;
+            let modalClassTarget = projects[i].class;
+            let img = projects[i].projectImg;
+            let alt = projects[i].alt;
+            let hrefLive = projects[i].hrefLive;
+            let hrefRepo = projects[i].hrefRepo;
+            const iModal = generateModal(title, modalClassTarget, img, alt, hrefLive, hrefRepo);
             $("#createModals").append(iModal);
         };
 
@@ -121,14 +121,14 @@ $(document).ready(function () {
     };
 
     function createGroupProjectModal() {
-        for (var j = 0; j < groupProjects.length; j++) {
-            var title = groupProjects[j].title;
-            var modalClassTarget = groupProjects[j].class;
-            var img = groupProjects[j].projectImg;
-            var alt = groupProjects[j].alt;
-            var hrefLive = groupProjects[j].hrefLive;
-            var hrefRepo = groupProjects[j].hrefRepo;
-            var gModal = generateModal(title, modalClassTarget, img, alt, hrefLive, hrefRepo);
+        for (let j = 0; j < groupProjects.length; j++) {
+            let title = groupProjects[j].title;
+            let modalClassTarget = groupProjects[j].class;
+            let img = groupProjects[j].projectImg;
+            let alt = groupProjects[j].alt;
+            let hrefLive = groupProjects[j].hrefLive;
+            let hrefRepo = groupProjects[j].hrefRepo;
+            const gModal = generateModal(title, modalClassTarget, img, alt, hrefLive, hrefRepo);
             $("#createModals").append(gModal);
         };
 
@@ -138,12 +138,12 @@ $(document).ready(function () {
 
     // For individual projects
     function getIndividualProjects() {
-        for (var i = 0; i < projects.length; i++) {
-            var id = i + 1;
-            var title = projects[i].title;
-            var img = projects[i].projectImg;
-            var alt = projects[i].alt;
-            var target = projects[i].target;
+        for (let i = 0; i < projects.length; i++) {
+            let id = i + 1;
+            let title = projects[i].title;
+            let img = projects[i].projectImg;
+            let alt = projects[i].alt;
+            let target = projects[i].target;
             $("#project" + id).html(title);
             $("#projectImg" + id).attr("src", img);
             $("#projectImg" + id).attr("alt", alt);
@@ -153,12 +153,12 @@ $(document).ready(function () {
 
     // For group projects
     function getGroupProjects() {
-        for (var j = 0; j < groupProjects.length; j++) {
-            var id = j + 1;
-            var gTitle = groupProjects[j].title;
-            var gImg = groupProjects[j].projectImg;
-            var gAlt = groupProjects[j].alt;
-            var gTarget = groupProjects[j].target;
+        for (let j = 0; j < groupProjects.length; j++) {
+            let id = j + 1;
+            let gTitle = groupProjects[j].title;
+            let gImg = groupProjects[j].projectImg;
+            let gAlt = groupProjects[j].alt;
+            let gTarget = groupProjects[j].target;
             $("#gProject" + id).html(gTitle);
             $("#gProjectImg" + id).attr("src", gImg);
             $("#gProjectImg" + id).attr("alt", gAlt);
@@ -168,7 +168,7 @@ $(document).ready(function () {
 
     // Create modals for each project while taking in their respected parameters
     function generateModal(title, modalClassTarget, img, alt, hrefLive, hrefRepo) {
-        var modal = "<div class='modal fade " + modalClassTarget + "' tabindex='-1' role='dialog' aria-labelledby='myLargeModalLabel' aria-hidden='true'>"
+        const modal = "<div class='modal fade " + modalClassTarget + "' tabindex='-1' role='dialog' aria-labelledby='myLargeModalLabel' aria-hidden='true'>"
             + "<div class='modal-dialog modal-lg'><div class='modal-content draggable'><div class='projects'><div class='row'><div class='col-lg-4'>"
             + "<img class='modalProjectImg' src='" + img + "' alt='" + alt + "'></div><div class='col-lg-8'><p class='projectName'><label>" + title + "</label></p>"
             + "<label><p id='" + modalClassTarget + "' class='projectDesc'></p></label></div></div><div class='row'><div class='col-md-6 btnBlock'>"
