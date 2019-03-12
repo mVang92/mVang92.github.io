@@ -4,7 +4,7 @@ $(document).ready(function () {
     function greetings() {
         $("#clickMe").append("<label>Click on the buttons below to view some of my most significant "
             + "individual and group projects.</label>");
-        var greetings = [
+        const greetings = [
             "make a difference.",
             "solve a problem.",
             "improve workflow.",
@@ -12,7 +12,7 @@ $(document).ready(function () {
             "involve new concepts.",
             "help other people.",
             "demonstrate my skills."];
-        var greet = Math.floor(Math.random() * (7 - 1 + 1)) + 1;
+        let greet = Math.floor(Math.random() * (7 - 1 + 1)) + 1;
         switch (greet) {
             case 1: $("#phrase").append(greetings[0]);
                 break;
@@ -32,8 +32,8 @@ $(document).ready(function () {
 
     // Change the background image depending on the season based on northern hemi months
     function getBgSeasons() {
-        var date = new Date();
-        var month = date.getMonth();
+        let date = new Date();
+        let month = date.getMonth();
         // console.log(month)
         if (month >= 0 && month < 2) {
             document.body.style.backgroundImage = "url('assets/images/winter.jpg')";
@@ -58,7 +58,7 @@ $(document).ready(function () {
             if (this.hash !== "") {
                 event.preventDefault();
                 // Store hash
-                var hash = this.hash;
+                const hash = this.hash;
                 // Using jQuery's animate() method to add smooth page scroll
                 // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                 $("html, body").animate({
