@@ -42,7 +42,7 @@ $(document).ready(function () {
         }
     ];
 
-    function printBackgroundInfo() {
+    const printBackgroundInfo = () => {
         for (let i = 0; i < background.length; i++) {
             const info = "<hr><div class='row projectDesc'><div class='col-md-4'><div class='row'><div class='col-md-12'><strong>"
                 + background[i].date + "</strong></div><div class='col-md-12'><img class='myBackgroundImg' src='"

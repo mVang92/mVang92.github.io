@@ -79,7 +79,7 @@ $(document).ready(function () {
         },
     ];
 
-    function createCard() {
+    const createCard = () => {
         // Create the cards first for individual projects...
         for (let i = 0; i < projects.length; i++) {
             let iCounter = i + 1;
@@ -104,7 +104,7 @@ $(document).ready(function () {
         createGroupProjectModal();
     };
 
-    function createIndividualProjectModal() {
+    const createIndividualProjectModal = () => {
         for (let i = 0; i < projects.length; i++) {
             let title = projects[i].title;
             let modalClassTarget = projects[i].class;
@@ -120,7 +120,7 @@ $(document).ready(function () {
         getIndividualProjects();
     };
 
-    function createGroupProjectModal() {
+    const createGroupProjectModal = () => {
         for (let j = 0; j < groupProjects.length; j++) {
             let title = groupProjects[j].title;
             let modalClassTarget = groupProjects[j].class;
@@ -137,7 +137,7 @@ $(document).ready(function () {
     };
 
     // For individual projects
-    function getIndividualProjects() {
+    const getIndividualProjects = () => {
         for (let i = 0; i < projects.length; i++) {
             let id = i + 1;
             let title = projects[i].title;
@@ -152,7 +152,7 @@ $(document).ready(function () {
     };
 
     // For group projects
-    function getGroupProjects() {
+    const getGroupProjects = () => {
         for (let j = 0; j < groupProjects.length; j++) {
             let id = j + 1;
             let gTitle = groupProjects[j].title;
@@ -167,7 +167,7 @@ $(document).ready(function () {
     };
 
     // Create modals for each project while taking in their respected parameters
-    function generateModal(title, modalClassTarget, img, alt, hrefLive, hrefRepo) {
+    const generateModal = (title, modalClassTarget, img, alt, hrefLive, hrefRepo) => {
         const modal = "<div class='modal fade " + modalClassTarget + "' tabindex='-1' role='dialog' aria-labelledby='myLargeModalLabel' aria-hidden='true'>"
             + "<div class='modal-dialog modal-lg'><div class='modal-content draggable'><div class='projects'><div class='row'><div class='col-lg-4'>"
             + "<img class='modalProjectImg' src='" + img + "' alt='" + alt + "'></div><div class='col-lg-8'><p class='projectName'><label>" + title + "</label></p>"
@@ -184,6 +184,6 @@ $(document).ready(function () {
 });
 
 // Draggable UI function
-$(function () {
+$(() => {
     $(".draggable").draggable();
 });

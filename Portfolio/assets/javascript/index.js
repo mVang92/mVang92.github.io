@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     // Greeting phases
-    function greetings() {
+    const greetings = () => {
         $("#clickMe").append("<label>Click on the buttons below to view some of my most significant "
             + "individual and group projects.</label>");
         const greetings = [
@@ -31,7 +31,7 @@ $(document).ready(function () {
     };
 
     // Change the background image depending on the season based on northern hemi months
-    function getBgSeasons() {
+    const getBgSeasons = () => {
         let date = new Date();
         let month = date.getMonth();
         // console.log(month)
@@ -49,7 +49,7 @@ $(document).ready(function () {
     };
 
     // Enable smooth scrolling
-    function scrollSpy() {
+    const scrollSpy = () => {
         // Add scrollspy to <body>
         $("body").scrollspy({ target: ".navbar", offset: 50 });
         // Add smooth scrolling on all links inside the navbar
