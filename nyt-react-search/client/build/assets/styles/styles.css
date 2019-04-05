@@ -1,0 +1,166 @@
+/* div {
+    border: 1px solid black;
+} */
+
+a:link {
+    transition-duration: 0.5s;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    transition-duration: 0.1s;
+    color: red;
+}
+
+body {
+    background: url("../images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    border-bottom: 1px solid black;
+}
+
+.title {
+    text-shadow: 2px 3px 5px rgb(128, 128, 128);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.desc {
+    font-weight: bold;
+    margin: auto;
+}
+
+.panel {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.panelName {
+    background: rgb(128, 128, 128);
+    text-shadow: 2px 3px 5px rgb(32, 32, 32);
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    color: white;
+    margin: auto;
+}
+
+.inputDiv {
+    width: 80%;
+    padding-top: 10px;
+    margin: auto;
+}
+
+input,
+textarea {
+    border-radius: 7px !important;
+    border: 1px solid black !important;
+}
+
+.submitBtnDiv {
+    margin-bottom: 5px;
+}
+
+.homeBtn {
+    margin-left: 50%;
+    transform: translate(-65px, -10px);
+}
+
+.searchBtn,
+.homeBtn {
+    width: 125px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    background: rgb(168, 168, 168) !important;
+    color: black;
+    z-index: 0 !important;
+}
+
+.deleteBtn,
+.saveBtn {
+    width: 65px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    z-index: 0 !important;
+}
+
+.deleteBtn {
+    background: rgb(255, 16, 16) !important;
+}
+
+.saveBtn {
+    background: rgb(16, 255, 16) !important;
+}
+
+.deleteBtn:hover {
+    transition-duration: 0.1s;
+    background: rgb(255, 112, 112) !important;
+}
+
+.saveBtn:hover {
+    transition-duration: 0.1s;
+    background: rgb(168, 255, 168) !important;
+}
+
+.searchBtn:hover,
+.homeBtn:hover {
+    transition-duration: 0.1s;
+    background: rgb(192, 192, 192) !important;
+}
+
+.inputName {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.results {
+    transition-duration: 0.5s;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+    background: rgb(235, 235, 235);
+    border: 1px solid black;
+    border-radius: 7px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.results:hover {
+    transition-duration: 0.5s;
+    background: white;
+}
+
+footer {
+    margin-top: 60px;
+}
+
+.footerTxt {
+    background: rgba(255, 16, 16, 0.8);
+    height: 45px;
+    border-top: 1px solid black;
+    padding-top: 12px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
