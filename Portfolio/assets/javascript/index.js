@@ -11,9 +11,12 @@ $(document).ready(function () {
             "involve innovation.",
             "involve new concepts.",
             "help other people.",
-            "demonstrate my skills."];
-        let greet = Math.floor(Math.random() * (7 - 1 + 1)) + 1;
-        switch (greet) {
+            "involve critical thinking.",
+            "demonstrate my skills."
+        ];
+        const greetingsLength = greetings.length;
+        let greetPhrase = Math.floor(Math.random() * (greetingsLength - 1 + 1)) + 1;
+        switch (greetPhrase) {
             case 1: $("#phrase").append(greetings[0]);
                 break;
             case 2: $("#phrase").append(greetings[1]);
@@ -27,6 +30,8 @@ $(document).ready(function () {
             case 6: $("#phrase").append(greetings[5]);
                 break;
             case 7: $("#phrase").append(greetings[6]);
+                break;
+            case 8: $("#phrase").append(greetings[7]);
         }
     };
 
