@@ -7,11 +7,17 @@ $(document).ready(function () {
         //     desc: "Passionate coder, courageous technical writer, and a rational problem solver with a very diverse background."
         // },
         {
+            date: "April 2019 - Present",
+            img: "assets/images/virginPulseLogo.png",
+            main: "Software Engineer intern working with the Sustaining Team at Virgin Pulse.",
+            desc: "Working with Sustaining Team to resolve software and coding issues."
+        },
+        {
             date: "March 2019 - Present",
             img: "assets/images/legitReviewsLogo.png",
             main: "Technical Review Writer for Legit Reviews.",
             desc: "Utilizing WordPress to write review articles for major computer companies. Participate in video conference calls "
-                + "with company development teams to learn about the products."
+                + "with company development teams to learn more about new product releases."
         },
         {
             date: "October 2018 - March 2019",
