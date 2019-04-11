@@ -1,10 +1,17 @@
 $(document).ready(function () {
     const background = [
+        // {
+        //     date: "Genesis - Present",
+        //     img: "assets/images/genesis.png",
+        //     main: "On an endless mission to learn new tools, ideas, skills, and technologies.",
+        //     desc: "Passionate coder, courageous technical writer, and a rational problem solver with a very diverse background."
+        // },
         {
-            date: "Genesis - Present",
-            img: "assets/images/genesis.png",
-            main: "On an endless mission to learn new tools, ideas, skills, and technologies.",
-            desc: "Passionate coder, courageous technical writer, and a rational problem solver with a very diverse background."
+            date: "March 2019 - Present",
+            img: "assets/images/legitReviewsLogo.png",
+            main: "Technical Review Writer for Legit Reviews.",
+            desc: "Utilizing WordPress to write review articles for major computer companies. Participate in video conference calls "
+                + "with company development teams to learn about the products."
         },
         {
             date: "October 2018 - March 2019",
