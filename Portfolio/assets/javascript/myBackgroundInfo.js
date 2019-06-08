@@ -49,7 +49,7 @@ $(document).ready(function () {
         {
             date: "September 2010 - May 2015",
             img: "assets/images/uwrfLogo.png",
-            main: "Bachelor of Science in Computer Science - Information Systems from University of Wisconsin - River Falls",
+            main: "Bachelor of Science in Computer Science - Information Systems, University of Wisconsin - River Falls",
             desc: "Excelled in courses like Introduction to Java, Object Oriented Programming with Java, Web Development (HTML, CSS, JavaScript), "
                 + "Database Management Systems (SQL), and more."
         }

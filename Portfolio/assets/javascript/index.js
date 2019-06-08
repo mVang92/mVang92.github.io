@@ -2,8 +2,8 @@ $(document).ready(function () {
 
     // Greeting phases
     const greetings = () => {
-        $("#clickMe").append("<label>Click on the buttons below to view some of my most significant "
-            + "individual and group projects.</label>");
+        $("#clickMe").append("<label>Click on the buttons below to view some of my most significant individual and group projects.</label>");
+        
         const greetings = [
             "make a difference.",
             "solve a problem.",
@@ -14,6 +14,7 @@ $(document).ready(function () {
             "involve critical thinking.",
             "demonstrate my skills."
         ];
+
         const greetingsLength = greetings.length;
         let greetPhrase = Math.floor(Math.random() * (greetingsLength - 1 + 1)) + 1;
         switch (greetPhrase) {

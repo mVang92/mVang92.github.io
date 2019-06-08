@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    const gitHubImage = 'assets/images/github.png';
+    
     // Individual projects information
     const projects = [
         {
@@ -175,7 +177,7 @@ $(document).ready(function () {
             + "<a title='" + title + " Live App' href='" + hrefLive + "' target='_blank'><button class='btn btn-default projectBtn'>"
             + "<img class='projectImg' src='" + img + "' style='width:25px'> View Project </button></a></div><div class='col-md-6 btnBlock'>"
             + "<a title='" + title + " Github Repository' href='" + hrefRepo + "' target='_blank'><button class='btn btn-default githubBtn'>"
-            + "<img class='projectImg' src='assets/images/github.png' style='width:25px'> Github Repo </button></a></div></div></div></div></div></div>";
+            + "<img class='projectImg' src='" + gitHubImage + "' style='width:25px'> Github Repo </button></a></div></div></div></div></div></div>";
         return modal;
     };
 
