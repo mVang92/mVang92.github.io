@@ -10,7 +10,7 @@ $(document).ready(function () {
             date: "April 2019 - Present",
             img: "assets/images/virginPulseLogo.png",
             main: "Software Engineer intern working with the Sustaining Team at Virgin Pulse.",
-            desc: "Working with Sustaining Team to resolve software and coding issues."
+            desc: "Resolve production incidents by making database and code changes. Participate in weekly meetings to improve the workflow of sprints."
         },
         {
             date: "March 2019 - Present",
