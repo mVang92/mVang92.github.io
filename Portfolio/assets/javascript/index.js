@@ -1,10 +1,12 @@
 $(document).ready(function () {
 
-    // Greeting phases
-    const greetings = () => {
-        $("#clickMe").append("<label>Click on the buttons below to view some of my most significant individual and group projects.</label>");
+    /**
+     * Generates a random phrase in the headline
+     */
+    const generateRandomPhrase = () => {
+        $("#clickOnProjectButtons").append("<label>Click on the buttons below to view some of my most significant individual and group projects.</label>");
         
-        const greetings = [
+        const phrases = [
             "make a difference.",
             "solve a problem.",
             "improve workflow.",
@@ -15,32 +17,35 @@ $(document).ready(function () {
             "demonstrate my skills."
         ];
 
-        const greetingsLength = greetings.length;
-        let greetPhrase = Math.floor(Math.random() * (greetingsLength - 1 + 1)) + 1;
-        switch (greetPhrase) {
-            case 1: $("#phrase").append(greetings[0]);
+        const phrasesArrayLength = phrases.length;
+        let randomPhrase = Math.floor(Math.random() * (phrasesArrayLength - 1 + 1)) + 1;
+        
+        switch (randomPhrase) {
+            case 1: $("#randomPhrase").append(phrases[0]);
                 break;
-            case 2: $("#phrase").append(greetings[1]);
+            case 2: $("#randomPhrase").append(phrases[1]);
                 break;
-            case 3: $("#phrase").append(greetings[2]);
+            case 3: $("#randomPhrase").append(phrases[2]);
                 break;
-            case 4: $("#phrase").append(greetings[3]);
+            case 4: $("#randomPhrase").append(phrases[3]);
                 break;
-            case 5: $("#phrase").append(greetings[4]);
+            case 5: $("#randomPhrase").append(phrases[4]);
                 break;
-            case 6: $("#phrase").append(greetings[5]);
+            case 6: $("#randomPhrase").append(phrases[5]);
                 break;
-            case 7: $("#phrase").append(greetings[6]);
+            case 7: $("#randomPhrase").append(phrases[6]);
                 break;
-            case 8: $("#phrase").append(greetings[7]);
+            case 8: $("#randomPhrase").append(phrases[7]);
         }
     };
 
-    // Change the background image depending on the season based on northern hemi months
-    const getBgSeasons = () => {
+    /**
+     * Change the background to reflect the northern hemisphere seasons
+     */
+    const getBackgroundImageForCurrentSeason = () => {
         let date = new Date();
         let month = date.getMonth();
-        // console.log(month)
+        
         if (month >= 0 && month < 2) {
             document.body.style.backgroundImage = "url('assets/images/winter.jpg')";
         } else if (month >= 2 && month < 5) {
@@ -54,30 +59,25 @@ $(document).ready(function () {
         };
     };
 
-    // Enable smooth scrolling
+    /**
+     * Enables smooth scrolling when navigating back to top of page
+     */
     const scrollSpy = () => {
-        // Add scrollspy to <body>
         $("body").scrollspy({ target: ".navbar", offset: 50 });
-        // Add smooth scrolling on all links inside the navbar
         $("a").on("click", function (event) {
-            // Make sure this.hash has a value before overriding default behavior
             if (this.hash !== "") {
                 event.preventDefault();
-                // Store hash
                 const hash = this.hash;
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                 $("html, body").animate({
                     scrollTop: $(hash).offset().top
                 }, 500, function () {
-                    // Add hash (#) to URL when done scrolling (default click behavior)
                     window.location.hash = hash;
                 });
             };
         });
     };
 
-    greetings();
-    getBgSeasons();
+    generateRandomPhrase();
+    getBackgroundImageForCurrentSeason();
     scrollSpy();
 });
