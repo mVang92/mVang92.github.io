@@ -7,9 +7,15 @@ $(document).ready(function () {
         //     desc: "Passionate coder, courageous technical writer, and a rational problem solver with a very diverse background."
         // },
         {
-            date: "April 2019 - Present",
+            date: "September 2019 - Present",
             img: "assets/images/virginPulseLogo.png",
-            main: "Software Engineer intern working with the Sustaining Team at Virgin Pulse.",
+            main: "Associate SDET working with the Itasca Team at Virgin Pulse.",
+            desc: "Ensure application stability by conducting manual testing and writing automation tests. Participate in code reviews to maintain high-quality standards."
+        },
+        {
+            date: "April 2019 - September 2019",
+            img: "assets/images/virginPulseLogo.png",
+            main: "Software Engineer intern working with the PLEX Team at Virgin Pulse.",
             desc: "Resolve production incidents by making database and code changes. Participate in weekly meetings to improve the workflow of sprints."
         },
         {
