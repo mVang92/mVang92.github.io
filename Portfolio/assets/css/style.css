@@ -512,8 +512,8 @@ footer {
         font-size: 28px;
     }
 
-    #submitBtn,
-    #resetBtn {
+    #submitButton,
+    #resetButton {
         width: 125px;
         height: 55px;
         font-size: 24px;

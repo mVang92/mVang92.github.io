@@ -13,20 +13,20 @@ $(document).ready(function () {
     const database = firebase.database();
 
     // Initially set the submit button to disable
-    $("#submitBtn").prop("disabled", true);
+    $("#submitButton").prop("disabled", true);
 
     // Enables the submit button only when there is text in the dialog box
     // Disables the button if text is not present
     $(".input").keyup(function () {
         if ($("#commentInput").val() == "") {
-            $("#submitBtn").prop("disabled", true);
+            $("#submitButton").prop("disabled", true);
         } else {
-            $("#submitBtn").removeAttr("disabled");
+            $("#submitButton").removeAttr("disabled");
         };
     });
 
     // Submit button click function
-    $("#submitBtn").on("click", function (evt) {
+    $("#submitButton").on("click", function (evt) {
         evt.preventDefault();
 
         // Take the inputs from the user and assign them to variables
@@ -40,13 +40,13 @@ $(document).ready(function () {
     });
 
     // Reset button click function
-    $("#resetBtn").on("click", function () {
+    $("#resetButton").on("click", function () {
         reset();
     });
 
     // Reset function
     function reset() {
-        $("#submitBtn").prop("disabled", true);
+        $("#submitButton").prop("disabled", true);
         $("#commentInput").val("");
     };
 });
@@ -55,7 +55,7 @@ $(document).ready(function () {
 const modal = document.getElementById("modalBox");
 
 // Get the button that opens the modal
-const submitBtn = document.getElementById("submitBtn");
+const submitBtn = document.getElementById("submitButton");
 
 // Get the <span> element that closes the modal
 const span = document.getElementsByClassName("close")[0];
@@ -76,5 +76,5 @@ window.onclick = event => {
 // remove the modal and disable the sumbit button
 $("#close").on("click", function () {
     modal.style.display = "none";
-    $("#submitBtn").prop("disabled", true);
+    $("#submitButton").prop("disabled", true);
 });
