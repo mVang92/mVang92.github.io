@@ -1,191 +1,203 @@
 $(document).ready(function () {
-    const gitHubImage = 'assets/images/github.png';
-    
-    // Individual projects information
+    const gitHubLogo = "assets/images/github.png";
+
     const projects = [
         {
             title: "Astronomy Trivia",
-            projectImg: "assets/images/TriviaGame.png",
-            alt: "Astronomy Trivia Game",
+            projectImage: "assets/images/TriviaGame.png",
+            alternative: "Astronomy Trivia Game",
             target: ".triviaGame",
             class: "triviaGame",
-            hrefLive: "https://mvang92.github.io/TriviaGame-/",
-            hrefRepo: "https://github.com/mVang92/mVang92.github.io/tree/master/TriviaGame-"
+            hrefLiveApplication: "https://mvang92.github.io/TriviaGame-/",
+            hrefGitHubRepository: "https://github.com/mVang92/mVang92.github.io/tree/master/TriviaGame-"
         },
         {
             title: "GifTastic",
-            projectImg: "assets/images/pbjTime.gif",
-            alt: "GifTastic",
+            projectImage: "assets/images/pbjTime.gif",
+            alternative: "GifTastic",
             target: ".gifTastic",
             class: "gifTastic",
-            hrefLive: "https://mvang92.github.io/GifTastic/",
-            hrefRepo: "https://github.com/mVang92/mVang92.github.io/tree/master/GifTastic"
+            hrefLiveApplication: "https://mvang92.github.io/GifTastic/",
+            hrefGitHubRepository: "https://github.com/mVang92/mVang92.github.io/tree/master/GifTastic"
         },
         {
             title: "Friend Finder",
-            projectImg: "assets/images/friendFinder.png",
-            alt: "Friend Finder",
+            projectImage: "assets/images/friendFinder.png",
+            alternative: "Friend Finder",
             target: ".friendFinder",
             class: "friendFinder",
-            hrefLive: "https://friend-finder-mvang92.herokuapp.com/",
-            hrefRepo: "https://github.com/mVang92/mVang92.github.io/tree/master/Friend-Finder"
+            hrefLiveApplication: "https://friend-finder-mvang92.herokuapp.com/",
+            hrefGitHubRepository: "https://github.com/mVang92/mVang92.github.io/tree/master/Friend-Finder"
         },
         {
             title: "Eat-Da-Burger",
-            projectImg: "assets/images/burger.png",
-            alt: "Eat-Da-Burger",
+            projectImage: "assets/images/burger.png",
+            alternative: "Eat-Da-Burger",
             target: ".burger",
             class: "burger",
-            hrefLive: "https://burgers-app-mvang92.herokuapp.com/",
-            hrefRepo: "https://github.com/mVang92/mVang92.github.io/tree/master/Burger"
+            hrefLiveApplication: "https://burgers-app-mvang92.herokuapp.com/",
+            hrefGitHubRepository: "https://github.com/mVang92/mVang92.github.io/tree/master/Burger"
         },
         {
             title: "NYT Scrubber",
-            projectImg: "../nyt-react-search/client/public/favicon.png",
-            alt: "New York Times Scrubber",
+            projectImage: "../nyt-react-search/client/public/favicon.png",
+            alternative: "New York Times Scrubber",
             target: ".nytScrubber",
             class: "nytScrubber",
-            hrefLive: "https://nty-scrubber-mvang92.herokuapp.com/",
-            hrefRepo: "https://github.com/mVang92/nyt-react-search"
+            hrefLiveApplication: "https://nty-scrubber-mvang92.herokuapp.com/",
+            hrefGitHubRepository: "https://github.com/mVang92/nyt-react-search"
         },
         {
             title: "Crystal Clicky Game",
-            projectImg: "../clicky/public/assets/images/crystalG.png",
-            alt: "Crystal Clicky Game",
+            projectImage: "../clicky/public/assets/images/crystalG.png",
+            alternative: "Crystal Clicky Game",
             target: ".clicky",
             class: "clicky",
-            hrefLive: "https://mvang92.github.io/clickylive/",
-            hrefRepo: "https://github.com/mVang92/clickylive"
+            hrefLiveApplication: "https://mvang92.github.io/clickylive/",
+            hrefGitHubRepository: "https://github.com/mVang92/clickylive"
         }
     ];
 
-    // Group project information
     const groupProjects = [
         {
             title: "BWCA",
-            projectImg: "assets/images/bwatersLogo.png",
-            alt: "BWCA Advanture Tours",
+            projectImage: "assets/images/bwatersLogo.png",
+            alternative: "BWCA Advanture Tours",
             target: ".bwaters",
             class: "bwaters",
-            hrefLive: "https://code-camp-p2.herokuapp.com/",
-            hrefRepo: "https://github.com/mVang92/CodeCampProject2"
+            hrefLiveApplication: "https://code-camp-p2.herokuapp.com/",
+            hrefGitHubRepository: "https://github.com/mVang92/CodeCampProject2"
         },
         {
             title: "menuNOW",
-            projectImg: "assets/images/menuNow.png",
-            alt: "menuNOW",
+            projectImage: "assets/images/menuNow.png",
+            alternative: "menuNOW",
             target: ".menuNow",
             class: "menuNow",
-            hrefLive: "https://menunow.herokuapp.com/",
-            hrefRepo: "https://github.com/mVang92/menuNow"
+            hrefLiveApplication: "https://menunow.herokuapp.com/",
+            hrefGitHubRepository: "https://github.com/mVang92/menuNow"
         },
     ];
 
+    /**
+     * Create a card for individual and group projects
+     */
     const createCard = () => {
-        // Create the cards first for individual projects...
-        for (let i = 0; i < projects.length; i++) {
-            let iCounter = i + 1;
-            const iCard = "<div id='target" + iCounter + "' class='col-md-4 cards' data-toggle='modal' data-target=''>"
-                + "<div class='row'><div class='col-md-12'><div id='project" + iCounter + "' class='col-md-12 cardProjectName'></div></div></div>"
-                + "<div class='row'><div class='col-md-12'><img id='projectImg" + iCounter + "' class='projectImg'></div></div></div>";
-            $("#iProjects").append(iCard);
+        for (let counter = 1; counter <= projects.length; counter++) {
+            const individualProjectCard = "<div id='individualProjectTarget" + counter + "' class='col-md-4 cards' data-toggle='modal' data-target=''>"
+                + "<div class='row'><div class='col-md-12'><div id='individualProjectTitle" + counter + "' class='col-md-12 cardProjectName'></div></div></div>"
+                + "<div class='row'><div class='col-md-12'><img id='individualProjectImage" + counter + "' class='projectImg'></div></div></div>";
+            $("#individualProjectCardsRow").append(individualProjectCard);
         };
 
-        // ...then group projects
-        for (let j = 0; j < groupProjects.length; j++) {
-            let gCounter = j + 1;
-            const gCard = "<div id='gTarget" + gCounter + "' class='col-md-4 cards' data-toggle='modal' data-target=''>"
-                + "<div class='row'><div class='col-md-12'><div id='gProject" + gCounter + "' class='col-md-12 cardProjectName'></div></div></div>"
-                + "<div class='row'><div class='col-md-12'><img id='gProjectImg" + gCounter + "' class='projectImg'></div></div></div>";
-            $("#gProjects").append(gCard);
+        for (let counter = 1; counter <= groupProjects.length; counter++) {
+            const groupProjectCard = "<div id='groupProjectTarget" + counter + "' class='col-md-4 cards' data-toggle='modal' data-target=''>"
+                + "<div class='row'><div class='col-md-12'><div id='groupProjectTitle" + counter + "' class='col-md-12 cardProjectName'></div></div></div>"
+                + "<div class='row'><div class='col-md-12'><img id='groupProjectImage" + counter + "' class='projectImg'></div></div></div>";
+            $("#groupProjectCardsRow").append(groupProjectCard);
         };
 
-        // With cards created, call the functions responsible for
-        // creating the modals for each project
         createIndividualProjectModal();
         createGroupProjectModal();
     };
 
+    /**
+     * Create a modal for each individual projects
+     */
     const createIndividualProjectModal = () => {
-        for (let i = 0; i < projects.length; i++) {
-            let title = projects[i].title;
-            let modalClassTarget = projects[i].class;
-            let img = projects[i].projectImg;
-            let alt = projects[i].alt;
-            let hrefLive = projects[i].hrefLive;
-            let hrefRepo = projects[i].hrefRepo;
-            const iModal = generateModal(title, modalClassTarget, img, alt, hrefLive, hrefRepo);
-            $("#createModals").append(iModal);
+        for (let counter = 0; counter < projects.length; counter++) {
+            let title = projects[counter].title;
+            let modalClassTarget = projects[counter].class;
+            let projectImage = projects[counter].projectImage;
+            let alternative = projects[counter].alternative;
+            let hrefLiveApplication = projects[counter].hrefLiveApplication;
+            let hrefGitHubRepository = projects[counter].hrefGitHubRepository;
+            const individualProjectModal = generateModal(title, modalClassTarget, projectImage, alternative, hrefLiveApplication, hrefGitHubRepository);
+            $("#projectModals").append(individualProjectModal);
         };
 
-        // After creating the modals, get the projects
-        getIndividualProjects();
+        createIndividualProjectContents();
     };
 
+    /**
+     * Create a modal for each group projects
+     */
     const createGroupProjectModal = () => {
-        for (let j = 0; j < groupProjects.length; j++) {
-            let title = groupProjects[j].title;
-            let modalClassTarget = groupProjects[j].class;
-            let img = groupProjects[j].projectImg;
-            let alt = groupProjects[j].alt;
-            let hrefLive = groupProjects[j].hrefLive;
-            let hrefRepo = groupProjects[j].hrefRepo;
-            const gModal = generateModal(title, modalClassTarget, img, alt, hrefLive, hrefRepo);
-            $("#createModals").append(gModal);
+        for (let counter = 0; counter < groupProjects.length; counter++) {
+            let title = groupProjects[counter].title;
+            let modalClassTarget = groupProjects[counter].class;
+            let projectImage = groupProjects[counter].projectImage;
+            let alternative = groupProjects[counter].alternative;
+            let hrefLiveApplication = groupProjects[counter].hrefLiveApplication;
+            let hrefGitHubRepository = groupProjects[counter].hrefGitHubRepository;
+            const groupProjectModal = generateModal(title, modalClassTarget, projectImage, alternative, hrefLiveApplication, hrefGitHubRepository);
+            $("#projectModals").append(groupProjectModal);
         };
 
-        // After creating the modals, get the projects
-        getGroupProjects();
+        createGroupProjectContents();
     };
 
-    // For individual projects
-    const getIndividualProjects = () => {
-        for (let i = 0; i < projects.length; i++) {
-            let id = i + 1;
-            let title = projects[i].title;
-            let img = projects[i].projectImg;
-            let alt = projects[i].alt;
-            let target = projects[i].target;
-            $("#project" + id).html(title);
-            $("#projectImg" + id).attr("src", img);
-            $("#projectImg" + id).attr("alt", alt);
-            $("#target" + id).attr("data-target", target);
-        };
-    };
-
-    // For group projects
-    const getGroupProjects = () => {
-        for (let j = 0; j < groupProjects.length; j++) {
-            let id = j + 1;
-            let gTitle = groupProjects[j].title;
-            let gImg = groupProjects[j].projectImg;
-            let gAlt = groupProjects[j].alt;
-            let gTarget = groupProjects[j].target;
-            $("#gProject" + id).html(gTitle);
-            $("#gProjectImg" + id).attr("src", gImg);
-            $("#gProjectImg" + id).attr("alt", gAlt);
-            $("#gTarget" + id).attr("data-target", gTarget);
+    /**
+     * Create unique contents inside of each card for an individual project
+     */
+    const createIndividualProjectContents = () => {
+        for (let counter = 0; counter < projects.length; counter++) {
+            let id = counter + 1;
+            let individualProjectTitle = projects[counter].title;
+            let individualProjectImage = projects[counter].projectImage;
+            let individualProjectAlternative = projects[counter].alternative;
+            let individualProjectTarget = projects[counter].target;
+            $("#individualProjectTitle" + id).html(individualProjectTitle);
+            $("#individualProjectImage" + id).attr("src", individualProjectImage);
+            $("#individualProjectImage" + id).attr("alt", individualProjectAlternative);
+            $("#individualProjectTarget" + id).attr("data-target", individualProjectTarget);
         };
     };
 
-    // Create modals for each project while taking in their respected parameters
-    const generateModal = (title, modalClassTarget, img, alt, hrefLive, hrefRepo) => {
+    /**
+     * Create unique contents inside of each card for a group project
+     */
+    const createGroupProjectContents = () => {
+        for (let counter = 0; counter < groupProjects.length; counter++) {
+            let id = counter + 1;
+            let groupProjectTitle = groupProjects[counter].title;
+            let groupProjectImage = groupProjects[counter].projectImage;
+            let groupProjectAlternative = groupProjects[counter].alternative;
+            let groupProjectTarget = groupProjects[counter].target;
+            $("#groupProjectTitle" + id).html(groupProjectTitle);
+            $("#groupProjectImage" + id).attr("src", groupProjectImage);
+            $("#groupProjectImage" + id).attr("alt", groupProjectAlternative);
+            $("#groupProjectTarget" + id).attr("data-target", groupProjectTarget);
+        };
+    };
+
+    /**
+    * Generate a modal for an indivudual project or group project
+    * @param  {String} title                The title of the current project
+    * @param  {String} modalClassTarget     The target name of the current project
+    * @param  {String} image                The image for the current project
+    * @param  {String} alternative          The alternative name for the current project
+    * @param  {String} hrefLiveApplication  The project link to the live application
+    * @param  {String} hrefGitHubRepository The project link to the GitHub repository
+    */
+    const generateModal = (title, modalClassTarget, image, alternative, hrefLiveApplication, hrefGitHubRepository) => {
         const modal = "<div class='modal fade " + modalClassTarget + "' tabindex='-1' role='dialog' aria-labelledby='myLargeModalLabel' aria-hidden='true'>"
             + "<div class='modal-dialog modal-lg'><div class='modal-content draggable'><div class='projects'><div class='row'><div class='col-lg-4'>"
-            + "<img class='modalProjectImg' src='" + img + "' alt='" + alt + "'></div><div class='col-lg-8'><p class='projectName'><label>" + title + "</label></p>"
+            + "<img class='modalProjectImg' src='" + image + "' alt='" + alternative + "'></div><div class='col-lg-8'><p class='projectName'><label>" + title + "</label></p>"
             + "<label><p id='" + modalClassTarget + "' class='projectDesc'></p></label></div></div><div class='row'><div class='col-md-6 btnBlock'>"
-            + "<a title='" + title + " Live App' href='" + hrefLive + "' target='_blank'><button class='btn btn-default projectBtn'>"
-            + "<img class='projectImg' src='" + img + "' style='width:25px'> View Project </button></a></div><div class='col-md-6 btnBlock'>"
-            + "<a title='" + title + " Github Repository' href='" + hrefRepo + "' target='_blank'><button class='btn btn-default githubBtn'>"
-            + "<img class='projectImg' src='" + gitHubImage + "' style='width:25px'> Github Repo </button></a></div></div></div></div></div></div>";
+            + "<a title='" + title + " Live App' href='" + hrefLiveApplication + "' target='_blank'><button class='btn btn-default projectBtn'>"
+            + "<img class='projectImg' src='" + image + "' style='width:25px'> View Project </button></a></div><div class='col-md-6 btnBlock'>"
+            + "<a title='" + title + " Github Repository' href='" + hrefGitHubRepository + "' target='_blank'><button class='btn btn-default githubBtn'>"
+            + "<img class='projectImg' src='" + gitHubLogo + "' style='width:25px'> Github Repo </button></a></div></div></div></div></div></div>";
         return modal;
     };
 
-    // Create the cards for the projects
     createCard();
 });
 
-// Draggable UI function
+/**
+* Allows draggable effect for modals with this className
+*/
 $(() => {
     $(".draggable").draggable();
 });
