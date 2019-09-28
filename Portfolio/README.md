@@ -16,4 +16,4 @@ The Contact section includes my contact information and a comment box. Using Fir
 
 Towards the bottom above the footer, there are three links to my GitHub, LinkedIn, and StackOverFlow page. There is also an arrow that allows the user to click on to bring them back to the top of the page.
 
-Lastly, the background image on each page will change automatically to reflect the northern hemisphere seasons.
+Lastly, the background image on the page will change automatically to reflect the northern hemisphere seasons.
