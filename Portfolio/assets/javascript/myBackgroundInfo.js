@@ -1,11 +1,5 @@
 $(document).ready(function () {
     const background = [
-        // {
-        //     date: "Genesis - Present",
-        //     img: "assets/images/genesis.png",
-        //     main: "On an endless mission to learn new tools, ideas, skills, and technologies.",
-        //     desc: "Passionate coder, courageous technical writer, and a rational problem solver with a very diverse background."
-        // },
         {
             date: "September 2019 - Present",
             img: "assets/images/virginPulseLogo.png",
@@ -15,8 +9,8 @@ $(document).ready(function () {
         {
             date: "April 2019 - September 2019",
             img: "assets/images/virginPulseLogo.png",
-            main: "Software Engineer intern working with the PLEX Team at Virgin Pulse.",
-            desc: "Resolve production incidents by making database and code changes. Participate in weekly meetings to improve the workflow of sprints."
+            main: "Software Engineer intern on the PLEX Team at Virgin Pulse.",
+            desc: "Resolved production incidents by working closely with Scrum and development teams to investigate and resolve client escalated issues."
         },
         {
             date: "March 2019 - Present",
@@ -61,13 +55,16 @@ $(document).ready(function () {
         }
     ];
 
+    /**
+    * Appends each object from the brackground array to the page
+    */
     const printBackgroundInfo = () => {
-        for (let i = 0; i < background.length; i++) {
+        for (let counter = 0; counter < background.length; counter++) {
             const info = "<hr><div class='row projectDesc'><div class='col-md-4'><div class='row'><div class='col-md-12'><strong>"
-                + background[i].date + "</strong></div><div class='col-md-12'><img class='myBackgroundImg' src='"
-                + background[i].img + "'></div></div></div><div class='col-md-8'><div class='row'><div class='col-md-12 backgroundMain'>&#9656; "
-                + background[i].main + "</div><div class='col-md-12 backgroundDesc'>&#9656; "
-                + background[i].desc + "</div></div></div></div>"
+                + background[counter].date + "</strong></div><div class='col-md-12'><img class='myBackgroundImg' src='"
+                + background[counter].img + "'></div></div></div><div class='col-md-8'><div class='row'><div class='col-md-12 backgroundMain'>&#9656; "
+                + background[counter].main + "</div><div class='col-md-12 backgroundDesc'>&#9656; "
+                + background[counter].desc + "</div></div></div></div>"
             $("#myBackgroundInfo").append(info);
         }
     };
