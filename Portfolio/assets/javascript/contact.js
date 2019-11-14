@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(() => {
     // Initialize Firebase
     const config = {
         apiKey: "AIzaSyAMDmuZhf-oPcfOPoS9jRWyiDjrQ2mZr8s",
@@ -17,7 +17,7 @@ $(document).ready(function () {
 
     // Enables the submit button only when there is text in the dialog box
     // Disables the button if text is not present
-    $(".input").keyup(function () {
+    $(".input").keyup(() => {
         if ($("#commentInput").val() == "") {
             $("#submitButton").prop("disabled", true);
         } else {
@@ -26,8 +26,8 @@ $(document).ready(function () {
     });
 
     // Submit button click function
-    $("#submitButton").on("click", function (evt) {
-        evt.preventDefault();
+    $("#submitButton").on("click", e => {
+        e.preventDefault();
 
         // Take the inputs from the user and assign them to variables
         const comment = $("#commentInput").val().trim();
@@ -40,12 +40,14 @@ $(document).ready(function () {
     });
 
     // Reset button click function
-    $("#resetButton").on("click", function () {
+    $("#resetButton").on("click", () => {
         reset();
     });
 
-    // Reset function
-    function reset() {
+    /**
+     * Reset the comment input field and disable the submit button
+     */
+    const reset = () => {
         $("#submitButton").prop("disabled", true);
         $("#commentInput").val("");
     };
@@ -74,7 +76,7 @@ window.onclick = event => {
 
 // When the user clicks the close button,
 // remove the modal and disable the sumbit button
-$("#close").on("click", function () {
+$("#close").on("click", () => {
     modal.style.display = "none";
     $("#submitButton").prop("disabled", true);
 });
