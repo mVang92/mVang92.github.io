@@ -25,6 +25,9 @@ $(document).ready(function () {
         + " win without clicking on the same crystals twice per round. A message will also inform the user if they currently"
         + " hold the highest score or to try again.");
 
+    $("#carSpace").html("CarSpace allows you to keep track of your vehicle maintenance history. Keep your vehicle running smoothly by adding your own vehicles"
+        + " and record their service logs. Maintanance records and keep track of your services with CarSpace. This project is still a work-in-progress.");
+
     $("#bwaters").html("With the participation of four group members, we built this full-stack website to allow"
         + " users to plan a camping, hiking, and mountain biking trip. An API is used to allow users to see trip information and the weather forecast"
         + " around Duluth, MN. Although the review section is not complete, users can submit reviews then further edit/delete them."

@@ -55,6 +55,15 @@ $(document).ready(function () {
             class: "clicky",
             hrefLiveApplication: "https://mvang92.github.io/clickylive/",
             hrefGitHubRepository: "https://github.com/mVang92/clickylive"
+        },
+        {
+            title: "CarSpace",
+            projectImage: "assets/images/carSpaceLogo.png",
+            alternative: "CarSpace",
+            target: ".carSpace",
+            class: "carSpace",
+            hrefLiveApplication: "https://car-space.herokuapp.com/",
+            hrefGitHubRepository: "https://github.com/mVang92/carLog"
         }
     ];
 
