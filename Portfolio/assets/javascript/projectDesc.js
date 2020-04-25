@@ -25,7 +25,7 @@ $(document).ready(function () {
         + " win without clicking on the same crystals twice per round. A message will also inform the user if they currently"
         + " hold the highest score or to try again.");
 
-    $("#carSpace").html("CarSpace allows you to keep track of your vehicle maintenance history and collaborate with the community. Keep your vehicle running smoothly."
+    $("#carSpace").html("CarSpace allows you to keep track of your vehicle maintenance history and collaborate with the community. Keep your vehicle running smoothly"
     + " and meet other passionate do-it-yourselfers in the forum. Ask questions and share vehicle diagnostic solutions with the community.");
 
     $("#bwaters").html("With the participation of four group members, we built this full-stack website to allow"
