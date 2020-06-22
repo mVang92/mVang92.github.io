@@ -4,7 +4,7 @@ $(document).ready(function () {
      * Generates a random phrase in the headline
      */
     const generateRandomPhrase = () => {
-        $("#clickOnProjectButtons").append("<label>Click on the buttons below to view some of my most significant individual and group projects.</label>");
+        $("#clickOnProjectButtons").append("<label>View my most significant individual and group projects by clicking the buttons below.</label>");
         
         const phrases = [
             "make a difference.",
