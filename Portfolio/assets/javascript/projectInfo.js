@@ -182,6 +182,7 @@ $(document).ready(function () {
 
     /**
     * Generate a modal for an indivudual project or group project
+    * 
     * @param  {String} title                The title of the current project
     * @param  {String} modalClassTarget     The target name of the current project
     * @param  {String} image                The image for the current project

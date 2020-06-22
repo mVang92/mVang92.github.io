@@ -34,7 +34,7 @@ body {
 
 #headLine {
     text-align: center;
-    font-size: 26px;
+    font-size: 22px;
 }
 
 #headLineName {
@@ -69,7 +69,7 @@ body {
     background: rgba(220, 220, 220, 0.75);
     box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5);
     margin-top: -8px;
-    margin-bottom: initial;
+    margin-bottom: -4rem;
     border-radius: initial;
 }
 
@@ -520,7 +520,7 @@ footer {
     }
 
     #backToTop {
-        margin-top: 80%;
+        margin-top: 50%;
     }
 
     #topImg {
