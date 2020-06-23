@@ -3,7 +3,7 @@ $(document).ready(function () {
         {
             date: "September 2019 - Present",
             companyLogo: "assets/images/virginPulseLogo.png",
-            jobRole: "Associate Software Development Engineer in Test at Virgin Pulse."
+            jobRole: "Software Development Engineer in Test at Virgin Pulse."
         },
         {
             date: "April 2019 - September 2019",
@@ -23,7 +23,7 @@ $(document).ready(function () {
         {
             date: "April 2018 - October 2018",
             companyLogo: "assets/images/uofmLogo.png",
-            jobRole: "Certified Full-Stack Web Developer from Trilogy Education.",
+            jobRole: "Certified Full-Stack Web Developer from Trilogy Education Services.",
         },
         {
             date: "August 2015 - December 2017",
