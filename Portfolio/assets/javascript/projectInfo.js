@@ -63,7 +63,7 @@ $(document).ready(function () {
             target: ".carSpace",
             class: "carSpace",
             hrefLiveApplication: "https://car-space.herokuapp.com/",
-            hrefGitHubRepository: "https://github.com/mVang92/carLog"
+            hrefGitHubRepository: "https://github.com/mVang92/carSpace"
         }
     ];
 
@@ -86,6 +86,15 @@ $(document).ready(function () {
             hrefLiveApplication: "https://menunow.herokuapp.com/",
             hrefGitHubRepository: "https://github.com/mVang92/menuNow"
         },
+        {
+            title: "AfterClass",
+            projectImage: "assets/images/afterClassLogo.png",
+            alternative: "afterClass",
+            target: ".afterClass",
+            class: "afterClass",
+            hrefLiveApplication: "https://lifeafterclass.herokuapp.com/",
+            hrefGitHubRepository: "https://github.com/Trie0037/Afterclass"
+        }
     ];
 
     /**
