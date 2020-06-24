@@ -26,7 +26,7 @@ $(document).ready(function () {
         + " hold the highest score or to try again.");
 
     $("#carSpace").html("CarSpace allows you to keep track of your vehicle maintenance history and collaborate with the community. Keep your vehicle running smoothly"
-    + " and meet other passionate do-it-yourselfers in the forum. Ask questions and share vehicle diagnostic solutions with the community.");
+        + " and meet other passionate do-it-yourselfers in the forum. Ask questions and share vehicle diagnostic solutions with the community.");
 
     $("#bwaters").html("With the participation of four group members, we built this full-stack website to allow"
         + " users to plan a camping, hiking, and mountain biking trip. An API is used to allow users to see trip information and the weather forecast"
@@ -36,4 +36,7 @@ $(document).ready(function () {
     $("#menuNow").html("With the participation of five group members, this full-stack web application allow restaurant owners to create menus, update them,"
         + " remove items, and add them back in a simple, user-friendly way. Technologies used in this application includes HTML, CSS, React-Bootstrap,"
         + " JavaScript, JSX, React, Firebase Authentication, Node, Express, and MongoDB.");
+
+    $("#afterClass").html("AfterClass provides an opportunity for users to login or signup, and pick the projects or courses they would like to be involved with."
+        + " The user will also be able to vote on a project they are interested in building with fellow collaborators.");
 });
