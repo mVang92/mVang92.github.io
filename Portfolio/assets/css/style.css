@@ -213,14 +213,14 @@ a.underline:active {
 
 #close,
 #myBackgroundBtn,
-#indivProjects,
+#individualProjects,
 #groupProjects {
     transition-duration: 0.4s;
     background: rgb(168, 168, 168);
 }
 
 #myBackgroundBtn,
-#indivProjects,
+#individualProjects,
 #groupProjects {
     width: 160px;
 }
@@ -231,7 +231,7 @@ a.underline:active {
 }
 
 #myBackgroundBtn:hover,
-#indivProjects:hover,
+#individualProjects:hover,
 #groupProjects:hover {
     transition-duration: 0.1s;
     background: rgb(255, 255, 255);
@@ -505,7 +505,7 @@ footer {
     }
 
     #myBackgroundBtn,
-    #indivProjects,
+    #individualProjects,
     #groupProjects {
         width: 275px;
         height: 65px;
@@ -585,7 +585,7 @@ footer {
     }
 
     #myBackgroundBtn,
-    #indivProjects,
+    #individualProjects,
     #groupProjects {
         width: 190px;
         height: 50px;
@@ -608,7 +608,7 @@ footer {
 
 @media only screen and (max-width: 468px) {
     #myBackgroundBtn,
-    #indivProjects,
+    #individualProjects,
     #groupProjects {
         margin-top: 5px;
         width: 170px;

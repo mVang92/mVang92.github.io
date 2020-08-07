@@ -7,6 +7,7 @@ $(document).ready(function () {
             projectImage: "assets/images/TriviaGame.png",
             alternative: "Astronomy Trivia Game",
             target: ".triviaGame",
+            id: "triviaGame",
             class: "triviaGame",
             hrefLiveApplication: "https://mvang92.github.io/TriviaGame-/",
             hrefGitHubRepository: "https://github.com/mVang92/mVang92.github.io/tree/master/TriviaGame-"
@@ -16,6 +17,7 @@ $(document).ready(function () {
             projectImage: "assets/images/pbjTime.gif",
             alternative: "GifTastic",
             target: ".gifTastic",
+            id: "gifTastic",
             class: "gifTastic",
             hrefLiveApplication: "https://mvang92.github.io/GifTastic/",
             hrefGitHubRepository: "https://github.com/mVang92/mVang92.github.io/tree/master/GifTastic"
@@ -25,6 +27,7 @@ $(document).ready(function () {
             projectImage: "assets/images/friendFinder.png",
             alternative: "Friend Finder",
             target: ".friendFinder",
+            id: "friendFinder",
             class: "friendFinder",
             hrefLiveApplication: "https://friend-finder-mvang92.herokuapp.com/",
             hrefGitHubRepository: "https://github.com/mVang92/mVang92.github.io/tree/master/Friend-Finder"
@@ -34,6 +37,7 @@ $(document).ready(function () {
             projectImage: "assets/images/burger.png",
             alternative: "Eat-Da-Burger",
             target: ".burger",
+            id: "burger",
             class: "burger",
             hrefLiveApplication: "https://burgers-app-mvang92.herokuapp.com/",
             hrefGitHubRepository: "https://github.com/mVang92/mVang92.github.io/tree/master/Burger"
@@ -43,6 +47,7 @@ $(document).ready(function () {
             projectImage: "../nyt-react-search/client/public/favicon.png",
             alternative: "New York Times Scrubber",
             target: ".nytScrubber",
+            id: "nytScrubber",
             class: "nytScrubber",
             hrefLiveApplication: "https://nty-scrubber-mvang92.herokuapp.com/",
             hrefGitHubRepository: "https://github.com/mVang92/nyt-react-search"
@@ -52,6 +57,7 @@ $(document).ready(function () {
             projectImage: "../clicky/public/assets/images/crystalG.png",
             alternative: "Crystal Clicky Game",
             target: ".clicky",
+            id: "clicky",
             class: "clicky",
             hrefLiveApplication: "https://mvang92.github.io/clickylive/",
             hrefGitHubRepository: "https://github.com/mVang92/clickylive"
@@ -61,6 +67,7 @@ $(document).ready(function () {
             projectImage: "assets/images/carSpaceLogo.png",
             alternative: "CarSpace",
             target: ".carSpace",
+            id: "carSpace",
             class: "carSpace",
             hrefLiveApplication: "https://car-space.herokuapp.com/",
             hrefGitHubRepository: "https://github.com/mVang92/carSpace"
@@ -73,6 +80,7 @@ $(document).ready(function () {
             projectImage: "assets/images/bwatersLogo.png",
             alternative: "BWCA Advanture Tours",
             target: ".bwaters",
+            id: "bwaters",
             class: "bwaters",
             hrefLiveApplication: "https://code-camp-p2.herokuapp.com/",
             hrefGitHubRepository: "https://github.com/mVang92/CodeCampProject2"
@@ -82,6 +90,7 @@ $(document).ready(function () {
             projectImage: "assets/images/menuNow.png",
             alternative: "menuNOW",
             target: ".menuNow",
+            id: "menuNow",
             class: "menuNow",
             hrefLiveApplication: "https://menunow.herokuapp.com/",
             hrefGitHubRepository: "https://github.com/mVang92/menuNow"
@@ -89,8 +98,9 @@ $(document).ready(function () {
         {
             title: "AfterClass",
             projectImage: "assets/images/afterClassLogo.png",
-            alternative: "afterClass",
+            alternative: "Life After Class",
             target: ".afterClass",
+            id: "afterClass",
             class: "afterClass",
             hrefLiveApplication: "https://lifeafterclass.herokuapp.com/",
             hrefGitHubRepository: "https://github.com/Trie0037/Afterclass"
@@ -101,17 +111,19 @@ $(document).ready(function () {
      * Create a card for individual and group projects
      */
     const createCard = () => {
-        for (let counter = 1; counter <= projects.length; counter++) {
-            const individualProjectCard = "<div id='individualProjectTarget" + counter + "' class='col-md-4 cards' data-toggle='modal' data-target=''>"
-                + "<div class='row'><div class='col-md-12'><div id='individualProjectTitle" + counter + "' class='col-md-12 cardProjectName'></div></div></div>"
-                + "<div class='row'><div class='col-md-12'><img id='individualProjectImage" + counter + "' class='projectImg'></div></div></div>";
+        for (let counter = 0; counter < projects.length; counter++) {
+            const projectId = projects[counter].id;
+            const individualProjectCard = "<div id='" + projectId + "Card' class='col-md-4 cards' data-toggle='modal' data-target=''>"
+                + "<div class='row'><div id='" + projectId + "Title' class='col-md-12 cardProjectName'></div></div>"
+                + "<div class='row'><div class='col-md-12'><img id='" + projectId + "Image' class='projectImg'></div></div></div>";
             $("#individualProjectCardsRow").append(individualProjectCard);
         };
 
-        for (let counter = 1; counter <= groupProjects.length; counter++) {
-            const groupProjectCard = "<div id='groupProjectTarget" + counter + "' class='col-md-4 cards' data-toggle='modal' data-target=''>"
-                + "<div class='row'><div class='col-md-12'><div id='groupProjectTitle" + counter + "' class='col-md-12 cardProjectName'></div></div></div>"
-                + "<div class='row'><div class='col-md-12'><img id='groupProjectImage" + counter + "' class='projectImg'></div></div></div>";
+        for (let counter = 0; counter < groupProjects.length; counter++) {
+            const projectId = groupProjects[counter].id;
+            const groupProjectCard = "<div id='" + projectId + "Card' class='col-md-4 cards' data-toggle='modal' data-target=''>"
+                + "<div class='row'><div id='" + projectId + "Title' class='col-md-12 cardProjectName'></div></div>"
+                + "<div class='row'><div class='col-md-12'><img id='" + projectId + "Image' class='projectImg'></div></div></div>";
             $("#groupProjectCardsRow").append(groupProjectCard);
         };
 
@@ -160,15 +172,15 @@ $(document).ready(function () {
      */
     const createIndividualProjectContents = () => {
         for (let counter = 0; counter < projects.length; counter++) {
-            let id = counter + 1;
+            let id = projects[counter].id;
             let individualProjectTitle = projects[counter].title;
             let individualProjectImage = projects[counter].projectImage;
             let individualProjectAlternative = projects[counter].alternative;
             let individualProjectTarget = projects[counter].target;
-            $("#individualProjectTitle" + id).html(individualProjectTitle);
-            $("#individualProjectImage" + id).attr("src", individualProjectImage);
-            $("#individualProjectImage" + id).attr("alt", individualProjectAlternative);
-            $("#individualProjectTarget" + id).attr("data-target", individualProjectTarget);
+            $("#" + id + "Title").html(individualProjectTitle);
+            $("#" + id + "Image").attr("src", individualProjectImage);
+            $("#" + id + "Image").attr("alt", individualProjectAlternative);
+            $("#" + id + "Card").attr("data-target", individualProjectTarget);
         };
     };
 
@@ -177,15 +189,15 @@ $(document).ready(function () {
      */
     const createGroupProjectContents = () => {
         for (let counter = 0; counter < groupProjects.length; counter++) {
-            let id = counter + 1;
+            let id = groupProjects[counter].id;
             let groupProjectTitle = groupProjects[counter].title;
             let groupProjectImage = groupProjects[counter].projectImage;
             let groupProjectAlternative = groupProjects[counter].alternative;
             let groupProjectTarget = groupProjects[counter].target;
-            $("#groupProjectTitle" + id).html(groupProjectTitle);
-            $("#groupProjectImage" + id).attr("src", groupProjectImage);
-            $("#groupProjectImage" + id).attr("alt", groupProjectAlternative);
-            $("#groupProjectTarget" + id).attr("data-target", groupProjectTarget);
+            $("#" + id + "Title").html(groupProjectTitle);
+            $("#" + id + "Image").attr("src", groupProjectImage);
+            $("#" + id + "Image").attr("alt", groupProjectAlternative);
+            $("#" + id + "Card").attr("data-target", groupProjectTarget);
         };
     };
 
