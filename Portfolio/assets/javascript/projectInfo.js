@@ -63,14 +63,14 @@ $(document).ready(function () {
             hrefGitHubRepository: "https://github.com/mVang92/clickylive"
         },
         {
-            title: "CarSpace",
-            projectImage: "assets/images/carSpaceLogo.png",
-            alternative: "CarSpace",
-            target: ".carSpace",
-            id: "carSpace",
-            class: "carSpace",
-            hrefLiveApplication: "https://car-space.herokuapp.com/",
-            hrefGitHubRepository: "https://github.com/mVang92/carSpace"
+            title: "EngineRev",
+            projectImage: "assets/images/engineRevLogo.png",
+            alternative: "EngineRev",
+            target: ".engineRev",
+            id: "engineRev",
+            class: "engineRev",
+            hrefLiveApplication: "https://engineRev.herokuapp.com/",
+            hrefGitHubRepository: "https://github.com/mVang92/EngineRev"
         }
     ];
 
